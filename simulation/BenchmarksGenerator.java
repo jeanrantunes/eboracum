@@ -68,7 +68,7 @@ public abstract class BenchmarksGenerator {
 			/*linux*/
 			//Process p = Runtime.getRuntime().exec("./bin/vergil -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
 			/*windows*/
-			Process p = Runtime.getRuntime().exec("java -classpath \".;ptolemy/ptsupport.jar;\\ptolemy/vergil/vergil.jar;lib/diva.jar;\\ptolemy/domains/domains.jar;\\ptolemy/actor/gt/gt.jar;\\ptolemy/domains/erg/erg.jar;\\ptolemy/vergil/gt/gt.jar;\\ptolemy/vergil/erg/erg.jar;\\ptolemy/vergil/fsm/fmv/fmv.jar\" ptolemy.vergil.VergilApplication -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
+			Process p = Runtime.getRuntime().exec("java -classpath \"bin/\" ptolemy.vergil.VergilApplication -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
 			/*no GUI*/
 			//java -classpath . ptolemy.actor.gui.MoMLSimpleApplication eboracum/data/NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID0.xml
 			p.waitFor();
