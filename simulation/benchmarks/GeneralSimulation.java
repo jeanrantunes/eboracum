@@ -2,6 +2,8 @@ package eboracum.simulation.benchmarks;
 
 import eboracum.simulation.BenchmarksGenerator;
 import eboracum.simulation.util.HistogramSpectrogramFactory;
+import eboracum.wsn.network.node.WirelessNode;
+import ptolemy.data.expr.Parameter;
 
 public class GeneralSimulation extends BenchmarksGenerator {
 
@@ -45,16 +47,17 @@ public class GeneralSimulation extends BenchmarksGenerator {
 		this.cpuCost = 50;
 		this.idleCost = 0.3;
 		this.wirelessNodes.clear();
-		this.wirelessNodes.put("sensor.SimpleWSNNode", numOfNodes);
-		//this.wirelessNodes.put("sensor.controled.GreedyWSNNode", numOfNodes);
+		//this.wirelessNodes.put("sensor.SimpleWSNNode", numOfNodes);
+		//this.wirelessNodes.put("sensor.controled.DummyWSNNode", numOfNodes);
 		//this.wirelessNodes.put("sensor.controled.RandomControledWSNNode", numOfNodes);
-		//this.wirelessNodes.put("sensor.controled.PSControledWSNNode", numOfNodes);
+		this.wirelessNodes.put("sensor.controled.PSControledWSNNode", numOfNodes);
+		//this.wirelessNodes.put("sensor.controled.AntControledWSNNode", numOfNodes);
 		this.wirelessEvents.clear();
 		//HistogramSpectrogramFactory.newHistogram(359, "directionHist.csv");
 		this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "StochasticPeriodicJumperEvent"), 1);
 		//this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "FullyStochasticMobileEvent"), 1000);
+		//this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "RandomMobileEvent"), 1);
 	}
-	
 	
 		private void setupBeePaperConfig(int j){
 			 switch (j) {

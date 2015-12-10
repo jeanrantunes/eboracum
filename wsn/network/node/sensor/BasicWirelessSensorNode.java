@@ -124,13 +124,13 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
     						this.timeOfDeath = (this.getDirector().getModelTime().add(round((Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression())))));
     						//_fireAt(round(this.getDirector().getModelTime().getDoubleValue()+(((Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression())))));
 	           				 */
+	           				if (!this.tempLastSensingEventTime.equals(this.getDirector().getModelTime())){
+		    					this.tempLastSensingEventTime = this.getDirector().getModelTime();
+		    					this.sensedEvents.setExpression(tempEvent.split("_")[0]);
+		    				}
+		    				else this.sensedEvents.setExpression(sensedEvents.getExpression()+tempEvent.split("_")[0]);
 	           			}
 	           			else this.tempEvent = null;
-	    				if (!this.tempLastSensingEventTime.equals(this.getDirector().getModelTime())){
-	    					this.tempLastSensingEventTime = this.getDirector().getModelTime();
-	    					this.sensedEvents.setExpression(tempEvent.split("_")[0]);
-	    				}
-	    				else this.sensedEvents.setExpression(sensedEvents.getExpression()+tempEvent.split("_")[0]);
 	    			//}
 	    			//else this.tempEvent = null;
 	           	}

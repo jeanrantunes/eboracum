@@ -72,14 +72,14 @@ public abstract class BasicEvent extends TypedAtomicActor {
     public void initialize() throws IllegalActionException {
         super.initialize();
         this.numberOfProducedEvents = 0;
-        this.numberOfSensorProcessedEvents= 0; 
+        this.numberOfSensorProcessedEvents = 0; 
         // Redefine event color according Color parameter
         _rectangle.fillColor.setToken("{0.5, 0.5, 0.5, 1.0}");
         _fireAt(Double.parseDouble(triggerTime.getExpression())); //_fireAt(0);
         message = this.endType.getExpression();
    }
     
-    public void fire() throws NoTokenException, IllegalActionException {
+   public void fire() throws NoTokenException, IllegalActionException {
         super.fire();
         //type.getExpression();
         out.send(0, new StringToken(message));

@@ -82,7 +82,7 @@
     <entity class="eboracum.wsn.network.SimpleAdHocNetwork" name="SimpleAdHocNetwork">
         <property class="ptolemy.data.expr.StringParameter" name="NetworkSinks" value="{NetworkMainGateway}">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="RebuildNetworkWhenGatewayDies" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="RebuildNetworkWhenGatewayDies" value="true">
         </property>
         <doc>Simple Network builder based on a multi-hope ad-hoc network desing.</doc>
         <property class="ptolemy.kernel.util.Location" name="_location" value="[425.0, -135.0]">
@@ -114,7 +114,7 @@
     <link port="SimpleAdHocNetwork.out" relation="relation"/>
     <link port="DataReporter.out" relation="relation2"/>
     <link port="DataReporter.trigger" relation="relation"/>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node0">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node0">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -146,20 +146,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 125.0}">
         </property>
@@ -203,7 +189,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node1">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node1">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -235,20 +221,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 250.0}">
         </property>
@@ -292,7 +264,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node2">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node2">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -324,20 +296,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 375.0}">
         </property>
@@ -381,7 +339,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node3">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node3">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -413,20 +371,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 500.0}">
         </property>
@@ -470,7 +414,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node4">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node4">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -502,20 +446,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 625.0}">
         </property>
@@ -559,7 +489,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node5">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node5">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -591,20 +521,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 750.0}">
         </property>
@@ -648,7 +564,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node6">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node6">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -680,20 +596,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 875.0}">
         </property>
@@ -737,7 +639,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node7">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node7">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -769,20 +671,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 125.0}">
         </property>
@@ -826,7 +714,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node8">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node8">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -858,20 +746,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 250.0}">
         </property>
@@ -915,7 +789,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node9">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node9">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -947,20 +821,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 375.0}">
         </property>
@@ -1004,7 +864,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node10">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node10">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1036,20 +896,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 500.0}">
         </property>
@@ -1093,7 +939,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node11">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node11">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1125,20 +971,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 625.0}">
         </property>
@@ -1182,7 +1014,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node12">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node12">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1214,20 +1046,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 750.0}">
         </property>
@@ -1271,7 +1089,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node13">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node13">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1303,20 +1121,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 875.0}">
         </property>
@@ -1360,7 +1164,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node14">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node14">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1392,20 +1196,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 125.0}">
         </property>
@@ -1449,7 +1239,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node15">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node15">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1481,20 +1271,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 250.0}">
         </property>
@@ -1538,7 +1314,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node16">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node16">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1570,20 +1346,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 375.0}">
         </property>
@@ -1627,7 +1389,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node17">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node17">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1659,20 +1421,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 500.0}">
         </property>
@@ -1716,7 +1464,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node18">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node18">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1748,20 +1496,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 625.0}">
         </property>
@@ -1805,7 +1539,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node19">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node19">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1837,20 +1571,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 750.0}">
         </property>
@@ -1894,7 +1614,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node20">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node20">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -1926,20 +1646,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 875.0}">
         </property>
@@ -1983,7 +1689,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node21">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node21">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2015,20 +1721,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 125.0}">
         </property>
@@ -2072,7 +1764,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node22">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node22">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2104,20 +1796,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 250.0}">
         </property>
@@ -2161,7 +1839,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node23">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node23">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2193,20 +1871,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 375.0}">
         </property>
@@ -2250,7 +1914,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node24">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node24">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2282,20 +1946,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 500.0}">
         </property>
@@ -2339,7 +1989,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node25">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node25">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2371,20 +2021,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 625.0}">
         </property>
@@ -2428,7 +2064,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node26">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node26">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2460,20 +2096,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 750.0}">
         </property>
@@ -2517,7 +2139,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node27">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node27">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2549,20 +2171,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 875.0}">
         </property>
@@ -2606,7 +2214,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node28">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node28">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2638,20 +2246,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 125.0}">
         </property>
@@ -2695,7 +2289,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node29">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node29">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2727,20 +2321,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 250.0}">
         </property>
@@ -2784,7 +2364,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node30">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node30">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2816,20 +2396,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 375.0}">
         </property>
@@ -2873,7 +2439,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node31">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node31">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2905,20 +2471,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 500.0}">
         </property>
@@ -2962,7 +2514,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node32">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node32">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -2994,20 +2546,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 625.0}">
         </property>
@@ -3051,7 +2589,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node33">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node33">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3083,20 +2621,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 750.0}">
         </property>
@@ -3140,7 +2664,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node34">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node34">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3172,20 +2696,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 875.0}">
         </property>
@@ -3229,7 +2739,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node35">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node35">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3261,20 +2771,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 125.0}">
         </property>
@@ -3318,7 +2814,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node36">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node36">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3350,20 +2846,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 250.0}">
         </property>
@@ -3407,7 +2889,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node37">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node37">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3439,20 +2921,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 375.0}">
         </property>
@@ -3496,7 +2964,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node38">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node38">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3528,20 +2996,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 500.0}">
         </property>
@@ -3585,7 +3039,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node39">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node39">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3617,20 +3071,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 625.0}">
         </property>
@@ -3674,7 +3114,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node40">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node40">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3706,20 +3146,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 750.0}">
         </property>
@@ -3763,7 +3189,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node41">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node41">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3795,20 +3221,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 875.0}">
         </property>
@@ -3852,7 +3264,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node42">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node42">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3884,20 +3296,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 125.0}">
         </property>
@@ -3941,7 +3339,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node43">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node43">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -3973,20 +3371,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 250.0}">
         </property>
@@ -4030,7 +3414,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node44">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node44">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -4062,20 +3446,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 375.0}">
         </property>
@@ -4119,7 +3489,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node45">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node45">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -4151,20 +3521,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 500.0}">
         </property>
@@ -4208,7 +3564,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node46">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node46">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -4240,20 +3596,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 625.0}">
         </property>
@@ -4297,7 +3639,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node47">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node47">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -4329,20 +3671,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 750.0}">
         </property>
@@ -4386,7 +3714,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.network.node.sensor.controled.PSControledWSNNode" name="Node48">
+<entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node48">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
@@ -4418,20 +3746,6 @@
         <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="threshold" value="0.14">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="diffCycleTime" value="14400">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="hQN" value="50">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="thresholdHopCount" value="2">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kHopDecay" value="0.25">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="decayTime" value="2000">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="kTimeDecay" value="0.5">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 875.0}">
         </property>

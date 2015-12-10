@@ -4475,7 +4475,7 @@
             </property>
         </port>
     </entity>
-<entity class="eboracum.wsn.event.StochasticPeriodicJumperEvent" name="E0_0">
+<entity class="eboracum.wsn.event.RandomMobileEvent" name="E0_0">
         <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Type" value="E0">
@@ -4491,6 +4491,12 @@
         <property class="ptolemy.data.expr.Parameter" name="Period" value="2">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Lifetime" value="Infinity">
+        </property>
+        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
+        </property>
+        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
+        </property>
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 500.0}">
         </property>

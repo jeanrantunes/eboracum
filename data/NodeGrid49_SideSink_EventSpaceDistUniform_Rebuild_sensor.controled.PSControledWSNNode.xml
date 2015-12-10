@@ -82,7 +82,7 @@
     <entity class="eboracum.wsn.network.SimpleAdHocNetwork" name="SimpleAdHocNetwork">
         <property class="ptolemy.data.expr.StringParameter" name="NetworkSinks" value="{NetworkMainGateway}">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="RebuildNetworkWhenGatewayDies" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="RebuildNetworkWhenGatewayDies" value="true">
         </property>
         <doc>Simple Network builder based on a multi-hope ad-hoc network desing.</doc>
         <property class="ptolemy.kernel.util.Location" name="_location" value="[425.0, -135.0]">

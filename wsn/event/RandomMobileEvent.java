@@ -2,6 +2,7 @@ package eboracum.wsn.event;
 
 import java.util.Random;
 
+import ptolemy.actor.NoTokenException;
 import ptolemy.data.expr.Parameter;
 import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;
@@ -32,8 +33,8 @@ public class RandomMobileEvent extends SimpleMobileEvent {
     	//if (this.stocParameterGenerator != null)
 //    		activateTime = ((Stochastic)this.stocParameterGenerator).getTriggerTime();
     	//else
-//    		activateTime = 0;
-    	activateTime = (int)(Math.random()*(9000000));
+    		activateTime = 0;
+//    	activateTime = (int)(Math.random()*(5400000/2));
         triggerTime.setExpression(Double.toString(activateTime));     
     }
    

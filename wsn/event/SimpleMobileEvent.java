@@ -27,7 +27,7 @@ public class SimpleMobileEvent extends PeriodicEvent{
     }
   
     public void fire() throws NoTokenException, IllegalActionException {
-        super.fire();
+    	super.fire();
         // Move event and request for actualisation of event location parameter 
         ChangeRequest doRandomize;
         try {
@@ -37,7 +37,9 @@ public class SimpleMobileEvent extends PeriodicEvent{
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        workspace().incrVersion();   
+        workspace().incrVersion();
+        message = this.getName().split("_")[0]+"_"+this.numberOfProducedEvents;
+    	System.out.println(this.message);
     }
     
     public boolean postfire() throws IllegalActionException{

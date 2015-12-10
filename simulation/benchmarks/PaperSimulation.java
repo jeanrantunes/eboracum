@@ -47,13 +47,14 @@ public class PaperSimulation extends BenchmarksGenerator {
 		this.idleCost = 0.3;
 		this.wirelessEvents.clear();
 		this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "StochasticPeriodicJumperEvent"), 1);
+		//this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "RandomMobileEvent"), 1);
 		HistogramSpectrogramFactory.newPoissonHistogram(100, "periodHist.csv");
 		this.wirelessNodes.clear();
 	}
 	
 	protected void setupNodesSpecificParameters(WirelessNode e){
 		switch (this.id) {
-    		case 0:
+    		case 1:
     			((Parameter)e.getAttribute("alpha")).setExpression("0");
     			((Parameter)e.getAttribute("betha")).setExpression("0");
     			((Parameter)e.getAttribute("delta")).setExpression("14");
@@ -65,9 +66,9 @@ public class PaperSimulation extends BenchmarksGenerator {
 		
 		private void setupBeePaperConfig(int j){
 			 switch (j) {
-	        	case 0:	//this.wirelessNodes.put("sensor.controled.PSControledWSNNode", numOfNodes);
-	        			this.wirelessNodes.put("sensor.controled.AntControledWSNNode", numOfNodes);
-	        	//		this.wirelessNodes.put("sensor.SimpleWSNNode", numOfNodes);
+	        	case 0:	this.wirelessNodes.put("sensor.controled.PSControledWSNNode", numOfNodes);
+	        		//	this.wirelessNodes.put("sensor.controled.AntControledWSNNode", numOfNodes);
+	        			//this.wirelessNodes.put("sensor.SimpleWSNNode", numOfNodes);
 	    		//		this.wirelessNodes.put("sensor.controled.GreedyWSNNode", numOfNodes);
 	    				//this.wirelessNodes.put("sensor.controled.RandomControledWSNNode", numOfNodes);
 	        		//this.wirelessNodes.put("sensor.controled.AuctionControledWSNNode", numOfNodes);
