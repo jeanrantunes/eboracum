@@ -137,7 +137,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 	           	else this.tempEvent = null;
            	}
 	        catch (Exception e){
-	        	System.out.println(e);
+	        	//System.out.println(e);
 	        	this.tempEvent = null;
 	        }
 		}

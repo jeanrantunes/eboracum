@@ -38,8 +38,8 @@ public class SimpleMobileEvent extends PeriodicEvent{
             e.printStackTrace();
         }
         workspace().incrVersion();
-        message = this.getName().split("_")[0]+"_"+this.numberOfProducedEvents;
-    	System.out.println(this.message);
+        //message = this.getName().split("_")[0]+"_"+this.numberOfProducedEvents;
+    	//System.out.println(this.message);
     }
     
     public boolean postfire() throws IllegalActionException{
