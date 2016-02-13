@@ -68,7 +68,7 @@ public abstract class BenchmarksGenerator {
 			/*linux*/
 			//Process p = Runtime.getRuntime().exec("./bin/vergil -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
 			/*windows*/
-			Process p = Runtime.getRuntime().exec("java -classpath \"bin/\" ptolemy.vergil.VergilApplication -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
+			Process p = Runtime.getRuntime().exec("java -Xmx8192m -classpath \"bin/\" ptolemy.vergil.VergilApplication -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
 			/*no GUI*/
 			//java -classpath . ptolemy.actor.gui.MoMLSimpleApplication eboracum/data/NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID0.xml
 			p.waitFor();
@@ -154,6 +154,8 @@ public abstract class BenchmarksGenerator {
 					e.color.setExpression(entry.getKey().getColor());
 					e.type.setExpression(entry.getKey().getType());
 					e.endType.setExpression(entry.getKey().getType());
+					//e.numberOfSensorProcessedEvents += i*1000;
+					//System.out.println(i);
 					Location l = new Location(e,"_location");
 					l.setLocation(new double[]{((this.scenarioDimensionXY[0])/2),((this.scenarioDimensionXY[1])/2)});
 					Node fragmentNode = dBuilder.parse(new ByteArrayInputStream(e.exportMoMLPlain().getBytes())).getDocumentElement();

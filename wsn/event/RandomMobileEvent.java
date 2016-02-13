@@ -34,7 +34,8 @@ public class RandomMobileEvent extends SimpleMobileEvent {
 //    		activateTime = ((Stochastic)this.stocParameterGenerator).getTriggerTime();
     	//else
     		//activateTime = 0;
-    	activateTime = (int)(Math.random()*(5400000/2));
+    	//activateTime = (int)(Math.random()*(5400000/2));
+    	activateTime = (int)(Math.random()*(9000000));
         triggerTime.setExpression(Double.toString(activateTime));     
     }
    

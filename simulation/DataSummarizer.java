@@ -22,18 +22,22 @@ public class DataSummarizer {
 	HashMap<String, ArrayList<Double>> nodeNumberofSensoredEvents = new HashMap<String,ArrayList<Double>>();
 	HashMap<String, ArrayList<Double>> nodeTimeofDeath = new HashMap<String,ArrayList<Double>>();
 	HashMap<String, ArrayList<Double>> eventNumberofTimesSensed = new HashMap<String,ArrayList<Double>>();
+	HashMap<String, ArrayList<Double>> eventsByDaySensed = new HashMap<String,ArrayList<Double>>();
 	
 	public void go(){
-		//for (int j = 0; j < 5; j++){
-			for (int i = 0; i < 30; i++)
-				this.collectDataFromFile("StocMobile/NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_Baseline_0_"+i+".csv");
+		for (int j = 1; j < 7; j++){
+			String file = "time/ps/NodeGrid49_SideSink_EventSpaceDistUniform_NotRebuild";
+			for (int i = 0; i < 10; i++){
+				this.collectDataFromFile(file+j+"_"+i+".csv");
+				//collectEventsSensedFromFile(file+i+".csv");
+				//saveSummaryFile(eventsByDaySensed, file+"eventsByDaySensed.csv");
 			//saveSummaryFile(nodeRemainingBattery, "NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID"+0+"_nodeRemainingBattery.csv");
 			//saveSummaryFile(nodeNumberofSentMessages, "NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID"+j+"_nodeNumberofSentMessages.csv");
 			//saveSummaryFile(nodeNumberofEnqueuedEvents, "NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID"+j+"_nodeNumberofEnqueuedEvents.csv");
-			//saveSummaryFile(nodeNumberofSensoredEvents, "NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID"+j+"_nodeNumberofSensoredEvents.csv");
-			saveSummaryFile(nodeTimeofDeath, "StocMobile/NodeGrid49_SideSink_EventSpaceDistNormal_NoNetRebuild_Baseline_0_nodeTimeofDeath.csv");
-			//saveSummaryFile(eventNumberofTimesSensed, "NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID"+j+"_eventNumberofTimesSensed.csv");
-	//	}
+			//saveSummaryFile(nodeNumberofSensoredEvents, file+"_nodeNumberofSensoredEvents.csv");
+			saveSummaryFile(nodeTimeofDeath, file+"_"+j+"_nodeTimeofDeath.csv");}
+			//saveSummaryFile(eventNumberofTimesSensed, file+"_eventNumberofTimesSensed.csv");
+		}
 	}
 	
 	public void saveSummaryFile(HashMap<String, ArrayList<Double>> data, String newFile){
@@ -46,7 +50,7 @@ public class DataSummarizer {
 			//	System.out.println(df.format(entry.getValue().get(i)));
 			//}
 		}
-		writeToFile(lines,"york/data/"+newFile);
+		writeToFile(lines,"eboracum/data/"+newFile);
 	}
 	
 	public static double var(ArrayList<Double> a) {
@@ -68,9 +72,32 @@ public class DataSummarizer {
         return sum / a.size();
     }
 
-	
+	public void collectEventsSensedFromFile(String file){
+		String csvFile = "eboracum/data/"+file;
+		BufferedReader br = null;
+		String line = "";
+		String cvsSplitBy = ";";
+		boolean resultsFlag = false;
+		try {
+			br = new BufferedReader(new FileReader(csvFile));
+			while ((line = br.readLine()) != null) {
+				String[] rline = line.split(cvsSplitBy);
+				if (rline[0].equals("Nodes")) break;
+				//System.out.println(rline[0]);
+				if (resultsFlag){
+								//System.out.println(rline[0]+" "+rline[1]);
+				
+									if (!eventsByDaySensed.containsKey(rline[0])) eventsByDaySensed.put(rline[0], new ArrayList<Double>());
+									eventsByDaySensed.get(rline[0]).add(Double.parseDouble(rline[1]));
+				}	
+				if (rline[0].equals("Number of Sensed Events by the WSN per Day")) resultsFlag = true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	public void collectDataFromFile(String file){
-		String csvFile = "york/data/"+file;
+		String csvFile = "eboracum/data/"+file;
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ";";

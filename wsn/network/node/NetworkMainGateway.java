@@ -41,7 +41,7 @@ public class NetworkMainGateway extends WirelessNode {
 		if (this.receivedMessage != null) {
 			if (!this.receivedMessage.equals(lastSensedEvent)){
 				this.eventSensoredGenCounter++;
-				//System.out.println(this.receivedMessage);
+				//System.out.println(this.getDirector().getModelTime().getDoubleValue()+" "+this.dayCounter+" "+this.receivedMessage);
 				if (this.getDirector().getModelTime().getDoubleValue()/(3600*24) > this.dayCounter){
 					this.eventSensoredCounter++;
 					detailEventSensoredCounter.add(this.eventSensoredCounter);

@@ -20,13 +20,15 @@ public class AntAgent implements BasicAgent{
 	}
 	
 	public boolean eventSensed(String tempEvent){
-		this.tempEvent = tempEvent;
-		this.propagate(tempEvent);
-		try {
-			this.myNode.getDirector().fireAt(this.myNode, this.myNode.getDirector().getModelTime().add(1));
-		} catch (IllegalActionException e) {
-			e.printStackTrace();
-		}
+	//	if (this.tempEvent == null){
+			this.tempEvent = tempEvent;
+			this.propagate(tempEvent);
+			try {
+				this.myNode.getDirector().fireAt(this.myNode, this.myNode.getDirector().getModelTime().add(1));
+			} catch (IllegalActionException e) {
+				e.printStackTrace();
+			}
+	//	}
 		return false;
 	}
 	

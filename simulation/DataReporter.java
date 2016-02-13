@@ -49,7 +49,7 @@ public class DataReporter extends TypedAtomicActor {
           	BenchmarksGenerator.appendDataReportFile(fileReport,"Simulation Total Time;"+df.format((this.getDirector().getModelTime().getDoubleValue())));
         	while (actors.hasNext()) {
         		Entity node = (Entity) actors.next();
-        		if (node.getClassName().equals("york.wsn.network.node.NetworkMainGateway")){
+        		if (node.getClassName().equals("eboracum.wsn.network.node.NetworkMainGateway")){
         			BenchmarksGenerator.appendDataReportFile(fileReport,"Total Number of Sensed Events by the WSN;"+((NetworkMainGateway)node).eventSensoredGenCounter);
         			BenchmarksGenerator.appendDataReportFile(fileReport,"Number of Sensed Events by the WSN per Day");
         			Iterator<Integer> n = ((NetworkMainGateway)node).detailEventSensoredCounter.iterator();
@@ -66,18 +66,25 @@ public class DataReporter extends TypedAtomicActor {
         		ClassLoader classLoader = DataReporter.class.getClassLoader();
                 try {
                 	@SuppressWarnings("rawtypes")
-					Class bwsn = classLoader.loadClass("york.wsn.network.node.sensor.BasicWirelessSensorNode");
+					Class bwsn = classLoader.loadClass("eboracum.wsn.network.node.sensor.BasicWirelessSensorNode");
                 	if (bwsn.isAssignableFrom(node.getClass())){
                 		if (firstNodeFlag) {
                 			BenchmarksGenerator.appendDataReportFile(fileReport,"Nodes\nClass Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death");
                 			firstNodeFlag = false;
                 		}
                 		//System.out.println(node);
-    					BenchmarksGenerator.appendDataReportFile(fileReport,node.getClassName()+";"+node.getName()+";"+df.format(Double.parseDouble(((Parameter)node.getAttribute("Battery")).getExpression()))+";"+((BasicWirelessSensorNode)node).numberOfReceivedMessages+";"+((BasicWirelessSensorNode)node).numberOfSentMessages+";"+((BasicWirelessSensorNode)node).numberOfQueuedEvents+";"+((BasicWirelessSensorNode)node).numberOfSensoredEvents+";"+df.format(((BasicWirelessSensorNode)node).timeOfDeath.getDoubleValue()));
+    					BenchmarksGenerator.appendDataReportFile(fileReport,node.getClassName()+";"+
+                		node.getName()+";"+
+    					df.format(Double.parseDouble(((Parameter)node.getAttribute("Battery")).getExpression()))+";"+
+                		((BasicWirelessSensorNode)node).numberOfReceivedMessages+";"+
+    					((BasicWirelessSensorNode)node).numberOfSentMessages+";"+
+                		((BasicWirelessSensorNode)node).numberOfQueuedEvents+";"+
+    					((BasicWirelessSensorNode)node).numberOfSensoredEvents+";"+
+                		df.format(((BasicWirelessSensorNode)node).timeOfDeath.getDoubleValue()));
                 	}
                 	
                 	@SuppressWarnings("rawtypes")
-					Class be = classLoader.loadClass("york.wsn.event.BasicEvent");
+					Class be = classLoader.loadClass("eboracum.wsn.event.BasicEvent");
     				if (be.isAssignableFrom(node.getClass())){ 
                 		if (firstEventFlag) {
                 			BenchmarksGenerator.appendDataReportFile(fileReport,"Events\nClass Name; Name; Type; Number of Produced Events; Number of Times Sensed");

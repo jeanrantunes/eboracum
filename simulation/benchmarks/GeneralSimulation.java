@@ -26,7 +26,7 @@ public class GeneralSimulation extends BenchmarksGenerator {
 			this.beginSetupBeePaperConfig();
 			this.setupBeePaperConfig(j);
 			this.endSetupBeePaperConfig(simulationIdentification);
-			int numOfRounds = 1;
+			int numOfRounds = 30;
 			for (int i=0; i<numOfRounds; i++) {
 				try {
 					this.run(simulationIdentification,i);
@@ -47,16 +47,18 @@ public class GeneralSimulation extends BenchmarksGenerator {
 		this.cpuCost = 50;
 		this.idleCost = 0.3;
 		this.wirelessNodes.clear();
-		//this.wirelessNodes.put("sensor.SimpleWSNNode", numOfNodes);
+		this.wirelessNodes.put("sensor.SimpleWSNNode", numOfNodes);
 		//this.wirelessNodes.put("sensor.controled.DummyWSNNode", numOfNodes);
 		//this.wirelessNodes.put("sensor.controled.RandomControledWSNNode", numOfNodes);
-		this.wirelessNodes.put("sensor.controled.PSControledWSNNode", numOfNodes);
+		//this.wirelessNodes.put("sensor.controled.PSControledWSNNode", numOfNodes);
 		//this.wirelessNodes.put("sensor.controled.AntControledWSNNode", numOfNodes);
+		//this.wirelessNodes.put("sensor.controled.GreedyWSNNode", numOfNodes);
 		this.wirelessEvents.clear();
 		//HistogramSpectrogramFactory.newHistogram(359, "directionHist.csv");
 		//this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "StochasticPeriodicJumperEvent"), 1);
-		//this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "FullyStochasticMobileEvent"), 1000);
-		this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "RandomMobileEvent"), 1000);
+		this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "FullyStochasticMobileEvent"), 100);
+		//this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "RandomMobileEvent"), 100);
+		
 	}
 	
 		private void setupBeePaperConfig(int j){

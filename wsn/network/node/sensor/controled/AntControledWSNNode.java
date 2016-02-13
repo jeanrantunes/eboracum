@@ -51,7 +51,8 @@ public class AntControledWSNNode extends ControledWSNNode{
 	
 	protected void sensorNodeAction() throws NoTokenException, IllegalActionException{
 		if (((AntAgent)this.myAgent).tempEvent != null){
-			if (lastSensorTime != this.getDirector().getModelTime() && lastSensorTime != Time.NEGATIVE_INFINITY){
+			if (lastSensorTime != this.getDirector().getModelTime() && lastSensorTime != Time.NEGATIVE_INFINITY)
+			{
 			//this.tempEvent = ((AntAgent)this.myAgent).tempEvent;
 				this.tempEvent = ((AntAgent)this.myAgent).deliberate(((AntAgent)this.myAgent).tempEvent);
 				//if (tempEvent != null) 
