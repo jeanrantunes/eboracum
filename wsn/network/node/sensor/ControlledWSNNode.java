@@ -7,12 +7,12 @@ import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;
 import ptolemy.kernel.util.NameDuplicationException;
 
-public abstract class ControledWSNNode extends BasicWirelessSensorNode {
+public abstract class ControlledWSNNode extends SimpleWSNNode {
 	
 	private static final long serialVersionUID = 1L;
 	public BasicAgent myAgent; 
     
-   	public ControledWSNNode(CompositeEntity container, String name)
+   	public ControlledWSNNode(CompositeEntity container, String name)
 			throws IllegalActionException, NameDuplicationException {
 		super(container, name);
 	}

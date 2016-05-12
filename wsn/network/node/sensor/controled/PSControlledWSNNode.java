@@ -9,10 +9,9 @@ import ptolemy.kernel.util.NameDuplicationException;
 import ptolemy.vergil.kernel.attributes.EllipseAttribute;
 
 import eboracum.wsn.agent.PSAgent;
-import eboracum.wsn.network.node.sensor.ControledWSNNode;
-import eboracum.wsn.network.node.sensor.cpu.SimpleFIFOBasedCPU;
+import eboracum.wsn.network.node.sensor.ControlledWSNNode;
 
-public class PSControledWSNNode extends ControledWSNNode{
+public class PSControlledWSNNode extends ControlledWSNNode{
 
 	private static final long serialVersionUID = 1L;
 	protected EllipseAttribute _circle_queen;
@@ -26,7 +25,7 @@ public class PSControledWSNNode extends ControledWSNNode{
 	private Time lastDiferentiationTime;
 	private Time lastDecayTime;
 
-	public PSControledWSNNode(CompositeEntity container, String name)
+	public PSControlledWSNNode(CompositeEntity container, String name)
 			throws IllegalActionException, NameDuplicationException {
 		super(container, name);
 		threshold = new Parameter(this,"threshold");
@@ -47,7 +46,6 @@ public class PSControledWSNNode extends ControledWSNNode{
 	
 	public void initialize() throws IllegalActionException {
 		super.initialize();
-		this.cpu = new SimpleFIFOBasedCPU();
 		this.myAgent = new PSAgent();
 		this.myAgent.setNode(this);
 		this._fireAt(this.getDirector().getModelStartTime());

@@ -1,12 +1,15 @@
 package eboracum.wsn.agent;
 
-import eboracum.wsn.network.node.sensor.ControledWSNNode;
+import eboracum.wsn.network.node.sensor.ControlledWSNNode;
 
 public class RandomAgent implements BasicAgent{
 
+	public ControlledWSNNode myNode;
 	private double threshold;
 	
-	public void setNode(ControledWSNNode myNode){}
+	public void setNode(ControlledWSNNode myNode){
+		this.myNode = myNode;
+	}
 	
 	public RandomAgent(double threshold){
 		this.threshold = threshold;

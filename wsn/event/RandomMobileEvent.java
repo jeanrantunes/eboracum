@@ -2,7 +2,6 @@ package eboracum.wsn.event;
 
 import java.util.Random;
 
-import ptolemy.actor.NoTokenException;
 import ptolemy.data.expr.Parameter;
 import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;

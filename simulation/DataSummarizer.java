@@ -27,7 +27,7 @@ public class DataSummarizer {
 	public void go(){
 		for (int j = 1; j < 7; j++){
 			String file = "time/ps/NodeGrid49_SideSink_EventSpaceDistUniform_NotRebuild";
-			for (int i = 0; i < 10; i++){
+			for (int i = 0; i < 30; i++){
 				this.collectDataFromFile(file+j+"_"+i+".csv");
 				//collectEventsSensedFromFile(file+i+".csv");
 				//saveSummaryFile(eventsByDaySensed, file+"eventsByDaySensed.csv");

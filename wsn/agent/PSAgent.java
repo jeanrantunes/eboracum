@@ -2,12 +2,12 @@ package eboracum.wsn.agent;
 
 import ptolemy.actor.NoRoomException;
 import ptolemy.kernel.util.IllegalActionException;
-import eboracum.wsn.network.node.sensor.ControledWSNNode;
-import eboracum.wsn.network.node.sensor.controled.PSControledWSNNode;
+import eboracum.wsn.network.node.sensor.ControlledWSNNode;
+import eboracum.wsn.network.node.sensor.controled.PSControlledWSNNode;
 
 public class PSAgent implements BasicAgent{
 	
-	public ControledWSNNode myNode;
+	public ControlledWSNNode myNode;
 	public boolean isQueen;
 	public boolean willStopBeQueen;
 	public double h;
@@ -22,9 +22,9 @@ public class PSAgent implements BasicAgent{
 		else return false;
 	}
 	
-	public void setNode(ControledWSNNode myNode){
+	public void setNode(ControlledWSNNode myNode){
 		this.myNode = myNode;
-		this.h = Double.parseDouble(((PSControledWSNNode)this.myNode).hQN.getValueAsString());
+		this.h = Double.parseDouble(((PSControlledWSNNode)this.myNode).hQN.getValueAsString());
 		this.willStopBeQueen= false; 
 	}
 	
@@ -35,11 +35,11 @@ public class PSAgent implements BasicAgent{
 			//	System.out.println(this.isQueen+ " " +this.willStopBeQueen);
 			//}
 		
-			if (h < Double.parseDouble(((PSControledWSNNode)this.myNode).threshold.getValueAsString())){
+			if (h < Double.parseDouble(((PSControlledWSNNode)this.myNode).threshold.getValueAsString())){
 				this.isQueen = true;
 				this.willStopBeQueen = false;
 				//System.out.println("Became queen ->"+this.myNode.getName()+";"+((PSAgent)this).h);
-				this.myNode.sendMessageToNeighbours("0;"+(((PSControledWSNNode)this.myNode).hQN).getExpression(), 0.0006);
+				this.myNode.sendMessageToNeighbours("0;"+(((PSControlledWSNNode)this.myNode).hQN).getExpression(), 0.0006);
 			}
 			else {
 				if (willStopBeQueen) {
@@ -52,7 +52,7 @@ public class PSAgent implements BasicAgent{
 	}
 	
 	public void propagate(String message) throws NoRoomException, NumberFormatException, IllegalActionException{
-		if (Integer.parseInt(message.split("=")[1].split(";")[0]) < Integer.parseInt(((PSControledWSNNode)this.myNode).thresholdHopCount.getValueAsString())){
+		if (Integer.parseInt(message.split("=")[1].split(";")[0]) < Integer.parseInt(((PSControlledWSNNode)this.myNode).thresholdHopCount.getValueAsString())){
 			//if ( this.myNode.getName().equals("Node2"))
 				//System.out.println(this.myNode.getName()+";"+((PSAgent)this).h+";"+((Integer.parseInt(message.split("=")[1].split(";")[0])+1))+";"+(Double.parseDouble(message.split("=")[1].split(";")[1])*Double.parseDouble(((PSControledWSNNode)this.myNode).kHopDecay.getValueAsString())));
 			//if (!this.isQueen) 
@@ -60,7 +60,7 @@ public class PSAgent implements BasicAgent{
 			try {
 				//if ( this.myNode.getName().equals("Node2"))
 					//System.out.println(this.myNode.getName()+";"+((PSAgent)this).h+";"+((Integer.parseInt(message.split("=")[1].split(";")[0])+1))+";"+(Double.parseDouble(message.split("=")[1].split(";")[1])*Double.parseDouble(((PSControledWSNNode)this.myNode).kHopDecay.getValueAsString())));
-				this.myNode.sendMessageToNeighbours((Integer.parseInt(message.split("=")[1].split(";")[0])+1)+";"+(Double.parseDouble(message.split("=")[1].split(";")[1])*Double.parseDouble(((PSControledWSNNode)this.myNode).kHopDecay.getValueAsString())), 0.0006);
+				this.myNode.sendMessageToNeighbours((Integer.parseInt(message.split("=")[1].split(";")[0])+1)+";"+(Double.parseDouble(message.split("=")[1].split(";")[1])*Double.parseDouble(((PSControlledWSNNode)this.myNode).kHopDecay.getValueAsString())), 0.0006);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -72,7 +72,7 @@ public class PSAgent implements BasicAgent{
 			//|| ((this.myNode.getDirector().getModelTime().getDoubleValue()/3)%Double.parseDouble(((PSControledWSNNode)this.myNode).diffCycleTime.getValueAsString())==0 || (this.myNode.getDirector().getModelTime().getDoubleValue()/5)%Double.parseDouble(((PSControledWSNNode)this.myNode).diffCycleTime.getValueAsString())==0))
 			//if ( this.myNode.getName().equals("Node2"))
 				//System.out.println("Decay: "+this.myNode.getName()+";"+((PSControledWSNNode)this.myNode).kTimeDecay.getValueAsString());
-			h *= Double.parseDouble(((PSControledWSNNode)this.myNode).kTimeDecay.getValueAsString());
+			h *= Double.parseDouble(((PSControlledWSNNode)this.myNode).kTimeDecay.getValueAsString());
 	}
 	
 }

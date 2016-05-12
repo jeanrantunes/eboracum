@@ -1,12 +1,12 @@
 package eboracum.wsn.agent;
 
 import ptolemy.kernel.util.IllegalActionException;
-import eboracum.wsn.network.node.sensor.ControledWSNNode;
-import eboracum.wsn.network.node.sensor.controled.AntControledWSNNode;
+import eboracum.wsn.network.node.sensor.ControlledWSNNode;
+import eboracum.wsn.network.node.sensor.controled.AntControlledWSNNode;
 
 public class AntAgent implements BasicAgent{
 	
-	public ControledWSNNode myNode;
+	public ControlledWSNNode myNode;
 	private Double threshold;
 	public int agentsSensed;
 	public String tempEvent;
@@ -36,13 +36,13 @@ public class AntAgent implements BasicAgent{
 		//System.out.println(this.myNode.getName()+";"+agentsSensed+";"+tempEvent);
 		Double rand = Math.random();
 		double stimulus;
-		stimulus = Double.parseDouble(((AntControledWSNNode)this.myNode).initStimulus.getValueAsString())-(Double.parseDouble(((AntControledWSNNode)this.myNode).delta.getValueAsString())*(agentsSensed/((double)this.totalNodes+1.0)));
+		stimulus = Double.parseDouble(((AntControlledWSNNode)this.myNode).initStimulus.getValueAsString())-(Double.parseDouble(((AntControlledWSNNode)this.myNode).delta.getValueAsString())*(agentsSensed/((double)this.totalNodes+1.0)));
 		if (rand < (Math.pow(stimulus,2)/(Math.pow(stimulus,2)+Math.pow(threshold,2)))){
-			threshold += Double.parseDouble(((AntControledWSNNode)this.myNode).ro.getValueAsString());
+			threshold += Double.parseDouble(((AntControlledWSNNode)this.myNode).ro.getValueAsString());
 			return tempEvent;
 		}
 		else {
-			threshold -= Double.parseDouble(((AntControledWSNNode)this.myNode).ksi.getValueAsString());
+			threshold -= Double.parseDouble(((AntControlledWSNNode)this.myNode).ksi.getValueAsString());
 			return null;
 		}
 	}
@@ -69,9 +69,9 @@ public class AntAgent implements BasicAgent{
 		}
 	}
 	
-	public void setNode(ControledWSNNode myNode){
+	public void setNode(ControlledWSNNode myNode){
 		this.myNode = myNode;
-		threshold = Double.parseDouble(((AntControledWSNNode)this.myNode).initThreshold.getValueAsString());
+		threshold = Double.parseDouble(((AntControlledWSNNode)this.myNode).initThreshold.getValueAsString());
 	}
 
 }

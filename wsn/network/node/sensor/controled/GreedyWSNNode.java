@@ -5,10 +5,9 @@ import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;
 import ptolemy.kernel.util.NameDuplicationException;
 import eboracum.wsn.agent.GreedyPuppetAgent;
-import eboracum.wsn.network.node.sensor.ControledWSNNode;
-import eboracum.wsn.network.node.sensor.cpu.SimpleFIFOBasedCPU;
+import eboracum.wsn.network.node.sensor.ControlledWSNNode;
 
-public class GreedyWSNNode extends ControledWSNNode{
+public class GreedyWSNNode extends ControlledWSNNode{
 
 	private static final long serialVersionUID = 1L;
 	public String definedByMasterEvent;
@@ -23,7 +22,6 @@ public class GreedyWSNNode extends ControledWSNNode{
 	
 	public void initialize() throws IllegalActionException {
 		super.initialize();
-		this.cpu = new SimpleFIFOBasedCPU();
 		this.definedByMasterEvent = null;
 	}
 	

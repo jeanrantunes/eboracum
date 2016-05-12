@@ -28,7 +28,7 @@ public abstract class AdHocNetwork extends TypedAtomicActor {
     public ArrayList<Entity> networkedNodes;
     public ArrayList<Entity> nodes = new ArrayList<Entity>();
     public ArrayList<Entity> sinks = new ArrayList<Entity>();
-    public Parameter rebuildNetworkWhenGatewayDies;
+    public Parameter rebuildNetwork;
     protected double coverRadius;
     protected int numNodesToBeNetoworked;
     public TypedIOPort out;
@@ -42,8 +42,8 @@ public abstract class AdHocNetwork extends TypedAtomicActor {
     	commChannelName.setExpression("PowerLossChannel");
     	commCoverRadius = new Parameter(this,"CommCoverRadius");
     	commCoverRadius.setExpression("CommCover");
-    	rebuildNetworkWhenGatewayDies = new Parameter(this,"RebuildNetworkWhenGatewayDies");
-    	rebuildNetworkWhenGatewayDies.setExpression("false");
+    	rebuildNetwork = new Parameter(this,"RebuildNetwork");
+    	rebuildNetwork.setExpression("false");
     	out = new TypedIOPort(this, "out", false, true);
         out.setTypeEquals(BaseType.BOOLEAN);
     }
@@ -56,7 +56,7 @@ public abstract class AdHocNetwork extends TypedAtomicActor {
     
     public void fire() throws IllegalActionException {
         super.fire();
-        if (this.rebuildNetworkWhenGatewayDies.getExpression().equals("true") || this.getDirector().getModelStartTime().equals(this.getDirector().getModelTime())){
+        if (this.rebuildNetwork.getExpression().equals("true") || this.getDirector().getModelStartTime().equals(this.getDirector().getModelTime())){
         	this.networkedNodes = new ArrayList<Entity>();
         	this.sinks = new ArrayList<Entity>();
         	this.findEntitySinks();

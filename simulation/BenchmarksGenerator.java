@@ -33,7 +33,7 @@ import ptolemy.data.expr.Parameter;
 import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.Location;
 import ptolemy.kernel.util.Workspace;
-//import ebocarum.wsn.network.AdHocNetwork;
+
 
 public abstract class BenchmarksGenerator {
 	
@@ -183,8 +183,7 @@ public abstract class BenchmarksGenerator {
 			fragmentNode = doc.importNode(fragmentNode, true);
 			doc.getDocumentElement().appendChild(fragmentNode);
 			*/
-
-			changePropertyAttributeOfEntity(doc, "SimpleAdHocNetwork", "RebuildNetworkWhenGatewayDies", Boolean.toString(this.rebuildNetworkWhenGatewayDies));
+			changePropertyAttributeOfEntity(doc, "SimpleAdHocNetwork", "RebuildNetwork", Boolean.toString(this.rebuildNetworkWhenGatewayDies));
 		    //
 			TransformerFactory tFactory = TransformerFactory.newInstance();
 			Transformer transformer = tFactory.newTransformer();

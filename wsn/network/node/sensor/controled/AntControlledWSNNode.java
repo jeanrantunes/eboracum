@@ -7,10 +7,9 @@ import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;
 import ptolemy.kernel.util.NameDuplicationException;
 import eboracum.wsn.agent.AntAgent;
-import eboracum.wsn.network.node.sensor.ControledWSNNode;
-import eboracum.wsn.network.node.sensor.cpu.SimpleFIFOBasedCPU;
+import eboracum.wsn.network.node.sensor.ControlledWSNNode;
 
-public class AntControledWSNNode extends ControledWSNNode{
+public class AntControlledWSNNode extends ControlledWSNNode{
 
 	private static final long serialVersionUID = 1L;
 	public Parameter initThreshold;
@@ -22,7 +21,7 @@ public class AntControledWSNNode extends ControledWSNNode{
 	//public Parameter totalNodes;
 	private Time lastSensorTime;
 
-	public AntControledWSNNode(CompositeEntity container, String name)
+	public AntControlledWSNNode(CompositeEntity container, String name)
 			throws IllegalActionException, NameDuplicationException {
 		super(container, name);
 		initThreshold = new Parameter(this,"initThreshold");
@@ -43,7 +42,6 @@ public class AntControledWSNNode extends ControledWSNNode{
 	
 	public void initialize() throws IllegalActionException {
 		super.initialize();
-		this.cpu = new SimpleFIFOBasedCPU();
 		this.myAgent = new AntAgent();
 		this.myAgent.setNode(this);
 		lastSensorTime = Time.NEGATIVE_INFINITY;

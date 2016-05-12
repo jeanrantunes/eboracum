@@ -32,6 +32,27 @@ public final class HistogramSpectrogramFactory {
 		}
 	}
 	
+	public static void newHistogram(double avg, double stdev, int range, String outFile){
+		File file = new File("eboracum/wsn/event/util/"+outFile);  
+		try {
+			file.createNewFile();
+			FileWriter fw = new FileWriter(file);
+			BufferedWriter writer = new BufferedWriter(fw);
+			double[] histogram = new double[range+1];
+			for (int i=0; i<=range; i++){
+				histogram[i] = (1/(stdev*Math.sqrt(2*Math.PI)))*Math.exp(-(((i-avg)*(i-avg))/(2*stdev*stdev)));
+				DecimalFormat df = new DecimalFormat("#.#######");
+				writer.write(i+";"+df.format(histogram[i]));writer.newLine();
+				//System.out.println(i+";"+df.format(histogram[i]));
+			}
+			writer.flush();
+			writer.close();
+			fw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public static void newPoissonHistogram(int range, String outFile){
 		File file = new File("eboracum/wsn/event/util/"+outFile);  
 		try {
@@ -190,7 +211,8 @@ public final class HistogramSpectrogramFactory {
 		//HistogramSpectrogramFactory.newPoissonHistogram(100, "poissonHist.csv");
 		//HistogramSpectrogramFactory.newHistogram(100, "normalHist.csv");
 		//HistogramSpectrogramFactory.newUniformHistogram(100, "uniformHist.csv");
-		HistogramSpectrogramFactory.newNormalSpectrogram(100, 100, "spectSimpleTest.csv");
+	//	HistogramSpectrogramFactory.newHistogram(21.9, 1.5667, 30, "spectSimpleTest.csv");
+		HistogramSpectrogramFactory.newHistogram(43.13, 2.95, 100,"spectSimpleTest.csv");
 	}
 
 }

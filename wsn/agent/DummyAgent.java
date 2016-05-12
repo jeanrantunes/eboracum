@@ -1,10 +1,10 @@
 package eboracum.wsn.agent;
 
-import eboracum.wsn.network.node.sensor.ControledWSNNode;
+import eboracum.wsn.network.node.sensor.ControlledWSNNode;
 
 public class DummyAgent implements BasicAgent{
 
-	public void setNode(ControledWSNNode myNode){}
+	public void setNode(ControlledWSNNode myNode){}
 	
 	public boolean eventSensed(String tempEvent){
 		return true;

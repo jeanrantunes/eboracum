@@ -168,7 +168,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 				}
 			}
 			else {
-					if (!this.timeControler.equals(this.getDirector().getModelTime())){
+				if (!this.timeControler.equals(this.getDirector().getModelTime())){
 					if (((tempTimeLastCPURun != Time.NEGATIVE_INFINITY)) && ((Integer)runReturn.get(0)>0)){
 						if (Double.parseDouble(battery.getValueAsString()) >= ((Double.parseDouble(CPUEnergyCost.getValueAsString())*(this.getDirector().getModelTime().getDoubleValue()-this.newTimeControler.getDoubleValue())))){ 
 							battery.setExpression(Double.toString(Double.parseDouble(battery.getValueAsString())-((Double.parseDouble(CPUEnergyCost.getValueAsString())*(this.getDirector().getModelTime().getDoubleValue()-this.newTimeControler.getDoubleValue())))));
