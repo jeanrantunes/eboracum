@@ -48,7 +48,7 @@ public class MovementRemoteController extends TypedAtomicActor{
 
 	 public void fire() throws IllegalActionException {
 	        super.fire();
-	        System.out.println("fire: "+this.getDirector().getModelTime()+ " " +this.flagMovement);
+	        //System.out.println("fire: "+this.getDirector().getModelTime()+ " " +this.flagMovement);
 	        if (this.getDirector().getModelStartTime().equals(this.getDirector().getModelTime())){
 	        	this.mobileNodes = new ArrayList<SimpleMobileWSNNode>();
 	        	try {
@@ -72,7 +72,7 @@ public class MovementRemoteController extends TypedAtomicActor{
 			SimpleMobileWSNNode node = n.next();
 			if (node instanceof eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode){
 				this.flagMovement = moveDynamicReorganizedWSNNode((DynamicReorganizedMobileWSNNode)node);
-				System.out.println(node.getName());
+				//System.out.println(node.getName());
 			}
 			else
 				this.flagMovement = node.move();
@@ -101,7 +101,7 @@ public class MovementRemoteController extends TypedAtomicActor{
 			double[] neigbourLocation = getNodeLocation(neigbour);
 			distance = calcDistance(neigbour, node);
 			angle = calcAngle(neigbour, node);
-			System.out.println(neigbour.getName()+": "+distance+" | "+Math.toDegrees(angle)+" -> "+forceEquation(distance, radius));
+			//System.out.println(neigbour.getName()+": "+distance+" | "+Math.toDegrees(angle)+" -> "+forceEquation(distance, radius));
 			double xsign = Math.signum(nodeLocation[0]-neigbourLocation[0]);
 			double ysign = Math.signum(nodeLocation[1]-neigbourLocation[1]);
 			returnXY[0]+=Double.valueOf((xsign*forceEquation(distance,radius)*Math.cos(angle))).intValue();

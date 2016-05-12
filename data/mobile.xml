@@ -25,7 +25,7 @@
         <property class="ptolemy.kernel.util.Location" name="_location" value="[-180.0, -140.0]">
         </property>
     </property>
-    <property class="ptolemy.actor.gui.WindowPropertiesAttribute" name="_windowProperties" value="{bounds={0, 133, 1215, 918}, maximized=false}">
+    <property class="ptolemy.actor.gui.WindowPropertiesAttribute" name="_windowProperties" value="{bounds={2177, 54, 1215, 918}, maximized=false}">
     </property>
     <property class="ptolemy.actor.gui.SizeAttribute" name="_vergilSize" value="[992, 801]">
     </property>
@@ -104,7 +104,7 @@
     <entity class="eboracum.wsn.network.SimpleAdHocNetwork" name="SimpleAdHocNetwork">
         <property class="ptolemy.data.expr.StringParameter" name="NetworkSinks" value="{NetworkMainGateway}">
         </property>
-<property class="ptolemy.data.expr.Parameter" name="RebuildNetwork" value="true">
+        <property class="ptolemy.data.expr.Parameter" name="RebuildNetwork" value="true">
         </property>
         <doc>Simple Network builder based on a multi-hope ad-hoc network desing.</doc>
         <property class="ptolemy.kernel.util.Location" name="_location" value="[435.0, -135.0]">
@@ -127,7 +127,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -154,8 +154,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{100.0, 100.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -206,7 +204,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -233,8 +231,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{100.0, 200.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -285,7 +281,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -312,8 +308,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{100.0, 300.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -364,7 +358,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -391,8 +385,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{100.0, 400.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -443,7 +435,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -470,8 +462,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{100.0, 500.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -522,7 +512,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -549,8 +539,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{100.0, 600.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -601,7 +589,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -628,8 +616,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{100.0, 700.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -680,7 +666,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -707,8 +693,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{100.0, 800.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -759,7 +743,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -786,8 +770,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{100.0, 900.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -838,7 +820,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -865,8 +847,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{200.0, 100.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -917,7 +897,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -944,8 +924,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{200.0, 200.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -996,7 +974,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1023,8 +1001,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{200.0, 300.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1075,7 +1051,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1102,8 +1078,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{200.0, 400.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1154,7 +1128,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1181,8 +1155,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{200.0, 500.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1233,7 +1205,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1260,8 +1232,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{200.0, 600.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1312,7 +1282,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1339,8 +1309,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{200.0, 700.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1391,7 +1359,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1418,8 +1386,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{200.0, 800.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1470,7 +1436,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1497,8 +1463,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{200.0, 900.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1549,7 +1513,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1576,8 +1540,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{300.0, 100.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1628,7 +1590,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1655,8 +1617,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{300.0, 200.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1707,7 +1667,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1734,8 +1694,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{300.0, 300.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1786,7 +1744,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1813,8 +1771,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{300.0, 400.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1865,7 +1821,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1892,8 +1848,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{300.0, 500.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -1944,7 +1898,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -1971,8 +1925,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{300.0, 600.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2023,7 +1975,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2050,8 +2002,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{300.0, 700.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2102,7 +2052,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2129,8 +2079,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{300.0, 800.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2181,7 +2129,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2208,8 +2156,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{300.0, 900.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2260,7 +2206,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2287,8 +2233,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{400.0, 100.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2339,7 +2283,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2366,8 +2310,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{400.0, 200.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2418,7 +2360,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2445,8 +2387,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{400.0, 300.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2497,7 +2437,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2524,8 +2464,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{400.0, 400.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2576,7 +2514,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2603,8 +2541,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{400.0, 500.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2655,7 +2591,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2682,8 +2618,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{400.0, 600.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2734,7 +2668,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2761,8 +2695,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{400.0, 700.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2813,7 +2745,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2840,8 +2772,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{400.0, 800.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2892,7 +2822,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2919,8 +2849,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{400.0, 900.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -2971,7 +2899,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -2998,8 +2926,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 100.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3050,7 +2976,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3077,8 +3003,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 200.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3129,7 +3053,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3156,8 +3080,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 300.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3208,7 +3130,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3235,8 +3157,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 400.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3287,7 +3207,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3314,8 +3234,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 500.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3366,7 +3284,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3393,8 +3311,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 600.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3445,7 +3361,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3472,8 +3388,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 700.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3524,7 +3438,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3551,8 +3465,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 800.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3603,7 +3515,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3630,8 +3542,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 900.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3682,7 +3592,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3709,8 +3619,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{600.0, 100.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3761,7 +3669,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3788,8 +3696,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{600.0, 200.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3840,7 +3746,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3867,8 +3773,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{600.0, 300.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>
@@ -3919,7 +3823,7 @@
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="randomize" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
@@ -3946,2536 +3850,6 @@
         <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{600.0, 400.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node49">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{600.0, 500.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node50">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{600.0, 600.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node51">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{600.0, 700.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node52">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{600.0, 800.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node53">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{600.0, 900.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node54">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{700.0, 100.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node55">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{700.0, 200.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node56">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{700.0, 300.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node57">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{700.0, 400.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node58">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{700.0, 500.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node59">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{700.0, 600.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node60">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{700.0, 700.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node61">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{700.0, 800.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node62">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{700.0, 900.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node63">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{800.0, 100.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node64">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{800.0, 200.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node65">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{800.0, 300.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node66">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{800.0, 400.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node67">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{800.0, 500.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node68">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{800.0, 600.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node69">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{800.0, 700.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node70">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{800.0, 800.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node71">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{800.0, 900.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node72">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{900.0, 100.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node73">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{900.0, 200.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node74">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{900.0, 300.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node75">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{900.0, 400.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node76">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{900.0, 500.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node77">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{900.0, 600.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node78">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{900.0, 700.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node79">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{900.0, 800.0}">
-        </property>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
-            <property name="output"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$CommChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
-            <property name="input"/>
-            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel" value="$SensorChannelName">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
-            </property>
-            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
-            </property>
-            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
-            </property>
-        </port>
-    </entity>
-<entity class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" name="Node80">
-        <property class="ptolemy.data.expr.StringParameter" name="CommChannelName" value="PowerLossChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CommCoverRadius" value="CommCover">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Network" value="SimpleAdHocNetwork">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="InitBattery" value="GlobalInitBattery">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
-        </property>
-        <property class="ptolemy.data.expr.SingletonParameter" name="_hideName" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensorChannelName" value="LimitedRangeChannel">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="SensorCoverRadius" value="SensorCover">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="CPUEnergyCost" value="50.0">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="SensedEvents" value="">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="networked" value="true">
-        </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Type" value="GeneralType">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="VelocityParam" value="10">
-        </property>
-        <property class="ptolemy.data.expr.Parameter" name="DirectionParam" value="0">
-        </property>
-        <property class="ptolemy.kernel.util.Location" name="_location" value="{900.0, 900.0}">
         </property>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
             <property name="input"/>

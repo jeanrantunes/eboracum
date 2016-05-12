@@ -21,10 +21,10 @@ private void setupBasicConfig(String simulationIdentification){
 	this.initBattery = 200/2;
 	this.commCover = 160;
 	this.sensorCover = 120;
-	int numOfNodes = 81;
+	int numOfNodes = 49;
 	this.cpuCost = 50;
 	this.idleCost = 0.3;
-	this.nodesRandomizeFlag = false;
+	this.nodesRandomizeFlag = true;
 	if (!nodesRandomizeFlag) generateGridPosition(numOfNodes);
 	this.mainGatewayCenteredFlag = false;
 	this.wirelessSensorNodesType = "GeneralType";

@@ -8,7 +8,7 @@ public class PSSimulation extends BenchmarksGenerator {
 	protected void runBenchmarks(){
 			this.scenarioDimensionXY = new int[]{1000,1000};
 			HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
-			simBeePaperConfig("Uniform", 49, "sensor.controled.PSControledWSNNode", 160);
+			simBeePaperConfig("Uniform", 49, "sensor.controled.PSControlledWSNNode", 160);
 			//simBeePaperConfig("Uniform", 64, "sensor.controled.PSControledWSNNode", 140);
 			//simBeePaperConfig("Uniform", 81, "sensor.controled.PSControledWSNNode", 120);
 			//simBeePaperConfig("Uniform", 100, "sensor.controled.PSControledWSNNode", 120);
