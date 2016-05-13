@@ -2,8 +2,6 @@ package eboracum.wsn.network.node.sensor.mobile;
 
 import java.util.Random;
 
-import eboracum.wsn.network.AdHocNetwork;
-import ptolemy.actor.TypedAtomicActor;
 import ptolemy.data.expr.Parameter;
 import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;

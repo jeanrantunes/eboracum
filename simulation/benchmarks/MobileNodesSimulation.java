@@ -6,34 +6,52 @@ import eboracum.simulation.util.HistogramSpectrogramFactory;
 public class MobileNodesSimulation extends BenchmarksGenerator{
 
 	protected void runBenchmarks(){
-		setupBasicConfig("mobile");
+		simConfig(49, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
+		simConfig(64, "sensor.mobile.DynamicReorganizedMobileWSNNode", 140);
+		simConfig(81, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
+		simConfig(100, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
+		simConfig(49, "sensor.SimpleWSNNode", 160);
+		simConfig(64, "sensor.SimpleWSNNode", 140);
+		simConfig(81, "sensor.SimpleWSNNode", 120);
+		simConfig(100, "sensor.SimpleWSNNode", 120);
+}
+
+public void simConfig(int size, String algo, int commcover) {
+	String simulationIdentification;
+	simulationIdentification = algo+"_Mesh"+size;
+	this.scenarioDimensionXY = new int[]{1000,1000};
+	HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
+	this.nodesRandomizeFlag = false;
+	this.mainGatewayCenteredFlag = false;
+	this.rebuildNetworkWhenGatewayDies= true;
+	this.setupSimConfig(simulationIdentification, size, algo, commcover);
+	int numOfRounds = 30;
+	for (int i=0; i<numOfRounds; i++) {
 		try {
-			this.run("mobile",0);
+			this.run(simulationIdentification,i);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
 }
 
-private void setupBasicConfig(String simulationIdentification){
-	this.scenarioDimensionXY = new int[]{1000,1000};
-	HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[0]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
-	HistogramSpectrogramFactory.newPoissonHistogram(100, "periodHist.csv");
-	this.initBattery = 200/2;
-	this.commCover = 160;
+private void setupSimConfig(String simulationIdentification, int size, String algo, int commcover){
+	this.initBattery = 5400000/2;
+	this.commCover = commcover;
 	this.sensorCover = 120;
-	int numOfNodes = 49;
+	int numOfNodes = size;
+	if (!nodesRandomizeFlag) generateGridPosition(numOfNodes);
+	this.wirelessSensorNodesType = "GeneralType";
 	this.cpuCost = 50;
 	this.idleCost = 0.3;
-	this.nodesRandomizeFlag = true;
-	if (!nodesRandomizeFlag) generateGridPosition(numOfNodes);
-	this.mainGatewayCenteredFlag = false;
-	this.wirelessSensorNodesType = "GeneralType";
-	this.wirelessNodes.put("sensor.mobile.DynamicReorganizedMobileWSNNode", numOfNodes);
+	this.wirelessNodes.clear();
+	this.wirelessNodes.put(algo, numOfNodes);
+	this.wirelessEvents.clear();
 	this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "StochasticPeriodicJumperEvent"), 1);
+	HistogramSpectrogramFactory.newPoissonHistogram(120, "periodHist.csv");
 	generateEventsXML();
 	this.network = "SimpleAdHocNetwork";
-	this.rebuildNetworkWhenGatewayDies= true;
-	this.synchronizedRealTime = true;
+	this.synchronizedRealTime = false;
 	generateModel(simulationIdentification);
 }
 
