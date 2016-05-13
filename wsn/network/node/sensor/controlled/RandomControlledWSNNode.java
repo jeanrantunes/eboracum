@@ -1,4 +1,4 @@
-package eboracum.wsn.network.node.sensor.controled;
+package eboracum.wsn.network.node.sensor.controlled;
 
 import eboracum.wsn.agent.RandomAgent;
 import eboracum.wsn.network.node.sensor.ControlledWSNNode;

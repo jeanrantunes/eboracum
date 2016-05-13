@@ -3,7 +3,7 @@ package eboracum.wsn.agent;
 import ptolemy.actor.NoRoomException;
 import ptolemy.kernel.util.IllegalActionException;
 import eboracum.wsn.network.node.sensor.ControlledWSNNode;
-import eboracum.wsn.network.node.sensor.controled.PSControlledWSNNode;
+import eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;
 
 public class PSAgent implements BasicAgent{
 	

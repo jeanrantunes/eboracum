@@ -10,8 +10,8 @@
       <operations public="true" package="false" protected="true" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="eboracum.wsn.network.node.sensor.controled.AntControlledWSNNode" project="ptII" 
-    file="/ptII/eboracum/wsn/network/node/sensor/controled/AntControlledWSNNode.java" binary="false" 
+  <class id="2" language="java" name="eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode" project="ptII" 
+    file="/ptII/eboracum/wsn/network/node/sensor/controlled/AntControlledWSNNode.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="407" y="474"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -20,8 +20,8 @@
       <operations public="true" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="eboracum.wsn.network.node.sensor.controled.PSControlledWSNNode" project="ptII" 
-    file="/ptII/eboracum/wsn/network/node/sensor/controled/PSControlledWSNNode.java" binary="false" 
+  <class id="3" language="java" name="eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode" project="ptII" 
+    file="/ptII/eboracum/wsn/network/node/sensor/controlled/PSControlledWSNNode.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="130" y="426"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -57,8 +57,8 @@
       <operations public="true" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="eboracum.wsn.network.node.sensor.controled.RandomControlledWSNNode" project="ptII" 
-    file="/ptII/eboracum/wsn/network/node/sensor/controled/RandomControlledWSNNode.java" binary="false" 
+  <class id="7" language="java" name="eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode" 
+    project="ptII" file="/ptII/eboracum/wsn/network/node/sensor/controlled/RandomControlledWSNNode.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="268" y="663"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -86,63 +86,63 @@
     </display>  
   </class>  
   <realization id="10">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="11">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="12" name="myNode">        
-        <position height="0" width="0" x="3" y="94"/>      
-      </attribute>      
-      <multiplicity id="13" minimum="0" maximum="1">        
-        <position height="0" width="0" x="3" y="94"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="14">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="15">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <association id="16">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="17" name="myNode">        
-        <position height="0" width="0" x="3" y="94"/>      
-      </attribute>      
-      <multiplicity id="18" minimum="0" maximum="1">        
-        <position height="0" width="0" x="3" y="94"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="19">    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  
-  <generalization id="20">    
+  <generalization id="11">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="12">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="21">    
+  <realization id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="14">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="15">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="16" name="myAgent">        
+        <position height="0" width="0" x="3" y="94"/>      
+      </attribute>      
+      <multiplicity id="17" minimum="0" maximum="1">        
+        <position height="0" width="0" x="3" y="94"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="18">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="9"/>  
   </generalization>  
+  <association id="19">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="20" name="myNode">        
+        <position height="0" width="0" x="3" y="94"/>      
+      </attribute>      
+      <multiplicity id="21" minimum="0" maximum="1">        
+        <position height="0" width="0" x="3" y="94"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="22">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="23" name="myAgent">        
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="23" name="myNode">        
         <position height="0" width="0" x="3" y="94"/>      
       </attribute>      
       <multiplicity id="24" minimum="0" maximum="1">        
         <position height="0" width="0" x="3" y="94"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="25">    
@@ -157,10 +157,10 @@
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="28">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

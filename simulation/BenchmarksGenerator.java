@@ -65,10 +65,7 @@ public abstract class BenchmarksGenerator {
 	public void run(String simulationIdentification, int round) throws InterruptedException{
 		try {
 			createDataReportFile(simulationIdentification,round);
-			/*linux*/
-			//Process p = Runtime.getRuntime().exec("./bin/vergil -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
-			/*windows*/
-			Process p = Runtime.getRuntime().exec("java -Xmx8192m -classpath \"bin/\" ptolemy.vergil.VergilApplication -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
+			Process p = Runtime.getRuntime().exec("java -Xmx8192m -classpath bin/ ptolemy.vergil.VergilApplication -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
 			/*no GUI*/
 			//java -classpath . ptolemy.actor.gui.MoMLSimpleApplication eboracum/data/NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID0.xml
 			p.waitFor();

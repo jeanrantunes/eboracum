@@ -1,4 +1,4 @@
-package eboracum.wsn.network.node.sensor.controled;
+package eboracum.wsn.network.node.sensor.controlled;
 
 import ptolemy.actor.NoTokenException;
 import ptolemy.kernel.CompositeEntity;

@@ -2,7 +2,7 @@ package eboracum.wsn.agent;
 
 import ptolemy.kernel.util.IllegalActionException;
 import eboracum.wsn.network.node.sensor.ControlledWSNNode;
-import eboracum.wsn.network.node.sensor.controled.AntControlledWSNNode;
+import eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;
 
 public class AntAgent implements BasicAgent{
 	

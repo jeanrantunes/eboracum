@@ -18,7 +18,7 @@ import ptolemy.kernel.util.Attribute;
 import ptolemy.kernel.util.IllegalActionException;
 import ptolemy.kernel.util.NameDuplicationException;
 import eboracum.wsn.agent.GreedyPuppetAgent;
-import eboracum.wsn.network.node.sensor.controled.GreedyWSNNode;
+import eboracum.wsn.network.node.sensor.controlled.GreedyWSNNode;
 
 public class GreedyCentralizedLoadBalancer extends TypedAtomicActor {
 

@@ -8,14 +8,14 @@ public class PSSimulation extends BenchmarksGenerator {
 	protected void runBenchmarks(){
 			this.scenarioDimensionXY = new int[]{1000,1000};
 			HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
-			simBeePaperConfig("Uniform", 49, "sensor.controled.PSControlledWSNNode", 160);
-			//simBeePaperConfig("Uniform", 64, "sensor.controled.PSControledWSNNode", 140);
-			//simBeePaperConfig("Uniform", 81, "sensor.controled.PSControledWSNNode", 120);
-			//simBeePaperConfig("Uniform", 100, "sensor.controled.PSControledWSNNode", 120);
-			//simBeePaperConfig("Uniform", 49, "sensor.controled.RandomControledWSNNode", 160);
-			/*simBeePaperConfig("Uniform", 64, "sensor.controled.RandomControledWSNNode", 140);
-			simBeePaperConfig("Uniform", 81, "sensor.controled.RandomControledWSNNode", 120);
-			simBeePaperConfig("Uniform", 100, "sensor.controled.RandomControledWSNNode", 120);
+			simBeePaperConfig("Uniform", 49, "sensor.controlled.PSControlledWSNNode", 160);
+			//simBeePaperConfig("Uniform", 64, "sensor.controlled.PSControlledWSNNode", 140);
+			//simBeePaperConfig("Uniform", 81, "sensor.controlled.PSControledWSNNode", 120);
+			//simBeePaperConfig("Uniform", 100, "sensor.controlled.PSControledWSNNode", 120);
+			//simBeePaperConfig("Uniform", 49, "sensor.controlled.RandomControledWSNNode", 160);
+			/*simBeePaperConfig("Uniform", 64, "sensor.controlled.RandomControledWSNNode", 140);
+			simBeePaperConfig("Uniform", 81, "sensor.controlled.RandomControledWSNNode", 120);
+			simBeePaperConfig("Uniform", 100, "sensor.controlled.RandomControledWSNNode", 120);
 			*/
 			//simBeePaperConfig("Uniform", 49, "sensor.SimpleWSNNode", 160);
 			/*simBeePaperConfig("Uniform", 64, "sensor.SimpleWSNNode", 140);
@@ -87,7 +87,7 @@ public class PSSimulation extends BenchmarksGenerator {
 		HistogramSpectrogramFactory.newPoissonHistogram(120, "periodHist.csv");
 		generateEventsXML();
 		this.network = "SimpleAdHocNetwork";
-		this.rebuildNetworkWhenGatewayDies= true;
+		this.rebuildNetworkWhenGatewayDies= false;
 		this.synchronizedRealTime = false;
 		generateModel(simulationIdentification);
 	}

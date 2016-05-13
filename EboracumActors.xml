@@ -12,10 +12,19 @@
 	<entity name="SimpleWSNNode" class="eboracum.wsn.network.node.sensor.SimpleWSNNode">
 		<doc>Simple WSN Sensor Node based on a FIFO CPU to handle the Events to be processed.</doc>
 	</entity>
-	<entity name="DummyControledWSNNode" class="eboracum.wsn.network.node.sensor.controled.DummyControledWSNNode">
+	<entity name="DummyControledWSNNode" class="eboracum.wsn.network.node.sensor.controled.DummyControlledWSNNode">
 		<doc></doc>
 	</entity>
-	<entity name="RandomControledWSNNode" class="eboracum.wsn.network.node.sensor.controled.RandomControledWSNNode">
+	<entity name="RandomControledWSNNode" class="eboracum.wsn.network.node.sensor.controled.RandomControlledWSNNode">
+		<doc></doc>
+	</entity>
+	<entity name="SimpleMobileWSNNode" class="eboracum.wsn.network.node.sensor.mobile.SimpleMobileWSNNode">
+		<doc></doc>
+	</entity>
+	<entity name="RandomMobileWSNNode" class="eboracum.wsn.network.node.sensor.mobile.RandomMobileWSNNode">
+		<doc></doc>
+	</entity>
+	<entity name="DynamicReorganizedWSNNode" class="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode">
 		<doc></doc>
 	</entity>
 	<entity name="AtomicEvent" class="eboracum.wsn.event.AtomicEvent">
@@ -43,6 +52,9 @@
 		<doc></doc>
 	</entity>
 	<entity name="FullyStochasticMobileEvent" class="eboracum.wsn.event.FullyStochasticMobileEvent">
+		<doc></doc>
+	</entity>
+	<entity name="MovementRemoteController" class="eboracum.wsn.network.node.sensor.mobile.central.MovementRemoteController">
 		<doc></doc>
 	</entity>
 	<entity name="SimpleAdHocNetwork" class="eboracum.wsn.network.SimpleAdHocNetwork">
