@@ -202,7 +202,7 @@ public abstract class WirelessNode extends TypedAtomicActor {
 		return super.postfire();
 	}
 
-	protected boolean receiveMessage(String tempMessage) throws NumberFormatException, IllegalActionException{
+	public boolean receiveMessage(String tempMessage) throws NumberFormatException, IllegalActionException{
 		tempMessage = tempMessage.substring(2, tempMessage.length()-2);
 		//double commCost = this.eventCommCostMap.get(tempMessage.split(",")[0].split("=")[1]);
 		//if ((Double.parseDouble(battery.getValueAsString()) >= commCost)){

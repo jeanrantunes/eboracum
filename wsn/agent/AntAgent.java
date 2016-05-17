@@ -3,6 +3,7 @@ package eboracum.wsn.agent;
 import ptolemy.kernel.util.IllegalActionException;
 import eboracum.wsn.network.node.sensor.ControlledWSNNode;
 import eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;
+import eboracum.wsn.network.node.sensor.mobile.ControlledDRMobileWSNNode;
 
 public class AntAgent implements BasicAgent{
 	
@@ -72,6 +73,12 @@ public class AntAgent implements BasicAgent{
 	public void setNode(ControlledWSNNode myNode){
 		this.myNode = myNode;
 		threshold = Double.parseDouble(((AntControlledWSNNode)this.myNode).initThreshold.getValueAsString());
+	}
+
+	@Override
+	public void setNode(ControlledDRMobileWSNNode myNode) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

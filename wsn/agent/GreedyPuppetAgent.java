@@ -2,12 +2,14 @@ package eboracum.wsn.agent;
 
 
 import eboracum.wsn.agent.central.GreedyCentralizedLoadBalancer;
+import eboracum.wsn.network.node.WirelessNode;
 import eboracum.wsn.network.node.sensor.ControlledWSNNode;
+import eboracum.wsn.network.node.sensor.mobile.ControlledDRMobileWSNNode;
 
 public class GreedyPuppetAgent implements BasicAgent{
 
 	public GreedyCentralizedLoadBalancer masterOfPuppets;
-	public ControlledWSNNode myNode;	
+	public WirelessNode myNode;	
 
 	public boolean eventSensed(String tempEvent){
 		try {
@@ -19,6 +21,10 @@ public class GreedyPuppetAgent implements BasicAgent{
 	}
 	
 	public void setNode(ControlledWSNNode myNode){
+		this.myNode = myNode;
+	}
+	
+	public void setNode(ControlledDRMobileWSNNode myNode) {
 		this.myNode = myNode;
 	}
 }

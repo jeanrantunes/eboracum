@@ -8,7 +8,7 @@ public class PSSimulation extends BenchmarksGenerator {
 	protected void runBenchmarks(){
 			this.scenarioDimensionXY = new int[]{1000,1000};
 			HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
-			simBeePaperConfig("Uniform", 49, "sensor.controlled.PSControlledWSNNode", 160);
+			//simBeePaperConfig("Uniform", 49, "sensor.controlled.PSControlledWSNNode", 160);
 			//simBeePaperConfig("Uniform", 64, "sensor.controlled.PSControlledWSNNode", 140);
 			//simBeePaperConfig("Uniform", 81, "sensor.controlled.PSControledWSNNode", 120);
 			//simBeePaperConfig("Uniform", 100, "sensor.controlled.PSControledWSNNode", 120);
@@ -17,7 +17,7 @@ public class PSSimulation extends BenchmarksGenerator {
 			simBeePaperConfig("Uniform", 81, "sensor.controlled.RandomControledWSNNode", 120);
 			simBeePaperConfig("Uniform", 100, "sensor.controlled.RandomControledWSNNode", 120);
 			*/
-			//simBeePaperConfig("Uniform", 49, "sensor.SimpleWSNNode", 160);
+			simBeePaperConfig("Uniform", 49, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
 			/*simBeePaperConfig("Uniform", 64, "sensor.SimpleWSNNode", 140);
 			simBeePaperConfig("Uniform", 81, "sensor.SimpleWSNNode", 120);
 			simBeePaperConfig("Uniform", 100, "sensor.SimpleWSNNode", 120);
@@ -26,7 +26,7 @@ public class PSSimulation extends BenchmarksGenerator {
 			simBeePaperConfig("Uniform", 81, "sensor.controled.GreedyWSNNode", 120);
 			*/
 			//simBeePaperConfig("Uniform", 100, "sensor.controled.GreedyWSNNode", 120);
-			//simBeePaperConfig("Uniform", 49, "sensor.controled.AntControledWSNNode", 160);
+			//simBeePaperConfig("Uniform", 49, "sensor.controlled.AntControlledWSNNode", 160);
 			//simBeePaperConfig("Uniform", 64, "sensor.controled.AntControledWSNNode", 140);
 			//simBeePaperConfig("Uniform", 81, "sensor.controled.AntControledWSNNode", 120);
 			//simBeePaperConfig("Uniform", 100, "sensor.controled.AntControledWSNNode", 120);
@@ -62,7 +62,7 @@ public class PSSimulation extends BenchmarksGenerator {
 		this.mainGatewayCenteredFlag = false;
 		this.setupBeePaperConfig(simulationIdentification, size, algo, commcover);
 		int numOfRounds = 1;
-		for (int i=0; i<1; i++) {
+		for (int i=0; i<numOfRounds; i++) {
 			try {
 				this.run(simulationIdentification,i);
 			} catch (InterruptedException e) {
@@ -87,7 +87,7 @@ public class PSSimulation extends BenchmarksGenerator {
 		HistogramSpectrogramFactory.newPoissonHistogram(120, "periodHist.csv");
 		generateEventsXML();
 		this.network = "SimpleAdHocNetwork";
-		this.rebuildNetworkWhenGatewayDies= false;
+		this.rebuildNetworkWhenGatewayDies= true;
 		this.synchronizedRealTime = false;
 		generateModel(simulationIdentification);
 	}

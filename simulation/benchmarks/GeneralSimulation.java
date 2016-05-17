@@ -2,8 +2,6 @@ package eboracum.simulation.benchmarks;
 
 import eboracum.simulation.BenchmarksGenerator;
 import eboracum.simulation.util.HistogramSpectrogramFactory;
-import eboracum.wsn.network.node.WirelessNode;
-import ptolemy.data.expr.Parameter;
 
 public class GeneralSimulation extends BenchmarksGenerator {
 

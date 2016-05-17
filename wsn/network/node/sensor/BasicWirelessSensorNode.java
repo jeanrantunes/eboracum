@@ -39,7 +39,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 	private static final long serialVersionUID = 1L;
 	final static String PLATFORMCONFIG = "eboracum/wsn/PlatformConfig.xml";
 	protected EllipseAttribute _circle_sensor;
-	protected Time tempLastSensingEventTime;
+	public Time tempLastSensingEventTime;
     protected WirelessIOPort sensoring;
     protected String tempEvent;
     protected Time timeLastCPURun;
@@ -106,7 +106,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 		cpuRunManager();
 	}
 	
-	protected void sensingManager() throws NoTokenException, IllegalActionException{
+	public void sensingManager() throws NoTokenException, IllegalActionException{
 		this.tempEvent = null;
 		if(this.sensoring.hasToken(0)){
 			this.tempEvent = this.sensoring.get(0).toString();
@@ -147,7 +147,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 		return true;
 	}
 	
-	protected void cpuRunManager() throws NoRoomException, IllegalActionException{
+	public void cpuRunManager() throws NoRoomException, IllegalActionException{
 			Time tempTimeLastCPURun = Time.NEGATIVE_INFINITY; //temporary variable to help the scheme of battery consumption when not synchronised to the real time
 			tempTimeLastCPURun = this.timeLastCPURun; 
 			List<Object> runReturn = this.cpu.run(tempEvent,this.getDirector().getModelTime());

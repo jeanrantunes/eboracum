@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import eboracum.wsn.network.AdHocNetwork;
-import eboracum.wsn.network.node.sensor.SimpleWSNNode;
+import eboracum.wsn.network.node.sensor.mobile.BasicMobileWSNNode;
 import eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;
-import eboracum.wsn.network.node.sensor.mobile.SimpleMobileWSNNode;
 import ptolemy.actor.CompositeActor;
 import ptolemy.actor.NoTokenException;
 import ptolemy.actor.TypedAtomicActor;
@@ -20,13 +19,10 @@ import ptolemy.kernel.util.NameDuplicationException;
 
 public class MovementRemoteController extends TypedAtomicActor{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	
 	public TypedIOPort out;
-	public ArrayList<SimpleMobileWSNNode> mobileNodes;
+	public ArrayList<BasicMobileWSNNode> mobileNodes;
 	public AdHocNetwork network;
 	public Parameter timeBetweenMovents;
 	public Parameter squareAreaSize;
@@ -48,9 +44,8 @@ public class MovementRemoteController extends TypedAtomicActor{
 
 	 public void fire() throws IllegalActionException {
 	        super.fire();
-	        //System.out.println("fire: "+this.getDirector().getModelTime()+ " " +this.flagMovement);
 	        if (this.getDirector().getModelStartTime().equals(this.getDirector().getModelTime())){
-	        	this.mobileNodes = new ArrayList<SimpleMobileWSNNode>();
+	        	this.mobileNodes = new ArrayList<BasicMobileWSNNode>();
 	        	try {
 					this.findMobileNodesAndNetwork();
 				} catch (ClassNotFoundException e) {
@@ -67,16 +62,16 @@ public class MovementRemoteController extends TypedAtomicActor{
 	}
 	 
 	protected void moveNodes() throws NoTokenException, IllegalActionException{
-		Iterator<SimpleMobileWSNNode> n = this.mobileNodes.iterator();
+		Iterator<BasicMobileWSNNode> n = this.mobileNodes.iterator();
 		while (n.hasNext()) {
-			SimpleMobileWSNNode node = n.next();
+			BasicMobileWSNNode node = n.next();
 			if (node instanceof eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode){
 				this.flagMovement = moveDynamicReorganizedWSNNode((DynamicReorganizedMobileWSNNode)node);
-				//System.out.println(node.getName());
 			}
 			else
 				this.flagMovement = node.move();
 		}
+		if (this.mobileNodes.isEmpty()) this.flagMovement = false; 
 	}
 	
 	private boolean moveDynamicReorganizedWSNNode(DynamicReorganizedMobileWSNNode node) throws NoTokenException, IllegalActionException{
@@ -89,19 +84,18 @@ public class MovementRemoteController extends TypedAtomicActor{
 	    return false;
 	}
 	
-	private int[] getNewXY(ArrayList<SimpleWSNNode> neigbours, DynamicReorganizedMobileWSNNode node, double radius){
+	private int[] getNewXY(ArrayList<BasicMobileWSNNode> neigbours, DynamicReorganizedMobileWSNNode node, double radius){
 		int returnXY[] = new int[2];
 		double[] nodeLocation = getNodeLocation(node);
 		returnXY[0] = Double.valueOf(nodeLocation[0]).intValue();
 		returnXY[1] = Double.valueOf(nodeLocation[1]).intValue();
 	    double distance, angle;
-	    Iterator<SimpleWSNNode> n = getSensorCoverNeighbours(node, radius).iterator();    
+	    Iterator<BasicMobileWSNNode> n = getSensorCoverNeighbours(node, radius).iterator();    
 		while (n.hasNext()) {
-			SimpleWSNNode neigbour = (SimpleWSNNode) n.next();
+			BasicMobileWSNNode neigbour = (BasicMobileWSNNode) n.next();
 			double[] neigbourLocation = getNodeLocation(neigbour);
 			distance = calcDistance(neigbour, node);
 			angle = calcAngle(neigbour, node);
-			//System.out.println(neigbour.getName()+": "+distance+" | "+Math.toDegrees(angle)+" -> "+forceEquation(distance, radius));
 			double xsign = Math.signum(nodeLocation[0]-neigbourLocation[0]);
 			double ysign = Math.signum(nodeLocation[1]-neigbourLocation[1]);
 			returnXY[0]+=Double.valueOf((xsign*forceEquation(distance,radius)*Math.cos(angle))).intValue();
@@ -127,7 +121,6 @@ public class MovementRemoteController extends TypedAtomicActor{
 	
 	private double forceEquation(double d, double r){
 		double b = 30;
-		//double f = ((2*r+((2*r)/a))*Math.exp((-d/b)))-((2*r)/a);
 		double f = (r)*Math.exp((-d/b));
 		if (f < 0) return 0;
 		else return f;
@@ -136,7 +129,6 @@ public class MovementRemoteController extends TypedAtomicActor{
 	private double calcAngle(Entity node1, Entity node2){
     	Location lnode1 = (Location) node1.getAttribute("_location");
     	Location lnode2 = (Location) node2.getAttribute("_location");
-    	//double x = Math.abs(Math.abs(lnode1.getLocation()[0])-Math.abs(lnode2.getLocation()[0]));
     	double y = Math.abs(Math.abs(lnode1.getLocation()[1])-Math.abs(lnode2.getLocation()[1]));
     	double d = calcDistance(node1, node2);
     	if (d != 0)
@@ -144,29 +136,22 @@ public class MovementRemoteController extends TypedAtomicActor{
     	else return 0;
 	}	
 	
-	private double[] getNodeLocation(SimpleWSNNode node){
+	private double[] getNodeLocation(BasicMobileWSNNode node){
 		 double [] location;
 	     Location locationAttribute = (Location) node.getAttribute("_location");
-	     location = locationAttribute.getLocation(); 
-	     //System.out.println(node.getName()+":("+location[0]+","+location[1]+")");
+	     location = locationAttribute.getLocation();
 	     return location;
 	}
 	
-	protected ArrayList<SimpleWSNNode> getSensorCoverNeighbours(SimpleMobileWSNNode node, double radius){
-		ArrayList<SimpleWSNNode> nodes = new ArrayList<SimpleWSNNode>();
-		//CompositeActor container = (CompositeActor) getContainer();
-        //@SuppressWarnings("rawtypes")
-		//Iterator actors = container.deepEntityList().iterator();
-		Iterator<SimpleMobileWSNNode> actors = this.mobileNodes.iterator();
+	protected ArrayList<BasicMobileWSNNode> getSensorCoverNeighbours(BasicMobileWSNNode node, double radius){
+		ArrayList<BasicMobileWSNNode> nodes = new ArrayList<BasicMobileWSNNode>();
+		Iterator<BasicMobileWSNNode> actors = this.mobileNodes.iterator();
 		while (actors.hasNext()) {
             Entity actor = (Entity) actors.next();
-            if (actor instanceof eboracum.wsn.network.node.sensor.SimpleWSNNode && !node.equals(actor) && calcDistance(actor, node) < radius*2){
-           		nodes.add((SimpleWSNNode) actor);
+            if (actor instanceof BasicMobileWSNNode && !node.equals(actor) && calcDistance(actor, node) < radius*2){
+           		nodes.add((BasicMobileWSNNode) actor);
            	}
         }
-        //System.out.println("---------\n"+node.getName()+" --- Neighbours:");
-        //showNodes(nodes);
-        //System.out.println("//////////");
 		return nodes;
 	}
 	
@@ -184,10 +169,10 @@ public class MovementRemoteController extends TypedAtomicActor{
 			Iterator actors = container.deepEntityList().iterator();
 	        while (actors.hasNext()) {
 	            Entity actor = (Entity) actors.next();
-	           	if (actor instanceof eboracum.wsn.network.node.sensor.mobile.SimpleMobileWSNNode){
+	           	if (actor instanceof eboracum.wsn.network.node.sensor.mobile.BasicMobileWSNNode){
 	           		if (actor instanceof eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode)
 	           			((DynamicReorganizedMobileWSNNode)actor).setMyMovementRemoteController(this);
-	           		this.mobileNodes.add((SimpleMobileWSNNode) actor);
+	           		this.mobileNodes.add((BasicMobileWSNNode) actor);
 	           	} else {
 	           		if (actor instanceof eboracum.wsn.network.AdHocNetwork){
 	           			this.network = (AdHocNetwork) actor;
@@ -196,8 +181,8 @@ public class MovementRemoteController extends TypedAtomicActor{
 	        }
 	 }
 
-	protected void showNodes(ArrayList<SimpleWSNNode> nodes){
-		Iterator<SimpleWSNNode> n = nodes.iterator();
+	protected void showNodes(ArrayList<BasicMobileWSNNode> nodes){
+		Iterator<BasicMobileWSNNode> n = nodes.iterator();
 		while (n.hasNext()) {
 			Entity node = (Entity) n.next();
 			System.out.println(node.getName());
@@ -205,7 +190,7 @@ public class MovementRemoteController extends TypedAtomicActor{
 	}
 	
 	protected void showNodes(){
-		Iterator<SimpleMobileWSNNode> n = this.mobileNodes.iterator();
+		Iterator<BasicMobileWSNNode> n = this.mobileNodes.iterator();
 		while (n.hasNext()) {
 			Entity node = (Entity) n.next();
 			System.out.println(node.getName());

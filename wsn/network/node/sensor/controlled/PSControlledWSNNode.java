@@ -106,7 +106,7 @@ public class PSControlledWSNNode extends ControlledWSNNode{
 		else return flag;
 	}
 	
-	protected boolean receiveMessage(String tempMessage) throws NumberFormatException, IllegalActionException{
+	public boolean receiveMessage(String tempMessage) throws NumberFormatException, IllegalActionException{
 		String message = tempMessage.substring(2, tempMessage.length()-2);
 		if (message.split(",")[1].split("=")[1].equals("ALL")){
 			((PSAgent)this.myAgent).propagate(tempMessage.split(",")[0]);

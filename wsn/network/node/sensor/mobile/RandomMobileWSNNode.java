@@ -8,11 +8,8 @@ import ptolemy.kernel.util.IllegalActionException;
 import ptolemy.kernel.util.Location;
 import ptolemy.kernel.util.NameDuplicationException;
 
-public class RandomMobileWSNNode extends SimpleMobileWSNNode{
+public class RandomMobileWSNNode extends BasicMobileWSNNode{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public Parameter jumpRadiusParam;
 
@@ -21,11 +18,9 @@ public class RandomMobileWSNNode extends SimpleMobileWSNNode{
 		super(container, name);
 		jumpRadiusParam = new Parameter (this, "JumpRadiusParam"); 
 		jumpRadiusParam.setExpression("20");
-		// TODO Auto-generated constructor stub
 	}
 	
 	public double [] newPosition() {
-        // Recalculate event location (x, y), using its current position plus a random delta (base on the range from -10 until +10)
         double [] _newLocation;
         int inputRandomX, inputRandomY;
         Location locationAttribute = (Location) this.getAttribute("_location");
@@ -34,7 +29,6 @@ public class RandomMobileWSNNode extends SimpleMobileWSNNode{
         int radius = Integer.parseInt(jumpRadiusParam.getExpression());
         inputRandomX = (RandomGen.nextInt(41))-radius; 
         inputRandomY = (RandomGen.nextInt(41))-radius;
-        //System.out.println(inputRandomX+" - "+inputRandomY);
         double inputX = new Double (inputRandomX);
         _newLocation[0]+=inputX;
         double inputY = new Double (inputRandomY);

@@ -7,13 +7,13 @@ public class MobileNodesSimulation extends BenchmarksGenerator{
 
 	protected void runBenchmarks(){
 		simConfig(49, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
-		simConfig(64, "sensor.mobile.DynamicReorganizedMobileWSNNode", 140);
-		simConfig(81, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
-		simConfig(100, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
-		simConfig(49, "sensor.SimpleWSNNode", 160);
-		simConfig(64, "sensor.SimpleWSNNode", 140);
-		simConfig(81, "sensor.SimpleWSNNode", 120);
-		simConfig(100, "sensor.SimpleWSNNode", 120);
+		//simConfig(64, "sensor.mobile.DynamicReorganizedMobileWSNNode", 140);
+		//simConfig(81, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
+		//simConfig(100, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
+		//simConfig(49, "sensor.SimpleWSNNode", 160);
+		//simConfig(64, "sensor.SimpleWSNNode", 140);
+		//simConfig(81, "sensor.SimpleWSNNode", 120);
+		//simConfig(100, "sensor.SimpleWSNNode", 120);
 }
 
 public void simConfig(int size, String algo, int commcover) {
@@ -21,11 +21,11 @@ public void simConfig(int size, String algo, int commcover) {
 	simulationIdentification = algo+"_Mesh"+size;
 	this.scenarioDimensionXY = new int[]{1000,1000};
 	HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
-	this.nodesRandomizeFlag = false;
+	this.nodesRandomizeFlag = true;
 	this.mainGatewayCenteredFlag = false;
 	this.rebuildNetworkWhenGatewayDies= true;
 	this.setupSimConfig(simulationIdentification, size, algo, commcover);
-	int numOfRounds = 30;
+	int numOfRounds = 1;
 	for (int i=0; i<numOfRounds; i++) {
 		try {
 			this.run(simulationIdentification,i);

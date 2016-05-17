@@ -75,7 +75,7 @@ public class AntControlledWSNNode extends ControlledWSNNode{
 		cpuRunManager();
 	}
 	
-	protected boolean receiveMessage(String tempMessage) throws NumberFormatException, IllegalActionException{
+	public boolean receiveMessage(String tempMessage) throws NumberFormatException, IllegalActionException{
 		String message = tempMessage.substring(2, tempMessage.length()-2);
 		if (message.split(",")[1].split("=")[1].equals("ALL")){
 			((AntAgent)this.myAgent).updateStimulus(tempMessage.split(",")[0].split("=")[1]);

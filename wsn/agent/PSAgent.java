@@ -2,12 +2,14 @@ package eboracum.wsn.agent;
 
 import ptolemy.actor.NoRoomException;
 import ptolemy.kernel.util.IllegalActionException;
+import eboracum.wsn.network.node.WirelessNode;
 import eboracum.wsn.network.node.sensor.ControlledWSNNode;
 import eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;
+import eboracum.wsn.network.node.sensor.mobile.ControlledDRMobileWSNNode;
 
 public class PSAgent implements BasicAgent{
 	
-	public ControlledWSNNode myNode;
+	public WirelessNode myNode;
 	public boolean isQueen;
 	public boolean willStopBeQueen;
 	public double h;
@@ -73,6 +75,11 @@ public class PSAgent implements BasicAgent{
 			//if ( this.myNode.getName().equals("Node2"))
 				//System.out.println("Decay: "+this.myNode.getName()+";"+((PSControledWSNNode)this.myNode).kTimeDecay.getValueAsString());
 			h *= Double.parseDouble(((PSControlledWSNNode)this.myNode).kTimeDecay.getValueAsString());
+	}
+
+	public void setNode(ControlledDRMobileWSNNode myNode) {
+		this.myNode = myNode;
+		
 	}
 	
 }
