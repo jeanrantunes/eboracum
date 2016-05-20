@@ -2,7 +2,6 @@ package eboracum.wsn.event;
 
 import java.util.ArrayList;
 
-import eboracum.wsn.event.util.Stochastic;
 import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;
 import ptolemy.kernel.util.NameDuplicationException;

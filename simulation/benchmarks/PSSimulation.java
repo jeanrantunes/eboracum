@@ -17,7 +17,7 @@ public class PSSimulation extends BenchmarksGenerator {
 			simBeePaperConfig("Uniform", 81, "sensor.controlled.RandomControledWSNNode", 120);
 			simBeePaperConfig("Uniform", 100, "sensor.controlled.RandomControledWSNNode", 120);
 			*/
-			simBeePaperConfig("Uniform", 49, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
+			simBeePaperConfig("Uniform", 100, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
 			/*simBeePaperConfig("Uniform", 64, "sensor.SimpleWSNNode", 140);
 			simBeePaperConfig("Uniform", 81, "sensor.SimpleWSNNode", 120);
 			simBeePaperConfig("Uniform", 100, "sensor.SimpleWSNNode", 120);

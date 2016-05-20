@@ -26,7 +26,7 @@
         <property name="_location" class="ptolemy.kernel.util.Location" value="[-180.0, -140.0]">
         </property>
     </property>
-    <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={325, 54, 1595, 918}, maximized=false}">
+    <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={325, 54, 1514, 918}, maximized=false}">
     </property>
     <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[1291, 801]">
     </property>
@@ -111,6 +111,10 @@
         <property name="timeBetweenMovents" class="ptolemy.data.expr.Parameter" value="100">
         </property>
         <property name="_location" class="ptolemy.kernel.util.Location" value="[1090.0, -135.0]">
+        </property>
+    </entity>
+    <entity name="PowerLossChannel2" class="ptolemy.domains.wireless.lib.PowerLossChannel">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[1275.0, -140.0]">
         </property>
     </entity>
     <relation name="relation2" class="ptolemy.actor.TypedIORelation">

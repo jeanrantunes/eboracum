@@ -7,9 +7,9 @@ public class MobileNodesSimulation extends BenchmarksGenerator{
 
 	protected void runBenchmarks(){
 		simConfig(49, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
-		//simConfig(64, "sensor.mobile.DynamicReorganizedMobileWSNNode", 140);
-		//simConfig(81, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
-		//simConfig(100, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
+		//simConfig(64, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
+		//simConfig(81, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
+		//simConfig(100, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
 		//simConfig(49, "sensor.SimpleWSNNode", 160);
 		//simConfig(64, "sensor.SimpleWSNNode", 140);
 		//simConfig(81, "sensor.SimpleWSNNode", 120);
