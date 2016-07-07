@@ -1,5 +1,6 @@
 package eboracum.wsn.network.node.sensor.mobile;
 
+import eboracum.wsn.network.node.sensor.cpu.SimpleFIFOBasedCPU;
 import ptolemy.data.expr.Parameter;
 import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;
@@ -21,6 +22,10 @@ public class SimpleMobileWSNNode extends BasicMobileWSNNode{
         directionParam.setExpression("0");
     }
     
+    public void initialize() throws IllegalActionException {
+		super.initialize();
+		this.cpu = new SimpleFIFOBasedCPU();
+	}
      public void setVelocity(double velocity){
         velocityParam.setExpression(Double.toString(velocity));
      }

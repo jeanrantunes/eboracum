@@ -25,19 +25,19 @@ public class DataSummarizer {
 	HashMap<String, ArrayList<Double>> eventsByDaySensed = new HashMap<String,ArrayList<Double>>();
 	
 	public void go(){
-		for (int j = 1; j < 7; j++){
-			String file = "time/ps/NodeGrid49_SideSink_EventSpaceDistUniform_NotRebuild";
+		//for (int j = 1; j < 7; j++){
+			String file = "sensor.SimpleWSNNode_Random100";
 			for (int i = 0; i < 30; i++){
-				this.collectDataFromFile(file+j+"_"+i+".csv");
-				//collectEventsSensedFromFile(file+i+".csv");
-				//saveSummaryFile(eventsByDaySensed, file+"eventsByDaySensed.csv");
+				//this.collectDataFromFile(file+"_"+i+".csv");
+				collectEventsSensedFromFile(file+"_"+i+".csv");
+				saveSummaryFile(eventsByDaySensed, file+"eventsByDaySensed.csv");}
 			//saveSummaryFile(nodeRemainingBattery, "NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID"+0+"_nodeRemainingBattery.csv");
 			//saveSummaryFile(nodeNumberofSentMessages, "NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID"+j+"_nodeNumberofSentMessages.csv");
 			//saveSummaryFile(nodeNumberofEnqueuedEvents, "NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID"+j+"_nodeNumberofEnqueuedEvents.csv");
 			//saveSummaryFile(nodeNumberofSensoredEvents, file+"_nodeNumberofSensoredEvents.csv");
-			saveSummaryFile(nodeTimeofDeath, file+"_"+j+"_nodeTimeofDeath.csv");}
+			//saveSummaryFile(nodeTimeofDeath, file+"_"+j+"_nodeTimeofDeath.csv");}
 			//saveSummaryFile(eventNumberofTimesSensed, file+"_eventNumberofTimesSensed.csv");
-		}
+		//}
 	}
 	
 	public void saveSummaryFile(HashMap<String, ArrayList<Double>> data, String newFile){

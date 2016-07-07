@@ -1,8 +1,13 @@
 package eboracum.wsn.network.node.sensor.controlled;
 
+import ptolemy.actor.NoRoomException;
 import ptolemy.actor.NoTokenException;
 import ptolemy.actor.util.Time;
+import ptolemy.data.BooleanToken;
+import ptolemy.data.StringToken;
 import ptolemy.data.expr.Parameter;
+import ptolemy.data.expr.SingletonParameter;
+import ptolemy.domains.wireless.kernel.WirelessIOPort;
 import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;
 import ptolemy.kernel.util.NameDuplicationException;
@@ -24,7 +29,9 @@ public class PSControlledWSNNode extends ControlledWSNNode{
 	public Parameter kTimeDecay;
 	private Time lastDiferentiationTime;
 	private Time lastDecayTime;
-
+	protected WirelessIOPort outPS;
+	protected WirelessIOPort inPS;
+	
 	public PSControlledWSNNode(CompositeEntity container, String name)
 			throws IllegalActionException, NameDuplicationException {
 		super(container, name);
@@ -42,6 +49,17 @@ public class PSControlledWSNNode extends ControlledWSNNode{
 		decayTime.setExpression("2000"); //600
 		kTimeDecay = new Parameter(this,"kTimeDecay");
 		kTimeDecay.setExpression("0.5");
+		outPS = new WirelessIOPort(this, "output2", false, true);
+	    outPS.outsideChannel.setExpression("PowerLossChannel2");
+	    inPS = new WirelessIOPort(this, "input2", true, false);
+    	inPS.outsideChannel.setExpression("PowerLossChannel2");
+    	try {
+			(new SingletonParameter(outPS, "_hide")).setToken(BooleanToken.TRUE);
+			(new SingletonParameter(inPS, "_hide")).setToken(BooleanToken.TRUE);
+		} catch (NameDuplicationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public void initialize() throws IllegalActionException {
@@ -57,20 +75,12 @@ public class PSControlledWSNNode extends ControlledWSNNode{
 	
 	public void fire() throws NoTokenException, IllegalActionException {
 		super.fire();
-		//if(this.in.hasToken(0)){
-//			Token channelProperties = this.in.getProperties(0);
-			//System.out.println(channelProperties);
-	//	}
-		//else
-		if ((((Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression()))) > 0)) {
-			
+		if(inPS.hasToken(0)){
+			this.receiveMessage(this.inPS.get(0).toString());
+		}
+		if ((((Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression()))) > 0)) {	
 			if ((this.getDirector().getModelTime()).getDoubleValue()%Double.parseDouble(this.diffCycleTime.getValueAsString())==0){
 				if (this.lastDiferentiationTime != this.getDirector().getModelTime()){
-					//if ( this.getName().equals("Node0"))
-						//if (this.getDirector().getModelTime().getDoubleValue()%900 == 0)
-						//	System.out.println(this.getDirector().getModelTime()+";"+System.currentTimeMillis());
-				//	if ( this.getName().equals("Node2"))
-				//System.out.println(this.getName()+" Diff -> "+this.lastDiferentiationTime+" ; "+this.getDirector().getModelTime());
 					this.lastDiferentiationTime = this.getDirector().getModelTime();
 					((PSAgent)this.myAgent).differentiate();
 					this._fireAt(this.getDirector().getModelTime().add(Double.parseDouble(diffCycleTime.getValueAsString())));
@@ -78,8 +88,6 @@ public class PSControlledWSNNode extends ControlledWSNNode{
 			}
 			if ((this.getDirector().getModelTime()).getDoubleValue()%Double.parseDouble(this.decayTime.getValueAsString())==0){
 				if (this.lastDecayTime != this.getDirector().getModelTime()){
-				//	if ( this.getName().equals("Node2"))
-					//	System.out.println(this.getName()+" Decay -> "+this.lastDecayTime+" ; "+this.getDirector().getModelTime());
 					this.lastDecayTime = this.getDirector().getModelTime();
 					((PSAgent)this.myAgent).tdecay();
 					this._fireAt(this.getDirector().getModelTime().add(Double.parseDouble(decayTime.getValueAsString())));
@@ -114,6 +122,20 @@ public class PSControlledWSNNode extends ControlledWSNNode{
 		}
 		else 
 			return super.receiveMessage(tempMessage);
+	}
+	
+	public boolean sendMessageToNeighbours(String token, double neighboursCommCost) throws NoRoomException, IllegalActionException{
+		double commCost = neighboursCommCost;
+		if ((Double.parseDouble(battery.getValueAsString()) >= commCost)){
+			battery.setExpression(Double.toString( ( Double.parseDouble(battery.getValueAsString()) - commCost )));
+			this.timeOfDeath = (this.getDirector().getModelTime().add(((Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression())))));
+			//_fireAt(this.getDirector().getModelTime().add(round(Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression()))));
+			outPS.send(0, new StringToken("{="+token+",gateway=ALL}"));
+			//this.numberOfSentMessages++;
+			return true;
+		}
+		else
+			return false;
 	}
 	
 	protected void buildIcon() throws IllegalActionException, NameDuplicationException {

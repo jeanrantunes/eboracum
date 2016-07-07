@@ -6,19 +6,28 @@ import eboracum.simulation.util.HistogramSpectrogramFactory;
 public class MobileNodesSimulation extends BenchmarksGenerator{
 
 	protected void runBenchmarks(){
-		simConfig(49, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
-		//simConfig(64, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
+		//simConfig(100, "sensor.controlled.AntControlledWSNNode", 160);
+		simConfig(49, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
+		simConfig(64, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
+		simConfig(81, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
+		simConfig(100, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
+		//simConfig(64, "sensor.controlled.PSControlledWSNNode", 160);
+		//simConfig(64, "sensor.mobile.controlled.PSControlledDRMobileWSNNode", 160);
+		//simConfig(81, "sensor.controlled.PSControlledWSNNode", 160);
+		//simConfig(81, "sensor.mobile.controlled.PSControlledDRMobileWSNNode", 160);
+		//simConfig(100, "sensor.controlled.PSControlledWSNNode", 160);
+		//simConfig(100, "sensor.mobile.controlled.PSControlledDRMobileWSNNode", 160);
 		//simConfig(81, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
 		//simConfig(100, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
 		//simConfig(49, "sensor.SimpleWSNNode", 160);
-		//simConfig(64, "sensor.SimpleWSNNode", 140);
-		//simConfig(81, "sensor.SimpleWSNNode", 120);
-		//simConfig(100, "sensor.SimpleWSNNode", 120);
+		//simConfig(64, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
+		//simConfig(81, "sensor.SimpleWSNNode", 160);
+		//simConfig(100, "sensor.SimpleWSNNode", 160);
 }
 
 public void simConfig(int size, String algo, int commcover) {
 	String simulationIdentification;
-	simulationIdentification = algo+"_Mesh"+size;
+	simulationIdentification = algo+"_Random"+size;
 	this.scenarioDimensionXY = new int[]{1000,1000};
 	HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
 	this.nodesRandomizeFlag = true;

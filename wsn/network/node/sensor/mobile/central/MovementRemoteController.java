@@ -57,7 +57,7 @@ public class MovementRemoteController extends TypedAtomicActor{
 	        	if (this.flagMovement) 
 	        		this.network.fire();
 	        }
-	        if (this.flagMovement) 
+	        if (this.flagMovement)
 	        	_fireAt(this.getDirector().getModelTime().add(Double.parseDouble(timeBetweenMovents.getValueAsString())));
 	}
 	 

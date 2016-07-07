@@ -2,6 +2,7 @@ package eboracum.wsn.network.node.sensor.mobile;
 
 import java.util.Random;
 
+import eboracum.wsn.network.node.sensor.cpu.SimpleFIFOBasedCPU;
 import ptolemy.data.expr.Parameter;
 import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.util.IllegalActionException;
@@ -18,6 +19,11 @@ public class RandomMobileWSNNode extends BasicMobileWSNNode{
 		super(container, name);
 		jumpRadiusParam = new Parameter (this, "JumpRadiusParam"); 
 		jumpRadiusParam.setExpression("20");
+	}
+	
+	public void initialize() throws IllegalActionException {
+		super.initialize();
+		this.cpu = new SimpleFIFOBasedCPU();
 	}
 	
 	public double [] newPosition() {

@@ -1,13 +1,15 @@
 package eboracum.wsn.agent;
 
 import ptolemy.kernel.util.IllegalActionException;
+import eboracum.wsn.network.node.WirelessNode;
 import eboracum.wsn.network.node.sensor.ControlledWSNNode;
 import eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;
 import eboracum.wsn.network.node.sensor.mobile.ControlledDRMobileWSNNode;
+import eboracum.wsn.network.node.sensor.mobile.controlled.AntControlledDRMobileWSNNode;
 
 public class AntAgent implements BasicAgent{
 	
-	public ControlledWSNNode myNode;
+	public WirelessNode myNode;
 	private Double threshold;
 	public int agentsSensed;
 	public String tempEvent;
@@ -34,16 +36,24 @@ public class AntAgent implements BasicAgent{
 	}
 	
 	public String deliberate(String tempEvent){
-		//System.out.println(this.myNode.getName()+";"+agentsSensed+";"+tempEvent);
 		Double rand = Math.random();
-		double stimulus;
-		stimulus = Double.parseDouble(((AntControlledWSNNode)this.myNode).initStimulus.getValueAsString())-(Double.parseDouble(((AntControlledWSNNode)this.myNode).delta.getValueAsString())*(agentsSensed/((double)this.totalNodes+1.0)));
+		double stimulus = 0, rho = 0, ksi = 0;
+		if (this.myNode instanceof AntControlledWSNNode){
+			stimulus = Double.parseDouble(((AntControlledWSNNode)this.myNode).initStimulus.getValueAsString())-(Double.parseDouble(((AntControlledWSNNode)this.myNode).delta.getValueAsString())*(agentsSensed/((double)this.totalNodes+1.0)));
+			rho = Double.parseDouble(((AntControlledWSNNode)this.myNode).ro.getValueAsString());
+			ksi = Double.parseDouble(((AntControlledWSNNode)this.myNode).ksi.getValueAsString());
+		}
+		if (this.myNode instanceof AntControlledDRMobileWSNNode){
+			stimulus = Double.parseDouble(((AntControlledDRMobileWSNNode)this.myNode).initStimulus.getValueAsString())-(Double.parseDouble(((AntControlledDRMobileWSNNode)this.myNode).delta.getValueAsString())*(agentsSensed/((double)this.totalNodes+1.0)));
+			rho = Double.parseDouble(((AntControlledDRMobileWSNNode)this.myNode).ro.getValueAsString());
+			ksi = Double.parseDouble(((AntControlledDRMobileWSNNode)this.myNode).ksi.getValueAsString());
+		}
 		if (rand < (Math.pow(stimulus,2)/(Math.pow(stimulus,2)+Math.pow(threshold,2)))){
-			threshold += Double.parseDouble(((AntControlledWSNNode)this.myNode).ro.getValueAsString());
+			threshold += rho;
 			return tempEvent;
 		}
 		else {
-			threshold -= Double.parseDouble(((AntControlledWSNNode)this.myNode).ksi.getValueAsString());
+			threshold -= ksi;
 			return null;
 		}
 	}
@@ -77,8 +87,8 @@ public class AntAgent implements BasicAgent{
 
 	@Override
 	public void setNode(ControlledDRMobileWSNNode myNode) {
-		// TODO Auto-generated method stub
-		
+		this.myNode = myNode;
+		threshold = Double.parseDouble(((AntControlledDRMobileWSNNode)this.myNode).initThreshold.getValueAsString());
 	}
 
 }

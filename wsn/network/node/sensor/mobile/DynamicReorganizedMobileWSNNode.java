@@ -1,5 +1,6 @@
 package eboracum.wsn.network.node.sensor.mobile;
 
+import eboracum.wsn.network.node.sensor.cpu.SimpleFIFOBasedCPU;
 import eboracum.wsn.network.node.sensor.mobile.central.MovementRemoteController;
 import ptolemy.actor.NoTokenException;
 import ptolemy.actor.TypedAtomicActor;
@@ -19,6 +20,11 @@ public class DynamicReorganizedMobileWSNNode extends BasicMobileWSNNode{
 	public DynamicReorganizedMobileWSNNode(CompositeEntity container, String name)
 			throws IllegalActionException, NameDuplicationException {
 		super(container, name);
+	}
+	
+	public void initialize() throws IllegalActionException {
+		super.initialize();
+		this.cpu = new SimpleFIFOBasedCPU();
 	}
 
 	public boolean postfire() throws IllegalActionException{

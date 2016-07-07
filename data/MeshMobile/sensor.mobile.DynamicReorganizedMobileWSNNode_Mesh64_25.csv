@@ -1,0 +1,169 @@
+Simulation Identification;sensor.mobile.DynamicReorganizedMobileWSNNode_Mesh64
+Round;25
+Initial Battery;2700000.0
+Communication Radius;160.0
+Sensor Cover Radius;120.0
+Node Idle Energy Cost;0.3
+CPU Processing Energy Cost;50.0
+Summary of Nodes
+Class Name;Number of Instances
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;64
+Summary of Events
+Class Name;Type;Number of Instances;Tasks Cost Graph; Comm Energy Cost
+eboracum.wsn.network.node.StochasticPeriodicJumperEvent;E0;1;<task id="0"><cpu name="SimpleFIFOBasedCPU" cost="1"/></task>;0.0018
+
+Results
+Simulation Total Time;7314930
+Total Number of Sensed Events by the WSN;259578
+Number of Sensed Events by the WSN per Day
+1;3283
+2;3277
+3;3249
+4;3242
+5;3214
+6;3176
+7;3218
+8;3267
+9;3229
+10;3279
+11;3257
+12;3222
+13;3285
+14;3251
+15;3290
+16;3253
+17;3252
+18;3271
+19;3220
+20;3209
+21;3264
+22;3243
+23;3277
+24;3250
+25;3223
+26;3217
+27;3220
+28;3273
+29;3206
+30;3284
+31;3271
+32;3304
+33;3245
+34;3266
+35;3260
+36;3273
+37;3264
+38;3261
+39;3323
+40;3275
+41;3218
+42;3193
+43;3278
+44;3242
+45;3291
+46;3289
+47;3261
+48;3231
+49;3232
+50;3200
+51;3246
+52;3248
+53;3278
+54;3256
+55;3219
+56;3243
+57;3250
+58;3219
+59;3239
+60;3256
+61;3264
+62;3285
+63;3227
+64;3242
+65;3240
+66;3274
+67;3260
+68;3246
+69;3242
+70;3289
+71;3302
+72;3222
+73;3312
+74;3233
+75;3222
+76;3254
+77;3285
+78;2517
+79;2239
+80;2283
+81;2096
+82;12
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node0;0;82035;9558;1;10111;7314775.985333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node1;0;620717;39031;0;12014;6997432.480667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node2;0;1326312;76564;1;11989;7001373.949334
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node3;0;818280;702002;0;11971;7000621.32134
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node4;0;939383;128249;1;11988;7001230.506001
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node5;0;285844;76695;0;12085;6985373.163334
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node6;0;168890;38650;1;11952;7007768.1
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node7;0;81280;9578;1;10176;7303942.532
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node8;0;422418;17459;1;12031;6994728.579333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node9;0;1035639;25545;0;14004;6665846.73
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node10;0;1365794;492347;0;13952;6671712.584671
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node11;0;1621583;67387;0;14164;6638929.011334
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node12;0;1148928;53733;0;14016;6663677.602
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node13;0;418711;39559;0;13974;6670762.646
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node14;0;238829;25968;1;13877;6687010.858667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node15;0;116686;17148;1;12117;6980397.112
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node16;0;629936;16937;0;12073;6987731.711333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node17;0;937326;331355;0;13986;6667011.870003
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node18;0;1183882;79718;0;13972;6670855.025334
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node19;0;931604;67365;0;14017;6663429.143334
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node20;0;425360;53594;0;13997;6666845.102667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node21;0;316406;39427;0;13937;6676930.104667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node22;0;204056;25627;0;13998;6666846.238
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node23;0;110642;17004;1;12181;6969731.309333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node24;0;592197;188017;0;12006;6997871.898002
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node25;0;899164;67576;0;13879;6686427.877334
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node26;0;770675;67385;0;13981;6669429.023334
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node27;0;478951;65011;0;13986;6668609.934
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node28;0;408171;53447;1;14043;6659179.318
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node29;0;313406;39511;0;14004;6665762.934
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node30;0;203386;25463;0;14088;6651847.222
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node31;0;109205;16455;0;12198;6966901.27
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node32;0;420190;123211;1;11920;7012594.067334
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node33;0;637656;53279;0;13936;6677013.659334
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node34;0;423201;53326;0;14045;6658846.710667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node35;0;408101;53327;0;13953;6674180.038
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node36;0;366016;51025;0;14037;6660193.85
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node37;0;296580;39461;0;14014;6664096.567333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node38;0;201615;25461;1;13957;6673680.567333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node39;0;107965;15688;1;12056;6990572.538667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node40;0;275790;72287;0;12011;6997732.944667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node41;0;415963;39170;0;13965;6672264.98
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node42;0;314200;39235;0;13954;6674097.923333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node43;0;312044;39415;0;13959;6673263.51
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node44;0;296193;39311;0;13944;6675764.134
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node45;0;253867;36984;1;14080;6653111.429333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node46;0;184376;25435;1;14029;6661680.723333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node47;0;103930;15218;0;12095;6984075.358667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node48;0;159811;35026;1;12007;6998623.177333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node49;0;236001;25322;0;13987;6668681.401333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node50;0;202704;25196;1;13826;6695515.490667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node51;0;202602;25359;0;13909;6681681.179333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node52;0;200204;25371;0;14040;6659847.774
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node53;0;183902;25356;0;14061;6656347.864
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node54;0;142806;23126;0;13904;6682527.910667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node55;0;86511;14326;1;11977;7003747.377333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node56;0;73797;9583;1;10154;7307609.168667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node57;0;107848;13449;1;12013;6997752.639333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node58;0;101436;12792;1;11959;7006756.581333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node59;0;100943;12216;0;11994;7000926.704
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node60;0;101153;12315;1;12077;6987092.776667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node61;0;99484;12851;1;12065;6989089.560667
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node62;0;85134;13316;0;12010;6998253.437333
+eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode;Node63;0;50568;9584;1;10222;7296275.829333
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;275287;0

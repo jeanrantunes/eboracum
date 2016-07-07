@@ -67,7 +67,6 @@ public abstract class WirelessNode extends TypedAtomicActor {
     protected Map<String, Double> eventCommCostMap;
    // private boolean flagAlive;
     
-    
     public WirelessNode(CompositeEntity container, String name) throws IllegalActionException, NameDuplicationException {
     	super(container, name);
     	StringParameter commChannelName = new StringParameter(this,"CommChannelName");
@@ -330,10 +329,7 @@ public abstract class WirelessNode extends TypedAtomicActor {
 	}
 	
 	public double round(double value) {
-		//DecimalFormat df = new DecimalFormat("#.000000000");
-		//return Double.parseDouble(df.format(value));
 		return Math.round(value*10000000.0)/10000000.0;
-		//return Math.ceil(value);
 	}
 
 }

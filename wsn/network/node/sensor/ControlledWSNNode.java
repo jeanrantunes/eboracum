@@ -1,6 +1,5 @@
 package eboracum.wsn.network.node.sensor;
 
-
 import eboracum.wsn.agent.BasicAgent;
 import ptolemy.actor.NoTokenException;
 import ptolemy.kernel.CompositeEntity;
@@ -12,8 +11,7 @@ public abstract class ControlledWSNNode extends SimpleWSNNode {
 	private static final long serialVersionUID = 1L;
 	public BasicAgent myAgent; 
     
-   	public ControlledWSNNode(CompositeEntity container, String name)
-			throws IllegalActionException, NameDuplicationException {
+   	public ControlledWSNNode(CompositeEntity container, String name) throws IllegalActionException, NameDuplicationException {
 		super(container, name);
 	}
    

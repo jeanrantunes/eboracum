@@ -1,6 +1,6 @@
 package eboracum.wsn.network.node.sensor.mobile;
 
-import eboracum.wsn.network.node.sensor.SimpleWSNNode;
+import eboracum.wsn.network.node.sensor.BasicWirelessSensorNode;
 import ptolemy.kernel.CompositeEntity;
 import ptolemy.kernel.Entity;
 import ptolemy.kernel.util.Attribute;
@@ -9,7 +9,7 @@ import ptolemy.kernel.util.IllegalActionException;
 import ptolemy.kernel.util.NameDuplicationException;
 import ptolemy.moml.MoMLChangeRequest;
 
-public abstract class BasicMobileWSNNode extends SimpleWSNNode{
+public abstract class BasicMobileWSNNode extends BasicWirelessSensorNode{
 
 	private static final long serialVersionUID = 1L;
 

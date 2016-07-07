@@ -114,6 +114,8 @@
         </property>
     </entity>
     <entity name="PowerLossChannel2" class="ptolemy.domains.wireless.lib.PowerLossChannel">
+        <property name="defaultProperties" class="ptolemy.data.expr.Parameter" value="{range = 120.0, power = Infinity}">
+        </property>
         <property name="_location" class="ptolemy.kernel.util.Location" value="[1275.0, -140.0]">
         </property>
     </entity>

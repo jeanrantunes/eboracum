@@ -60,7 +60,13 @@
 	<entity name="FullyStochasticMobileEvent" class="eboracum.wsn.event.FullyStochasticMobileEvent">
 		<doc></doc>
 	</entity>
-	<entity name="MovementRemoteController" class="eboracum.wsn.network.node.sensor.mobile.central.MovementRemoteController">
+	<entity name="FullyStochasticMobileEvent" class="eboracum.wsn.event.FullyStochasticMobileEvent">
+		<doc></doc>
+	</entity>
+	<entity name="AntControlledDRMobileWSNNode" class="eboracum.wsn.network.node.sensor.mobile.controlled.AntControlledDRMobileWSNNode">
+		<doc></doc>
+	</entity>
+	<entity name="PSControlledDRMobileWSNNode" class="eboracum.wsn.network.node.sensor.mobile.controlled.PSControlledDRMobileWSNNode">
 		<doc></doc>
 	</entity>
 	<entity name="SimpleAdHocNetwork" class="eboracum.wsn.network.SimpleAdHocNetwork">

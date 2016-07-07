@@ -1,0 +1,169 @@
+Simulation Identification;sensor.controlled.AntControlledWSNNode_Random49
+Round;23
+Initial Battery;2700000.0
+Communication Radius;160.0
+Sensor Cover Radius;120.0
+Node Idle Energy Cost;0.3
+CPU Processing Energy Cost;50.0
+Summary of Nodes
+Class Name;Number of Instances
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;49
+Summary of Events
+Class Name;Type;Number of Instances;Tasks Cost Graph; Comm Energy Cost
+eboracum.wsn.network.node.StochasticPeriodicJumperEvent;E0;1;<task id="0"><cpu name="SimpleFIFOBasedCPU" cost="1"/></task>;0.0018
+
+Results
+Simulation Total Time;8749039
+Total Number of Sensed Events by the WSN;21274
+Number of Sensed Events by the WSN per Day
+1;263
+2;259
+3;246
+4;233
+5;238
+6;231
+7;255
+8;261
+9;259
+10;225
+11;255
+12;237
+13;261
+14;279
+15;249
+16;243
+17;229
+18;240
+19;243
+20;246
+21;266
+22;227
+23;223
+24;250
+25;255
+26;249
+27;239
+28;238
+29;252
+30;237
+31;239
+32;229
+33;226
+34;297
+35;253
+36;206
+37;234
+38;239
+39;239
+40;238
+41;247
+42;225
+43;221
+44;206
+45;253
+46;212
+47;226
+48;238
+49;222
+50;246
+51;218
+52;248
+53;224
+54;207
+55;213
+56;209
+57;229
+58;211
+59;213
+60;226
+61;227
+62;203
+63;217
+64;204
+65;196
+66;190
+67;242
+68;219
+69;229
+70;235
+71;222
+72;215
+73;209
+74;239
+75;228
+76;213
+77;205
+78;198
+79;209
+80;198
+81;209
+82;207
+83;203
+84;231
+85;221
+86;230
+87;193
+88;155
+89;190
+90;191
+91;171
+92;171
+93;142
+94;73
+95;46
+96;48
+97;13
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node0;0;0;0;0;8647;7558801.665332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node1;0;0;0;0;9370;7438305.435332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node2;0;0;0;0;12287;6952137.924666
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node3;0;0;0;0;10107;7315477.439999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node4;0;19686;5947;0;5947;8008780.049333
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node5;0;0;0;0;8992;7501310.211333
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node6;0;0;0;0;11183;7136136.758666
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node7;0;0;0;0;9388;7435303.575332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node8;0;0;0;0;3561;8406492.302
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node9;0;0;0;0;3330;8444976.663999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node10;0;0;0;0;3315;8447473.229999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node11;0;0;0;0;10587;7235470.301999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node12;0;0;0;0;9249;7458474.239999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node13;0;0;0;0;11345;7109136.960666
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node14;0;0;0;0;8427;7595473.951999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node15;0;0;0;0;10501;7249802.739332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node16;0;0;0;0;7499;7750139.002666
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node17;0;0;0;0;9272;7454642.896666
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node18;0;0;0;0;10265;7289142.716666
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node19;0;0;0;0;10125;7312469.067999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node20;0;0;0;0;10867;7188803.559332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node21;0;0;0;0;5698;8050299.733332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node22;0;0;0;0;7224;7795979.215999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node23;0;0;0;0;5950;8008300.101332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node24;0;0;0;0;9270;7454968.993999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node25;0;24226;6588;0;6588;7901935.737999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node26;0;0;0;0;1525;8745822.453333
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node27;0;0;0;0;3166;8472326.537333
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node28;0;0;0;0;10710;7214969.861999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node29;0;0;0;0;9771;7371474.123999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node30;0;0;0;0;5794;8034319.869333
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node31;0;0;0;0;9265;7455802.185332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node32;0;0;0;0;9787;7368802.071332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node33;0;27199;4020;0;4020;8329965.696
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node34;0;0;0;0;10978;7170303.001332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node35;0;0;0;0;10870;7188303.389332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node36;0;0;0;0;9437;7427141.796666
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node37;0;0;0;0;6959;7840149.974666
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node38;0;0;0;0;9028;7495302.025332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node39;0;19693;5448;0;5448;8091950.984
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node40;0;20648;9216;0;9216;7463915.969999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node41;0;0;0;0;10951;7174803.063332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node42;0;0;0;0;8115;7647479.001999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node43;0;0;0;0;4827;8195477.409999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node44;0;0;0;0;9562;7406308.207333
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node45;0;0;0;0;9978;7336972.949999
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node46;0;0;0;0;9658;7390302.655332
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node47;0;0;0;0;5254;8124318.171333
+eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode;Node48;0;0;0;0;9007;7498810.439333
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;329703;0
