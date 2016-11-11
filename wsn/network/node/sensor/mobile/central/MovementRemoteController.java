@@ -22,7 +22,7 @@ public class MovementRemoteController extends TypedAtomicActor{
 	private static final long serialVersionUID = 1L;
 	
 	public TypedIOPort out;
-	public ArrayList<BasicMobileWSNNode> mobileNodes;
+	public ArrayList<DynamicReorganizedMobileWSNNode> mobileNodes;
 	public AdHocNetwork network;
 	public Parameter timeBetweenMovents;
 	public Parameter squareAreaSize;
@@ -44,8 +44,9 @@ public class MovementRemoteController extends TypedAtomicActor{
 
 	 public void fire() throws IllegalActionException {
 	        super.fire();
+	        //System.out.println("fire: "+this.getDirector().getModelTime()+" "+this.getDirector().getModelStartTime());
 	        if (this.getDirector().getModelStartTime().equals(this.getDirector().getModelTime())){
-	        	this.mobileNodes = new ArrayList<BasicMobileWSNNode>();
+	        	this.mobileNodes = new ArrayList<DynamicReorganizedMobileWSNNode>();
 	        	try {
 					this.findMobileNodesAndNetwork();
 				} catch (ClassNotFoundException e) {
@@ -54,15 +55,18 @@ public class MovementRemoteController extends TypedAtomicActor{
 	        }
 	        else {
 	        	this.moveNodes();
-	        	if (this.flagMovement) 
+	        	//System.out.println(this.getDirector().getModelTime()+" "+this.flagMovement);
+	        	//if (this.flagMovement) 
 	        		this.network.fire();
 	        }
-	        if (this.flagMovement)
+	        if (this.flagMovement) {
+	        	//System.out.println("new fire at: "+this.getDirector().getModelTime().add(Double.parseDouble(timeBetweenMovents.getValueAsString())));
 	        	_fireAt(this.getDirector().getModelTime().add(Double.parseDouble(timeBetweenMovents.getValueAsString())));
-	}
+	        }
+	       }
 	 
 	protected void moveNodes() throws NoTokenException, IllegalActionException{
-		Iterator<BasicMobileWSNNode> n = this.mobileNodes.iterator();
+		Iterator<DynamicReorganizedMobileWSNNode> n = this.mobileNodes.iterator();
 		while (n.hasNext()) {
 			BasicMobileWSNNode node = n.next();
 			if (node instanceof eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode){
@@ -82,15 +86,16 @@ public class MovementRemoteController extends TypedAtomicActor{
 	    	return true;
 	    }
 	    return false;
+	    //return true;
 	}
 	
-	private int[] getNewXY(ArrayList<BasicMobileWSNNode> neigbours, DynamicReorganizedMobileWSNNode node, double radius){
+	private int[] getNewXY(ArrayList<DynamicReorganizedMobileWSNNode> neigbours, DynamicReorganizedMobileWSNNode node, double radius){
 		int returnXY[] = new int[2];
 		double[] nodeLocation = getNodeLocation(node);
 		returnXY[0] = Double.valueOf(nodeLocation[0]).intValue();
 		returnXY[1] = Double.valueOf(nodeLocation[1]).intValue();
 	    double distance, angle;
-	    Iterator<BasicMobileWSNNode> n = getSensorCoverNeighbours(node, radius).iterator();    
+	    Iterator<DynamicReorganizedMobileWSNNode> n = getSensorCoverNeighbours(node, radius).iterator();    
 		while (n.hasNext()) {
 			BasicMobileWSNNode neigbour = (BasicMobileWSNNode) n.next();
 			double[] neigbourLocation = getNodeLocation(neigbour);
@@ -143,13 +148,13 @@ public class MovementRemoteController extends TypedAtomicActor{
 	     return location;
 	}
 	
-	protected ArrayList<BasicMobileWSNNode> getSensorCoverNeighbours(BasicMobileWSNNode node, double radius){
-		ArrayList<BasicMobileWSNNode> nodes = new ArrayList<BasicMobileWSNNode>();
-		Iterator<BasicMobileWSNNode> actors = this.mobileNodes.iterator();
+	protected ArrayList<DynamicReorganizedMobileWSNNode> getSensorCoverNeighbours(BasicMobileWSNNode node, double radius){
+		ArrayList<DynamicReorganizedMobileWSNNode> nodes = new ArrayList<DynamicReorganizedMobileWSNNode>();
+		Iterator<DynamicReorganizedMobileWSNNode> actors = this.mobileNodes.iterator();
 		while (actors.hasNext()) {
             Entity actor = (Entity) actors.next();
             if (actor instanceof BasicMobileWSNNode && !node.equals(actor) && calcDistance(actor, node) < radius*2){
-           		nodes.add((BasicMobileWSNNode) actor);
+           		nodes.add((DynamicReorganizedMobileWSNNode) actor);
            	}
         }
 		return nodes;
@@ -172,7 +177,7 @@ public class MovementRemoteController extends TypedAtomicActor{
 	           	if (actor instanceof eboracum.wsn.network.node.sensor.mobile.BasicMobileWSNNode){
 	           		if (actor instanceof eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode)
 	           			((DynamicReorganizedMobileWSNNode)actor).setMyMovementRemoteController(this);
-	           		this.mobileNodes.add((BasicMobileWSNNode) actor);
+	           		this.mobileNodes.add((DynamicReorganizedMobileWSNNode) actor);
 	           	} else {
 	           		if (actor instanceof eboracum.wsn.network.AdHocNetwork){
 	           			this.network = (AdHocNetwork) actor;
@@ -190,7 +195,7 @@ public class MovementRemoteController extends TypedAtomicActor{
 	}
 	
 	protected void showNodes(){
-		Iterator<BasicMobileWSNNode> n = this.mobileNodes.iterator();
+		Iterator<DynamicReorganizedMobileWSNNode> n = this.mobileNodes.iterator();
 		while (n.hasNext()) {
 			Entity node = (Entity) n.next();
 			System.out.println(node.getName());

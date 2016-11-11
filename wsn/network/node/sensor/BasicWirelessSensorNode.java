@@ -144,6 +144,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 	}
 	
 	protected boolean eventSensedManager(String tempEvent) throws NumberFormatException, IllegalActionException{
+		//System.out.println(this.getDisplayName()+" "+tempEvent);
 		return true;
 	}
 	

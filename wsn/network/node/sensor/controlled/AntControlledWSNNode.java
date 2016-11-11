@@ -32,12 +32,25 @@ public class AntControlledWSNNode extends ControlledWSNNode{
 		ksi.setExpression("0.0007");
 		ro = new Parameter(this,"ro");
 		ro.setExpression("0.001");
-		//alpha = new Parameter(this,"alpha");
-		//alpha.setExpression("1");
+		alpha = new Parameter(this,"alpha");
+		alpha.setExpression("1");
 		delta = new Parameter(this,"delta");
 		delta.setExpression("20");
 		//totalNodes = new Parameter(this,"totalNodes");
 		//totalNodes.setExpression("4");
+		
+		//initThreshold: 2
+		//initStimulus: 24
+		//delta: 23
+		//alpha: 7
+		//ksi: 0.001
+		//ro: 0.001
+		/*initThreshold.setExpression("2");
+		initStimulus.setExpression("24");
+		ksi.setExpression("0.001");
+		ro.setExpression("0.001");
+		alpha.setExpression("7");
+		delta.setExpression("23");*/
 	}
 	
 	public void initialize() throws IllegalActionException {

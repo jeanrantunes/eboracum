@@ -6,21 +6,21 @@ import eboracum.simulation.util.HistogramSpectrogramFactory;
 public class MobileNodesSimulation extends BenchmarksGenerator{
 
 	protected void runBenchmarks(){
-		//simConfig(100, "sensor.controlled.AntControlledWSNNode", 160);
-		simConfig(49, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
-		simConfig(64, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
-		simConfig(81, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
-		simConfig(100, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
+		//simConfig(49, "sensor.controlled.AntControlledWSNNode", 160);
+		//simConfig(49, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
+		//simConfig(64, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
+		//simConfig(81, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
+		//simConfig(100, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
 		//simConfig(64, "sensor.controlled.PSControlledWSNNode", 160);
-		//simConfig(64, "sensor.mobile.controlled.PSControlledDRMobileWSNNode", 160);
+		//simConfig(49, "sensor.mobile.controlled.PSControlledDRMobileWSNNode", 160);
 		//simConfig(81, "sensor.controlled.PSControlledWSNNode", 160);
-		//simConfig(81, "sensor.mobile.controlled.PSControlledDRMobileWSNNode", 160);
-		//simConfig(100, "sensor.controlled.PSControlledWSNNode", 160);
 		//simConfig(100, "sensor.mobile.controlled.PSControlledDRMobileWSNNode", 160);
+		//simConfig(100, "sensor.controlled.PSControlledWSNNode", 160);
+		//simConfig(100, "sensor.mobile.controlled.AntControlledDRMobileWSNNode", 160);
 		//simConfig(81, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
 		//simConfig(100, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
 		//simConfig(49, "sensor.SimpleWSNNode", 160);
-		//simConfig(64, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
+		simConfig(49, "sensor.mobile.DynamicReorganizedMobileWSNNode", 160);
 		//simConfig(81, "sensor.SimpleWSNNode", 160);
 		//simConfig(100, "sensor.SimpleWSNNode", 160);
 }

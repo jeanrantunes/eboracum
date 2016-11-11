@@ -26,8 +26,9 @@ public class DataSummarizer {
 	
 	public void go(){
 		//for (int j = 1; j < 7; j++){
-			String file = "sensor.SimpleWSNNode_Random100";
-			for (int i = 0; i < 30; i++){
+			//String file = "MeshMobileAnt_3/sensor.mobile.controlled.AntControlledDRMobileWSNNode_Mesh100";
+			String file = "NodeGrid81_SideSink_EventSpaceDistUniform_Rebuild_sensor.controlled.AntControlledWSNNode";
+			for (int i = 0; i < 3; i++){
 				//this.collectDataFromFile(file+"_"+i+".csv");
 				collectEventsSensedFromFile(file+"_"+i+".csv");
 				saveSummaryFile(eventsByDaySensed, file+"eventsByDaySensed.csv");}
