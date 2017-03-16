@@ -13,6 +13,7 @@ public class GreedyPuppetAgent implements BasicAgent{
 
 	public boolean eventSensed(String tempEvent){
 		try {
+			//System.out.println(myNode.getDirector());
 			this.masterOfPuppets.eventSensed(tempEvent,	myNode.getDirector().getModelTime(), this);
 		} catch (Exception e) {
 			e.printStackTrace();

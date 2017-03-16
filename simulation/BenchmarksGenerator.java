@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -90,6 +91,20 @@ public abstract class BenchmarksGenerator {
 				y += fracY;
 			}
 			x+= fracX;
+		}
+	}
+	
+	protected void generateRandomPosition(int n){
+		double divisor = Math.ceil(Math.sqrt(n))+1;
+		this.gridPositions = new double[(int) Math.round(divisor*divisor)][2];
+		int count = 0;
+		Random RandomGen = new Random();
+		for (int i=1; i<divisor; i++){
+			for (int j=1; j<divisor; j++){
+				gridPositions[count][0]=RandomGen.nextInt(this.scenarioDimensionXY[0]-100)+50;
+				gridPositions[count][1]=RandomGen.nextInt(this.scenarioDimensionXY[1]-100)+50;
+				count++;
+			}
 		}
 	}
 	
@@ -341,5 +356,57 @@ public abstract class BenchmarksGenerator {
 		}
 
 	}
+	
+	public static void changeParametersForGA(double initThreshold, double initStimulus, double delta, double alpha, double ksi, double ro, String xmlFile, int numOfNodes, int iter){
+		Workspace world = new Workspace("World");
+		TypedCompositeActor scenario = new TypedCompositeActor(world);
+		Manager god;
+		try {
+			god = new Manager(world, "God");
+			scenario.setManager(god);
+			File fXmlFile = new File(xmlFile+".xml");
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			Document doc = dBuilder.parse(fXmlFile);
+			doc.getDocumentElement().normalize();
+			for (int i=0; i<numOfNodes; i++){
+				staticChangePropertyAttributeOfEntity(doc, "Node"+i, "initThreshold", Double.toString(initThreshold));
+				staticChangePropertyAttributeOfEntity(doc, "Node"+i, "initStimulus", Double.toString(initStimulus));
+				staticChangePropertyAttributeOfEntity(doc, "Node"+i, "delta", Double.toString(delta));
+				staticChangePropertyAttributeOfEntity(doc, "Node"+i, "alpha", Double.toString(alpha));
+				staticChangePropertyAttributeOfEntity(doc, "Node"+i, "ksi", Double.toString(ksi));
+				staticChangePropertyAttributeOfEntity(doc, "Node"+i, "ro", Double.toString(ro));	
+			}
+			TransformerFactory tFactory = TransformerFactory.newInstance();
+			Transformer transformer = tFactory.newTransformer();
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes"); 
+			DocumentType doctype = doc.getDoctype();
+	        if(doctype != null) {
+	            transformer.setOutputProperty(OutputKeys.DOCTYPE_PUBLIC, doctype.getPublicId());
+	            transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, doctype.getSystemId());
+	        }
+		    DOMSource source = new DOMSource(doc);
+		    StreamResult file = new StreamResult(new File(xmlFile+"_"+iter+".xml"));
+			transformer.transform(source,file);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+	}
+	
+	public static void staticChangePropertyAttributeOfEntity(Document doc, String entityName, String atributteName, String newValue){
+		NodeList nList = doc.getElementsByTagName("entity");
+		for (int i = 0; i < nList.getLength(); i++) {
+			Node nEntity = nList.item(i);
+			if (((Element) nEntity).getAttribute("name").equals(entityName)){
+				for (int j = 0; j < ((Element)nEntity).getElementsByTagName("property").getLength(); j++) {
+					Node nProperty = (Element)((Element)nEntity).getElementsByTagName("property").item(j);
+					if (((Element) nProperty).getAttribute("name").equals(atributteName))
+						((Element) nProperty).setAttribute("value", newValue);
+				}
+			}
+		}
+	}
+	
+	
 
 }

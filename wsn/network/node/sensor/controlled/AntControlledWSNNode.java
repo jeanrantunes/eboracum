@@ -25,25 +25,25 @@ public class AntControlledWSNNode extends ControlledWSNNode{
 			throws IllegalActionException, NameDuplicationException {
 		super(container, name);
 		initThreshold = new Parameter(this,"initThreshold");
-		initThreshold.setExpression("1");
+		initThreshold.setExpression("2");
 		initStimulus = new Parameter(this,"initStimulus");
-		initStimulus.setExpression("20");
+		initStimulus.setExpression("31");
 		ksi = new Parameter(this,"ksi");
-		ksi.setExpression("0.0007");
+		ksi.setExpression("0.00038");
 		ro = new Parameter(this,"ro");
-		ro.setExpression("0.001");
+		ro.setExpression("0.0003");
 		alpha = new Parameter(this,"alpha");
-		alpha.setExpression("1");
+		alpha.setExpression("15");
 		delta = new Parameter(this,"delta");
-		delta.setExpression("20");
+		delta.setExpression("30");
 		//totalNodes = new Parameter(this,"totalNodes");
 		//totalNodes.setExpression("4");
 		
-		//initThreshold: 2
-		//initStimulus: 24
-		//delta: 23
-		//alpha: 7
-		//ksi: 0.001
+		//initThreshold: 1
+		//initStimulus: 20
+		//delta: 20
+		//alpha: 1
+		//ksi: 0.0007
 		//ro: 0.001
 		/*initThreshold.setExpression("2");
 		initStimulus.setExpression("24");

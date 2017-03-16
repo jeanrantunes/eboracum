@@ -3,7 +3,7 @@
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="eboracum.wsn.network.node.sensor.ControlledWSNNode" project="ptII" 
     file="/ptII/eboracum/wsn/network/node/sensor/ControlledWSNNode.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="236" y="143"/>    
+    <position height="-1" width="-1" x="186" y="164"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -13,7 +13,7 @@
   <class id="2" language="java" name="eboracum.wsn.network.node.sensor.controlled.AntControlledWSNNode" project="ptII" 
     file="/ptII/eboracum/wsn/network/node/sensor/controlled/AntControlledWSNNode.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="350" y="278"/>    
+    <position height="-1" width="-1" x="315" y="434"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -23,7 +23,7 @@
   <class id="3" language="java" name="eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode" project="ptII" 
     file="/ptII/eboracum/wsn/network/node/sensor/controlled/PSControlledWSNNode.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="127" y="248"/>    
+    <position height="-1" width="-1" x="136" y="352"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
@@ -32,7 +32,7 @@
   </class>  
   <interface id="4" language="java" name="eboracum.wsn.agent.BasicAgent" project="ptII" 
     file="/ptII/eboracum/wsn/agent/BasicAgent.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="474" y="69"/>    
+    <position height="-1" width="-1" x="377" y="165"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
@@ -41,7 +41,7 @@
   </interface>  
   <class id="5" language="java" name="eboracum.wsn.agent.PSAgent" project="ptII" 
     file="/ptII/eboracum/wsn/agent/PSAgent.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="395" y="189"/>    
+    <position height="-1" width="-1" x="424" y="264"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
@@ -50,7 +50,7 @@
   </class>  
   <class id="6" language="java" name="eboracum.wsn.agent.AntAgent" project="ptII" 
     file="/ptII/eboracum/wsn/agent/AntAgent.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="578" y="147"/>    
+    <position height="-1" width="-1" x="313" y="262"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
@@ -59,85 +59,102 @@
   </class>  
   <class id="7" language="java" name="eboracum.wsn.network.node.sensor.SimpleWSNNode" project="ptII" 
     file="/ptII/eboracum/wsn/network/node/sensor/SimpleWSNNode.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="237" y="30"/>    
+    <position height="-1" width="-1" x="294" y="69"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="eboracum.wsn.network.node.sensor.controlled.GreedyWSNNode" project="ptII" 
-    file="/ptII/eboracum/wsn/network/node/sensor/controlled/GreedyWSNNode.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="237" y="360"/>    
+  <class id="8" language="java" name="eboracum.wsn.network.node.sensor.mobile.DynamicReorganizedMobileWSNNode" 
+    project="ptII" file="/ptII/eboracum/wsn/network/node/sensor/mobile/DynamicReorganizedMobileWSNNode.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="529" y="68"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="eboracum.wsn.agent.central.GreedyCentralizedLoadBalancer" project="ptII" 
-    file="/ptII/eboracum/wsn/agent/central/GreedyCentralizedLoadBalancer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="522" y="361"/>    
+  <class id="9" language="java" name="eboracum.wsn.network.node.sensor.mobile.ControlledDRMobileWSNNode" project="ptII" 
+    file="/ptII/eboracum/wsn/network/node/sensor/mobile/ControlledDRMobileWSNNode.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="589" y="165"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="eboracum.wsn.agent.GreedyPuppetAgent" project="ptII" 
-    file="/ptII/eboracum/wsn/agent/GreedyPuppetAgent.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="523" y="212"/>    
+  <class id="10" language="java" name="eboracum.wsn.network.node.sensor.mobile.controlled.AntControlledDRMobileWSNNode" 
+    project="ptII" file="/ptII/eboracum/wsn/network/node/sensor/mobile/controlled/AntControlledDRMobileWSNNode.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="611" y="431"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
+  <class id="11" language="java" name="eboracum.wsn.network.node.sensor.mobile.controlled.PSControlledDRMobileWSNNode" 
+    project="ptII" file="/ptII/eboracum/wsn/network/node/sensor/mobile/controlled/PSControlledDRMobileWSNNode.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="434" y="354"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
   <generalization id="12">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
   </generalization>  
-  <realization id="13">    
+  <generalization id="13">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <realization id="14">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  
-  <association id="14">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="15" name="masterOfPuppets"/>      
-      <multiplicity id="16" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="false" multiplicity="true"/>  
-  </association>  
-  <generalization id="17">    
-    <end type="SOURCE" refId="2"/>    
+  <generalization id="15">    
+    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <association id="18">    
+  <generalization id="16">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <association id="17">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="18" name="myAgent"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="20">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="19" name="myAgent">        
-        <position height="0" width="0" x="-227" y="18"/>      
+      <attribute id="21" name="myAgent">        
+        <position height="0" width="0" x="-426" y="-66"/>      
       </attribute>      
-      <multiplicity id="20" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-227" y="18"/>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-426" y="-66"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="false" multiplicity="true"/>  
   </association>  
-  <realization id="21">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <generalization id="22">    
+  <generalization id="23">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="7"/>  
   </generalization>  
-  <realization id="23">    
+  <generalization id="24">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <realization id="25">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  

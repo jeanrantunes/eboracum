@@ -81,6 +81,9 @@
 	<entity name="DataReporter" class="eboracum.simulation.DataReporter">
 		<doc>Data reporter to generate statistics.</doc>
 	</entity>
+	<entity name="GreedyCentralizedLoadBalancer" class="eboracum.wsn.agent.central.GreedyCentralizedLoadBalancer">
+		<doc></doc>
+	</entity>
 	</group>
     ?>
   </configure>

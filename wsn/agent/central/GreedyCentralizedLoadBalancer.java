@@ -64,7 +64,6 @@ public class GreedyCentralizedLoadBalancer extends TypedAtomicActor {
 		if (this.netNodesEventsMap.size()>0 && this.netNodesEventsMap.containsKey(event) && event != null){
 			GreedyPuppetAgent agent = getNodeWithGraterBattery((ArrayList<GreedyPuppetAgent>)this.netNodesEventsMap.get(event));
 			if (agent != null) {
-				
 				((GreedyWSNNode)agent.myNode).definedByMasterEvent = event;
 				((TypedAtomicActor)agent.myNode).getDirector().fireAtCurrentTime((TypedAtomicActor)agent.myNode);
 			}
@@ -108,7 +107,8 @@ public class GreedyCentralizedLoadBalancer extends TypedAtomicActor {
 	            if (!((BooleanToken) markValue).booleanValue()) {
 	                continue;
 	            }
-	            if (node.getClassName().equals("eboracum.wsn.network.node.sensor.controled.GreedyWSNNode")){
+	            //System.out.println(node.getClassName());
+	            if (node.getClassName().equals("eboracum.wsn.network.node.sensor.controlled.GreedyWSNNode")){
 	            	((GreedyPuppetAgent)((GreedyWSNNode)node).myAgent).masterOfPuppets = this;
 	            	//System.out.println(((GreedyPuppetAgent)((GreedyWSNNode)node).myAgent));
 	            }
