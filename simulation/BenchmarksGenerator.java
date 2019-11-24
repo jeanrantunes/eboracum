@@ -66,8 +66,9 @@ public abstract class BenchmarksGenerator {
 	public void run(String simulationIdentification, int round) throws InterruptedException{
 		try {
 			createDataReportFile(simulationIdentification,round);
-			Process p = Runtime.getRuntime().exec("java -Xmx8192m -classpath bin/ ptolemy.vergil.VergilApplication -visualsense -runThenExit eboracum/data/"+simulationIdentification+".xml -DataReportFile \"&quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;\"");
-			/*no GUI*/
+			
+			Process p = Runtime.getRuntime().exec("java ptolemy.vergil.VergilApplication -visualsense -runThenExit -DataReportFile &quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot; eboracum/data/"+simulationIdentification+".xml");
+/*no GUI*/
 			//java -classpath . ptolemy.actor.gui.MoMLSimpleApplication eboracum/data/NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID0.xml
 			p.waitFor();
 		} catch (IOException e) {//ThenExit
@@ -135,6 +136,7 @@ public abstract class BenchmarksGenerator {
 				for (int i=0; i<entry.getValue(); i++) {
 					@SuppressWarnings("rawtypes")
 					Class c = Class.forName("eboracum.wsn.network.node."+entry.getKey());
+					
 					@SuppressWarnings({ "rawtypes", "unchecked" })
 					Constructor cc = c.getConstructor(new Class[]{CompositeEntity.class,String.class});
 					WirelessNode e = (WirelessNode) cc.newInstance(scenario, "Node"+i);					
@@ -313,6 +315,7 @@ public abstract class BenchmarksGenerator {
 	}
 	
 	public static void appendDataReportFile(String filename, String line) {
+		System.out.println(line);
 		File file = new File(filename);  
         try {
 			FileWriter fw = new FileWriter(file, true);
@@ -364,6 +367,7 @@ public abstract class BenchmarksGenerator {
 		try {
 			god = new Manager(world, "God");
 			scenario.setManager(god);
+			
 			File fXmlFile = new File(xmlFile+".xml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -406,7 +410,5 @@ public abstract class BenchmarksGenerator {
 			}
 		}
 	}
-	
-	
 
 }

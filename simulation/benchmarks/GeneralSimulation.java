@@ -24,7 +24,7 @@ public class GeneralSimulation extends BenchmarksGenerator {
 			this.beginSetupBeePaperConfig();
 			this.setupBeePaperConfig(j);
 			this.endSetupBeePaperConfig(simulationIdentification);
-			int numOfRounds = 30;
+			int numOfRounds = 1;
 			for (int i=0; i<numOfRounds; i++) {
 				try {
 					this.run(simulationIdentification,i);

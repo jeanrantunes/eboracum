@@ -12,6 +12,12 @@
 	<entity name="SimpleWSNNode" class="eboracum.wsn.network.node.sensor.SimpleWSNNode">
 		<doc>Simple WSN Sensor Node based on a FIFO CPU to handle the Events to be processed.</doc>
 	</entity>
+	<entity name="Drone" class="eboracum.wsn.network.node.Drone">
+		<doc></doc>
+	</entity>
+	<entity name="MuleWSNNode" class="eboracum.wsn.network.node.sensor.MuleWSNNode">
+		<doc>Simple WSN Sensor Node based on a FIFO CPU to handle the Events to be processed.</doc>
+	</entity>
 	<entity name="DummyControlledWSNNode" class="eboracum.wsn.network.node.sensor.controlled.DummyControlledWSNNode">
 		<doc></doc>
 	</entity>
@@ -75,9 +81,11 @@
 	<entity name="EventTypeController" class="eboracum.wsn.type.EventTypeController">
 		<doc>Associates the Event Type Hierarchy to Events e Nodes.</doc>
 	</entity>
+	<!--
 	<entity name="Stochastic" class="eboracum.wsn.event.util.Stochastic">
 		<doc>Stochastic Component</doc>
 	</entity>
+	-->
 	<entity name="DataReporter" class="eboracum.simulation.DataReporter">
 		<doc>Data reporter to generate statistics.</doc>
 	</entity>

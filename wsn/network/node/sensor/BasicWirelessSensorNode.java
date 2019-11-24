@@ -98,6 +98,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 		super.fire();
 		// sensing the Event
 		this.sensorNodeAction();
+		/*this.cpu.getDataMemory();*/
 	}
 	
 	protected void sensorNodeAction() throws NoTokenException, IllegalActionException{
@@ -110,7 +111,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 		this.tempEvent = null;
 		if(this.sensoring.hasToken(0)){
 			this.tempEvent = this.sensoring.get(0).toString();
-			//System.out.println(this.tempEvent);
+			
 			this.tempEvent = tempEvent.substring(1,tempEvent.length()-1);
 			ClassLoader classLoader = EventType.class.getClassLoader();
 			try {
@@ -141,6 +142,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 	        	this.tempEvent = null;
 	        }
 		}
+		
 	}
 	
 	protected boolean eventSensedManager(String tempEvent) throws NumberFormatException, IllegalActionException{
@@ -193,10 +195,12 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 	protected void eventDoneManager(List<Object> runReturn) throws NoRoomException, IllegalActionException{
 		// verify if the event must be send through the network (not ordinary)
 		//((BasicEvent)this.getEvent(((String)runReturn.get(1)))).numberOfSensorProcessedEvents++;
-		if (!this.eventOrdinaryMap.get(((String)runReturn.get(1)).split("_")[0]))	
+		//System.out.println((String)runReturn.get(1));
+		//if (this.eventOrdinaryMap.get(((String)runReturn.get(1)).split("_")[0]))	
 			// send the event to the gateway
-			this.sendMessageToSink(((String)runReturn.get(1)));
-		this.numberOfSensoredEvents++; // collect the event for statistics
+			
+			//this.sendMessageToSink(((String)runReturn.get(1))); comentado por jean
+		//this.numberOfSensoredEvents++; // collect the event for statistics
 	}
 	
 	protected Entity getEvent(String name) throws IllegalActionException {

@@ -39,6 +39,12 @@ import ptolemy.actor.util.Time;
 		 * processedTask is the task processed in the current simulation time if any, null if there is no finished task at this simulation time. 
 		 */
 		public List<Object> run(String task, Time currentTime);
+
+		public boolean isEmptyMemory();
+
+		public Block getBlockMemory();
+
+		public void showDataMemory();
 		
 	}
 

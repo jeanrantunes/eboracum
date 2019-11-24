@@ -26,9 +26,10 @@ public class DataReporter extends TypedAtomicActor {
     
     public DataReporter(CompositeEntity container, String name)
             throws IllegalActionException, NameDuplicationException {
-        super(container, name);
-        simulationReportFile = new Parameter(this, "SimulationReportFile");
+    	super(container, name);
+    	simulationReportFile = new Parameter(this, "SimulationReportFile");
         simulationReportFile.setExpression("DataReportFile");
+
         out = new TypedIOPort(this, "out", false, true);
         out.setTypeEquals(BaseType.BOOLEAN);
         trigger = new TypedIOPort(this, "trigger", true, false);
@@ -41,6 +42,7 @@ public class DataReporter extends TypedAtomicActor {
         DecimalFormat df = new DecimalFormat("#.#######");
         boolean firstEventFlag = true;
         boolean firstNodeFlag = true;
+        
         if (trigger.hasToken(0)){
         	CompositeActor container = (CompositeActor) getContainer();
         	@SuppressWarnings("rawtypes")

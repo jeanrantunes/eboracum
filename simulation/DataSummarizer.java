@@ -98,6 +98,7 @@ public class DataSummarizer {
 		}
 	}
 	public void collectDataFromFile(String file){
+		System.out.println(file);
 		String csvFile = "eboracum/data/"+file;
 		BufferedReader br = null;
 		String line = "";

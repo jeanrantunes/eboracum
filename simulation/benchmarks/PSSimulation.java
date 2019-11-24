@@ -8,49 +8,49 @@ public class PSSimulation extends BenchmarksGenerator {
 	protected void runBenchmarks(){
 			this.scenarioDimensionXY = new int[]{1000,1000};
 			HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
-			simBeePaperConfig("Uniform", 49, "sensor.controlled.PSControlledWSNNode", 160);
+//			simBeePaperConfig("Uniform", 49, "sensor.controlled.PSControlledWSNNode", 160);
 			//simBeePaperConfig("Uniform", 64, "sensor.controlled.PSControlledWSNNode", 140);
-			//simBeePaperConfig("Uniform", 81, "sensor.controlled.PSControledWSNNode", 120);
-			//simBeePaperConfig("Uniform", 100, "sensor.controlled.PSControledWSNNode", 120);
-			//simBeePaperConfig("Uniform", 49, "sensor.controlled.RandomControledWSNNode", 160);
-			/*simBeePaperConfig("Uniform", 64, "sensor.controlled.RandomControledWSNNode", 140);
-			simBeePaperConfig("Uniform", 81, "sensor.controlled.RandomControledWSNNode", 120);
-			simBeePaperConfig("Uniform", 100, "sensor.controlled.RandomControledWSNNode", 120);
+			//simBeePaperConfig("Uniform", 81, "sensor.controlled.PSControlledWSNNode", 120);
+			//simBeePaperConfig("Uniform", 100, "sensor.controlled.PSControlledWSNNode", 120);
+			simBeePaperConfig("Uniform", 49, "sensor.controlled.RandomControlledWSNNode", 160);
+			/*simBeePaperConfig("Uniform", 64, "sensor.controlled.RandomControlledWSNNode", 140);
+			simBeePaperConfig("Uniform", 81, "sensor.controlled.RandomControlledWSNNode", 120);
+			simBeePaperConfig("Uniform", 100, "sensor.controlled.RandomControlledWSNNode", 120);
 			*/
 			//simBeePaperConfig("Uniform", 100, "sensor.mobile.DynamicReorganizedMobileWSNNode", 120);
 			/*simBeePaperConfig("Uniform", 64, "sensor.SimpleWSNNode", 140);
 			simBeePaperConfig("Uniform", 81, "sensor.SimpleWSNNode", 120);
 			simBeePaperConfig("Uniform", 100, "sensor.SimpleWSNNode", 120);*/
-			//simBeePaperConfig("Uniform", 49, "sensor.controlled.GreedyWSNNode", 160);
-			/*simBeePaperConfig("Uniform", 64, "sensor.controled.GreedyWSNNode", 140);
-			simBeePaperConfig("Uniform", 81, "sensor.controled.GreedyWSNNode", 120);
+//			simBeePaperConfig("Uniform", 49, "sensor.controlled.GreedyWSNNode", 160);
+			/*simBeePaperConfig("Uniform", 64, "sensor.Controlled.GreedyWSNNode", 140);
+			simBeePaperConfig("Uniform", 81, "sensor.Controlled.GreedyWSNNode", 120);
 			*/
-			//simBeePaperConfig("Uniform", 100, "sensor.controled.GreedyWSNNode", 120);
+			//simBeePaperConfig("Uniform", 100, "sensor.Controlled.GreedyWSNNode", 120);
 			//simBeePaperConfig("Uniform", 49, "sensor.controlled.AntControlledWSNNode", 160);
 			//simBeePaperConfig("Uniform", 64, "sensor.controlled.AntControlledWSNNode", 140);
 			//simBeePaperConfig("Uniform", 81, "sensor.controlled.AntControlledWSNNode", 120);
 			//simBeePaperConfig("Uniform", 100, "sensor.controlled.AntControlledWSNNode", 120);
 			/*HistogramSpectrogramFactory.newNormalSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
-			simBeePaperConfig("Normal", 49, "sensor.controled.PSControledWSNNode", 160);
-			simBeePaperConfig("Normal", 64, "sensor.controled.PSControledWSNNode", 140);
-			simBeePaperConfig("Normal", 81, "sensor.controled.PSControledWSNNode", 120);
-			simBeePaperConfig("Normal", 100, "sensor.controled.PSControledWSNNode", 120);
-			simBeePaperConfig("Normal", 49, "sensor.controled.RandomControledWSNNode", 160);
-			simBeePaperConfig("Normal", 64, "sensor.controled.RandomControledWSNNode", 140);
-			simBeePaperConfig("Normal", 81, "sensor.controled.RandomControledWSNNode", 120);
-			simBeePaperConfig("Normal", 100, "sensor.controled.RandomControledWSNNode", 120);
+			simBeePaperConfig("Normal", 49, "sensor.Controlled.PSControlledWSNNode", 160);
+			simBeePaperConfig("Normal", 64, "sensor.Controlled.PSControlledWSNNode", 140);
+			simBeePaperConfig("Normal", 81, "sensor.Controlled.PSControlledWSNNode", 120);
+			simBeePaperConfig("Normal", 100, "sensor.Controlled.PSControlledWSNNode", 120);
+			simBeePaperConfig("Normal", 49, "sensor.Controlled.RandomControlledWSNNode", 160);
+			simBeePaperConfig("Normal", 64, "sensor.Controlled.RandomControlledWSNNode", 140);
+			simBeePaperConfig("Normal", 81, "sensor.Controlled.RandomControlledWSNNode", 120);
+			simBeePaperConfig("Normal", 100, "sensor.Controlled.RandomControlledWSNNode", 120);
 			simBeePaperConfig("Normal", 49, "sensor.SimpleWSNNode", 160);
 			simBeePaperConfig("Normal", 64, "sensor.SimpleWSNNode", 140);
 			simBeePaperConfig("Normal", 81, "sensor.SimpleWSNNode", 120);
 			simBeePaperConfig("Normal", 100, "sensor.SimpleWSNNode", 120);
-			simBeePaperConfig("Normal", 49, "sensor.controled.GreedyWSNNode", 160);
-			simBeePaperConfig("Normal", 64, "sensor.controled.GreedyWSNNode", 140);
-			simBeePaperConfig("Normal", 81, "sensor.controled.GreedyWSNNode", 120);
-			simBeePaperConfig("Normal", 100, "sensor.controled.GreedyWSNNode", 120);
-			simBeePaperConfig("Normal", 49, "sensor.controled.AntControledWSNNode", 160);
-			simBeePaperConfig("Normal", 64, "sensor.controled.AntControledWSNNode", 140);
-			simBeePaperConfig("Normal", 81, "sensor.controled.AntControledWSNNode", 120);
-			simBeePaperConfig("Normal", 100, "sensor.controled.AntControledWSNNode", 120);	*/		
+			simBeePaperConfig("Normal", 49, "sensor.Controlled.GreedyWSNNode", 160);
+			simBeePaperConfig("Normal", 64, "sensor.Controlled.GreedyWSNNode", 140);
+			simBeePaperConfig("Normal", 81, "sensor.Controlled.GreedyWSNNode", 120);
+			simBeePaperConfig("Normal", 100, "sensor.Controlled.GreedyWSNNode", 120);
+			simBeePaperConfig("Normal", 49, "sensor.Controlled.AntControlledWSNNode", 160);
+			simBeePaperConfig("Normal", 64, "sensor.Controlled.AntControlledWSNNode", 140);
+			simBeePaperConfig("Normal", 81, "sensor.Controlled.AntControlledWSNNode", 120);
+			simBeePaperConfig("Normal", 100, "sensor.Controlled.AntControlledWSNNode", 120);	*/		
 			//HistogramSpectrogramFactory.newInvertNormalSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
 			//simBeePaperConfig("InvNormal");
 	}
@@ -72,7 +72,7 @@ public class PSSimulation extends BenchmarksGenerator {
 	}
 	
 	private void setupBeePaperConfig(String simulationIdentification, int size, String algo, int commcover){
-		this.initBattery = 5400000/2;
+		this.initBattery = 540/2;
 		this.commCover = commcover;
 		this.sensorCover = 120;
 		int numOfNodes = size;

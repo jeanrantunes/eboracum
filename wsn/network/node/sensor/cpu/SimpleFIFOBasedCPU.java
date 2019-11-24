@@ -24,6 +24,8 @@ public class SimpleFIFOBasedCPU implements SensorCPU{
 	private Queue<String> queue;
 	private Time nextTimeFree;
 	private List<Object> tempReturn;
+	private List<Block> memory;
+	private Block block;
 	
 	public SimpleFIFOBasedCPU() {
 		this.taskCostMap = new HashMap<String, Double>();
@@ -32,6 +34,8 @@ public class SimpleFIFOBasedCPU implements SensorCPU{
 		this.nextTimeFree = Time.NEGATIVE_INFINITY;
 		this.queue.clear();
 		this.tempReturn = new ArrayList<Object>();
+		this.memory = new ArrayList<Block>();
+		this.block = new Block(); 
 	}
 	
 	public List<Object> run(String task, Time currentTime){
@@ -53,7 +57,34 @@ public class SimpleFIFOBasedCPU implements SensorCPU{
 		//System.out.println(this.nextTimeFree+"  "+task);
 		tempReturn.add(this.nextTimeFree);
 		//System.out.print(queue+";");
+		
+		if (processedEvent != null) {
+			this.block = new Block(); 
+			block.setEventInMemory(processedEvent);
+			block.setTimeOccurrentEvent(currentTime);
+			this.memory.add(block);
+		}
+		
 		return tempReturn;
+	}
+	
+	public boolean isEmptyMemory() {
+		return this.memory.isEmpty();
+	}
+	
+	public Block getBlockMemory() {
+		Block b = this.memory.get(0);
+		this.memory.remove(0);
+		return b;
+	}
+	
+	public void showDataMemory() {
+		for(Block item: this.memory) {
+			
+			System.out.println("[ " +item.getProcessedEvent()+"--"+item.getTimeEvent() +" ]");
+		}
+		System.out.println("--");
+		System.out.println();
 	}
 	
 	protected void processTaskCostMap(){

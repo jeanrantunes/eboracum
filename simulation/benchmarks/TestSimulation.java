@@ -6,9 +6,9 @@ import eboracum.simulation.util.HistogramSpectrogramFactory;
 public class TestSimulation extends BenchmarksGenerator{
 
 	protected void runBenchmarks(){
-		setupBasicConfig("test");
+		setupBasicConfig("test12345");
 		try {
-			this.run("test",0);
+			this.run("test12345",0);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

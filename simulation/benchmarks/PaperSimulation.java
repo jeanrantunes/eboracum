@@ -66,7 +66,7 @@ public class PaperSimulation extends BenchmarksGenerator {
 		
 		private void setupBeePaperConfig(int j){
 			 switch (j) {
-	        	case 0:	this.wirelessNodes.put("sensor.controlled.PSControledWSNNode", numOfNodes);
+			 case 0:	this.wirelessNodes.put("sensor.controlled.PSControlledWSNNode", numOfNodes);
 	        		//	this.wirelessNodes.put("sensor.controled.AntControledWSNNode", numOfNodes);
 	        			//this.wirelessNodes.put("sensor.SimpleWSNNode", numOfNodes);
 	    		//		this.wirelessNodes.put("sensor.controled.GreedyWSNNode", numOfNodes);

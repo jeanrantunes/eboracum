@@ -1,0 +1,13 @@
+Simulation Identification;test123
+Round;2
+Initial Battery;0.0
+Communication Radius;0.0
+Sensor Cover Radius;0.0
+Node Idle Energy Cost;0.0
+CPU Processing Energy Cost;0.0
+Summary of Nodes
+Class Name;Number of Instances
+Summary of Events
+Class Name;Type;Number of Instances;Tasks Cost Graph; Comm Energy Cost
+
+Results
