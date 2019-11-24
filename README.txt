@@ -12,9 +12,7 @@ Download and install PtolemyII/VisualSense version 8.0.1 as a normal user.
 
 Configure the use with Eclipse:
 
-http://chess.eecs.berkeley.edu/ptexternal/nightly/doc/eclipse/windows/noSVN.htm
-http://chess.eecs.berkeley.edu/ptexternal/nightly/doc/eclipse/windows/setupClasspath.htm
-http://chess.eecs.berkeley.edu/ptexternal/nightly/doc/eclipse/windows/runPtolemyII.htm
+https://cdn.rawgit.com/icyphy/ptII/master/doc/eclipse/index.htm
 
 You will need to put "-visualsense" in the running arguments of Vergil.
 
