@@ -9,6 +9,7 @@ public class MobileSinkSimulation extends BenchmarksGenerator{
 	protected void runBenchmarks() {
 		String simulationIdentification = "jean";
 		this.scenarioDimensionXY = new int[]{1000,1000};
+		
 		HistogramSpectrogramFactory.newInvertNormalSpectrogram(this.scenarioDimensionXY[0]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
 		this.initBattery = 5400/2;
 		HistogramSpectrogramFactory.newHistogram(120, "triggerTimeHist.csv");

@@ -127,7 +127,7 @@ public class Drone extends NetworkMainGateway {
 
 	public void addEventToTheMemoryDrone(String received) throws NumberFormatException, IllegalActionException {
 		String[] aux = received.split("[\\=\\,\\{\\}\\\"]");
-
+		System.out.println(aux);
 		if(aux[aux.length-1].equals("Drone")) {
 			String node = null;
 			Block b = new Block();

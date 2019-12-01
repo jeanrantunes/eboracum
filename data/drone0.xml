@@ -22,7 +22,7 @@
     </property>
     <property class="ptolemy.domains.wireless.kernel.WirelessDirector"
              name="Wireless Director">
-        <property class="ptolemy.data.expr.Parameter" name="synchronizeToRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="synchronizeToRealTime" value="true">
         </property>
         <property class="ptolemy.actor.parameters.SharedParameter" name="timeResolution"
                 value="1E-6">
@@ -45,7 +45,7 @@
     </property>
     <property class="ptolemy.data.expr.Parameter" name="SensorCover" value="120.0">
     </property>
-    <property class="ptolemy.data.expr.Parameter" name="CommCover" value="160.0">
+    <property class="ptolemy.data.expr.Parameter" name="CommCover" value="120.0">
     </property>
     <property class="ptolemy.data.expr.Parameter" name="DataReportFile"
              value="&#34;eboracum/data/defaultReport.csv&#34;">
@@ -131,7 +131,7 @@
     <link port="DataReporter.out" relation="relation2"/>
     <link port="DataReporter.trigger" relation="relation3"/>
     <link port="SimpleAdHocNetwork.out" relation="relation3"/>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node0">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node0">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -140,11 +140,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -185,8 +185,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node1">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node1">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -195,11 +219,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -240,8 +264,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node2">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node2">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -250,11 +298,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -295,8 +343,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node3">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node3">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -305,11 +377,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -350,8 +422,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node4">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node4">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -360,11 +456,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -405,8 +501,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node5">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node5">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -415,11 +535,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -460,8 +580,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node6">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node6">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -470,11 +614,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -515,8 +659,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node7">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node7">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -525,11 +693,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -570,8 +738,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node8">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node8">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -580,11 +772,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -625,8 +817,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node9">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node9">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -635,11 +851,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -680,8 +896,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node10">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node10">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -690,11 +930,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -735,8 +975,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node11">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node11">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -745,11 +1009,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -790,8 +1054,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node12">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node12">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -800,11 +1088,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -845,8 +1133,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node13">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node13">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -855,11 +1167,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -900,8 +1212,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node14">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node14">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -910,11 +1246,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -955,8 +1291,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node15">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node15">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -965,11 +1325,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1010,8 +1370,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node16">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node16">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1020,11 +1404,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1065,8 +1449,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node17">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node17">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1075,11 +1483,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1120,8 +1528,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node18">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node18">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1130,11 +1562,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1175,8 +1607,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node19">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node19">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1185,11 +1641,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1230,8 +1686,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node20">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node20">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1240,11 +1720,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1285,8 +1765,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node21">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node21">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1295,11 +1799,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1340,8 +1844,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node22">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node22">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1350,11 +1878,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1395,8 +1923,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node23">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node23">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1405,11 +1957,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1450,8 +2002,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node24">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node24">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1460,11 +2036,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1505,8 +2081,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node25">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node25">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1515,11 +2115,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1560,8 +2160,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node26">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node26">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1570,11 +2194,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1615,8 +2239,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node27">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node27">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1625,11 +2273,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1670,8 +2318,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node28">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node28">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1680,11 +2352,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1725,8 +2397,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node29">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node29">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1735,11 +2431,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1780,8 +2476,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node30">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node30">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1790,11 +2510,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1835,8 +2555,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node31">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node31">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1845,11 +2589,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1890,8 +2634,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node32">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node32">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1900,11 +2668,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -1945,8 +2713,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node33">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node33">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1955,11 +2747,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2000,8 +2792,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node34">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node34">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2010,11 +2826,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2055,8 +2871,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node35">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node35">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2065,11 +2905,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2110,8 +2950,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node36">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node36">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2120,11 +2984,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2165,8 +3029,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node37">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node37">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2175,11 +3063,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2220,8 +3108,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node38">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node38">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2230,11 +3142,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2275,8 +3187,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node39">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node39">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2285,11 +3221,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2330,8 +3266,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node40">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node40">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2340,11 +3300,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2385,8 +3345,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node41">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node41">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2395,11 +3379,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2440,8 +3424,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node42">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node42">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2450,11 +3458,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2495,8 +3503,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node43">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node43">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2505,11 +3537,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2550,8 +3582,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node44">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node44">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2560,11 +3616,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2605,8 +3661,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node45">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node45">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2615,11 +3695,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2660,8 +3740,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node46">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node46">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2670,11 +3774,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2715,8 +3819,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node47">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node47">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2725,11 +3853,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2770,8 +3898,32 @@
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
             </property>
         </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.SimpleWSNNode" name="Node48">
+   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node48">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2780,11 +3932,11 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="false">
+        <property class="ptolemy.data.expr.Parameter" name="SynchronizedRealTime" value="true">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="Battery" value="0">
         </property>
@@ -2823,6 +3975,30 @@
             <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
             </property>
             <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputNodeMule">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="outputNodeMule">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
             </property>
         </port>
     </entity>

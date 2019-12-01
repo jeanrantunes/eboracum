@@ -39,7 +39,7 @@ public class SimpleFIFOBasedCPU implements SensorCPU{
 	}
 	
 	public List<Object> run(String task, Time currentTime){
-		//System.out.print(currentTime+" - ");
+		
 		String processedEvent = null;
 		if (task != null)
 			this.queue.add(task);
@@ -56,9 +56,10 @@ public class SimpleFIFOBasedCPU implements SensorCPU{
 		tempReturn.add(processedEvent);
 		//System.out.println(this.nextTimeFree+"  "+task);
 		tempReturn.add(this.nextTimeFree);
-		//System.out.print(queue+";");
+//		System.out.println(task);
 		
 		if (processedEvent != null) {
+			System.out.println(currentTime + "-" + processedEvent);
 			this.block = new Block(); 
 			block.setEventInMemory(processedEvent);
 			block.setTimeOccurrentEvent(currentTime);

@@ -5,7 +5,7 @@ import eboracum.simulation.BenchmarksGenerator;
 import eboracum.simulation.util.HistogramSpectrogramFactory;
 import eboracum.wsn.network.node.WirelessNode;
 
-public class PaperSimulation extends BenchmarksGenerator {
+public class DroneSimulation extends BenchmarksGenerator {
 	
 	int id;
 
@@ -19,7 +19,7 @@ public class PaperSimulation extends BenchmarksGenerator {
 		String simulationIdentification;
 		for (int j = 0; j <= 0; j++){
 			this.id = j;
-			simulationIdentification = "testjean"+j;
+			simulationIdentification = "drone"+j;
 			this.nodesRandomizeFlag = false;
 			this.mainGatewayCenteredFlag = false;
 			this.beginSetupBeePaperConfig();
@@ -36,9 +36,11 @@ public class PaperSimulation extends BenchmarksGenerator {
 		}
 	}
 	
-	private void beginSetupBeePaperConfig(){
+	private void beginSetupBeePaperConfig(){	
+		this.mobileSink = true;
 		this.initBattery = 5400000/2;
-		this.commCover = 160;
+//		this.commCover = 160;
+		this.commCover = 120;
 		this.sensorCover = 120;
 		this.numOfNodes = 49;
 		if (!nodesRandomizeFlag) generateGridPosition(numOfNodes);
@@ -48,7 +50,7 @@ public class PaperSimulation extends BenchmarksGenerator {
 		this.wirelessEvents.clear();
 		this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "StochasticPeriodicJumperEvent"), 1);
 		//this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "RandomMobileEvent"), 1);
-		HistogramSpectrogramFactory.newPoissonHistogram(100, "periodHist.csv");
+		HistogramSpectrogramFactory.newPoissonHistogram(100, "DronePeriodHist.csv");
 		this.wirelessNodes.clear();
 	}
 	
@@ -68,7 +70,7 @@ public class PaperSimulation extends BenchmarksGenerator {
 			 switch (j) {
 			 case 0:	//this.wirelessNodes.put("sensor.controlled.PSControlledWSNNode", numOfNodes);
 	        		//	this.wirelessNodes.put("sensor.controled.AntControledWSNNode", numOfNodes);
-	        			this.wirelessNodes.put("sensor.SimpleWSNNode", numOfNodes);
+	        			this.wirelessNodes.put("sensor.MuleWSNNode", numOfNodes);
 	    		//		this.wirelessNodes.put("sensor.controled.GreedyWSNNode", numOfNodes);
 	    				//this.wirelessNodes.put("sensor.controled.RandomControledWSNNode", numOfNodes);
 	        		//this.wirelessNodes.put("sensor.controled.AuctionControledWSNNode", numOfNodes);
@@ -80,13 +82,13 @@ public class PaperSimulation extends BenchmarksGenerator {
 			generateEventsXML();
 			this.network = "SimpleAdHocNetwork";
 			this.rebuildNetworkWhenGatewayDies= false;
-			this.synchronizedRealTime = false;
+			this.synchronizedRealTime = true;
 			generateModel(simulationIdentification);
 		}
 
 		@SuppressWarnings("unused")
 		public static void main(String[] args){
-			BenchmarksGenerator b = new PaperSimulation();
+			BenchmarksGenerator b = new DroneSimulation();
 		}
 		
 }

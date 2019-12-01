@@ -262,3 +262,57 @@ eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node48;0;0;0
 Events
 Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
 eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;37;0
+Simulation Total Time;49
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
+Simulation Total Time;49
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
+Simulation Total Time;49
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
+Simulation Total Time;49
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
+Simulation Total Time;49
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
+Simulation Total Time;49
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
+eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
+eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0

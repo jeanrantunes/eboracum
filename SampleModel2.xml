@@ -14,7 +14,7 @@
     </property>
     <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[1147, 655]">
     </property>
-    <property name="_vergilZoomFactor" class="ptolemy.data.expr.ExpertParameter" value="0.64">
+    <property name="_vergilZoomFactor" class="ptolemy.data.expr.ExpertParameter" value="0.4096">
     </property>
     <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{657.9375, 336.9288194444446}">
     </property>
@@ -57,7 +57,7 @@
     <entity name="SimpleAdHocNetwork" class="eboracum.wsn.network.SimpleAdHocNetwork">
         <property name="NetworkSinks" class="ptolemy.data.expr.StringParameter" value="{Drone}">
         </property>
-        <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel2">
+        <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel">
         </property>
         <property name="RebuildNetwork" class="ptolemy.data.expr.Parameter" value="false">
         </property>
@@ -85,29 +85,21 @@
         </property>
     </entity>
     <entity name="Drone" class="eboracum.wsn.network.node.Drone">
-        <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel2">
+        <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel">
         </property>
         <doc>Special WSN Node designed only to be the main gateway of the network.</doc>
-        <property name="_location" class="ptolemy.kernel.util.Location" value="[-35.0, 15.0]">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[0.0, 900.0]">
         </property>
     </entity>
     <entity name="MuleWSNNode" class="eboracum.wsn.network.node.sensor.MuleWSNNode">
-        <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel2">
+        <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel">
         </property>
         <doc>Simple WSN Sensor Node based on a FIFO CPU to handle the Events to be processed.</doc>
-        <property name="_location" class="ptolemy.kernel.util.Location" value="[400.0, 325.0]">
-        </property>
-    </entity>
-    <entity name="PowerLossChannel2" class="ptolemy.domains.wireless.lib.PowerLossChannel">
-        <property name="defaultProperties" class="ptolemy.data.expr.Parameter" value="{range = CommCover, power = Infinity}">
-        </property>
-        <property name="name" class="ptolemy.data.expr.NameParameter" value="PowerLossChannel2">
-        </property>
-        <property name="_location" class="ptolemy.kernel.util.Location" value="[60.0, -90.0]">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{400.0, 325.0}">
         </property>
     </entity>
     <entity name="MuleWSNNode2" class="eboracum.wsn.network.node.sensor.MuleWSNNode">
-        <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel2">
+        <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel">
         </property>
         <doc>Simple WSN Sensor Node based on a FIFO CPU to handle the Events to be processed.</doc>
         <property name="_location" class="ptolemy.kernel.util.Location" value="{730.0, 605.0}">

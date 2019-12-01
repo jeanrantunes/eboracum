@@ -56,6 +56,7 @@ public abstract class BenchmarksGenerator {
 	protected String wirelessSensorNodesType;
 	protected double cpuCost;
 	protected double idleCost;
+	protected boolean mobileSink;
 	 
 	public BenchmarksGenerator() {
 		this.runBenchmarks();
@@ -67,7 +68,7 @@ public abstract class BenchmarksGenerator {
 		try {
 			createDataReportFile(simulationIdentification,round);
 			
-			Process p = Runtime.getRuntime().exec("java ptolemy.vergil.VergilApplication -visualsense -runThenExit -DataReportFile &quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot; eboracum/data/"+simulationIdentification+".xml");
+			Process p = Runtime.getRuntime().exec("java ptolemy.vergil.VergilApplication -visualsense -DataReportFile &quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot; eboracum/data/"+simulationIdentification+".xml");
 /*no GUI*/
 			//java -classpath . ptolemy.actor.gui.MoMLSimpleApplication eboracum/data/NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID0.xml
 			p.waitFor();
@@ -116,7 +117,12 @@ public abstract class BenchmarksGenerator {
 		try {
 			god = new Manager(world, "God");
 			scenario.setManager(god);
-			File fXmlFile = new File("eboracum/simulation/_base_model.xml");
+			File fXmlFile;
+			if (this.mobileSink) {
+				fXmlFile = new File("eboracum/simulation/_base_model_mobilesink.xml");
+			} else {
+				fXmlFile = new File("eboracum/simulation/_base_model.xml");
+			}
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
@@ -177,12 +183,17 @@ public abstract class BenchmarksGenerator {
 					doc.getDocumentElement().appendChild(fragmentNode);
 				}
 			}
-			if (this.mainGatewayCenteredFlag)
-				changePropertyAttributeOfEntity(doc, "NetworkMainGateway", "_location", "["+((this.scenarioDimensionXY[0])/2)+","+(this.scenarioDimensionXY[1]/2)+"]");
-			else
-				changePropertyAttributeOfEntity(doc, "NetworkMainGateway", "_location", "["+0+","+(this.scenarioDimensionXY[1]/2)+"]");
-			changePropertyAttributeOfEntity(doc, "NetworkMainGateway", "Network", this.network);
-			changePropertyAttributeOfEntity(doc, "NetworkMainGateway", "IdleEnergyCost", Double.toString(this.idleCost));
+			if (this.mobileSink) {
+				changePropertyAttributeOfEntity(doc, "Drone", "Network", this.network);
+			} else {
+				if (this.mainGatewayCenteredFlag)
+					changePropertyAttributeOfEntity(doc, "NetworkMainGateway", "_location", "["+((this.scenarioDimensionXY[0])/2)+","+(this.scenarioDimensionXY[1]/2)+"]");
+				else
+					changePropertyAttributeOfEntity(doc, "NetworkMainGateway", "_location", "["+0+","+(this.scenarioDimensionXY[1]/2)+"]");
+				changePropertyAttributeOfEntity(doc, "NetworkMainGateway", "Network", this.network);
+			}
+			
+//			changePropertyAttributeOfEntity(doc, "NetworkMainGateway", "IdleEnergyCost", Double.toString(this.idleCost));
 			changePropertyAttributeOfProperty(doc, "Wireless Director", "synchronizeToRealTime", String.valueOf(this.synchronizedRealTime));
 			/*
 			@SuppressWarnings("rawtypes")

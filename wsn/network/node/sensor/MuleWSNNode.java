@@ -19,6 +19,7 @@ public class MuleWSNNode extends BasicWirelessSensorNode {
 		inPort.outsideChannel.setExpression("$CommChannelName");
 		outPort = new WirelessIOPort(this, "outputNodeMule", false, true);
 		outPort.outsideChannel.setExpression("$CommChannelName");
+		gateway.setExpression("Drone");
 	}
 
 	public void initialize() throws IllegalActionException {
@@ -32,6 +33,7 @@ public class MuleWSNNode extends BasicWirelessSensorNode {
 		if(inPort.hasToken(0)) {
 			if(this.hankshake()) {	
 				Block aux = this.cpu.getBlockMemory();
+				System.out.println(aux);
 				sendEventsToDrone(aux);
 			}
 		}
@@ -39,6 +41,7 @@ public class MuleWSNNode extends BasicWirelessSensorNode {
 	
 	public boolean hankshake() throws NoTokenException, IllegalActionException {
 		String message = inPort.get(0).toString().split("=")[1].split("}")[0];
+System.out.println(this.cpu.isEmptyMemory());
 		if(message.equals("DroneHello") && !this.cpu.isEmptyMemory()) {
 			return true;
 		}
