@@ -80,7 +80,7 @@ public abstract class AdHocNetwork extends TypedAtomicActor {
     	Iterator<Entity> n = this.networkedNodes.iterator();
         while (n.hasNext()) {
         	Entity node = (Entity) n.next();
-        	System.out.println(node.getName()+" "+((StringParameter)node.getAttribute("Gateway")).getExpression());
+//        	System.out.println(node.getName()+" "+((StringParameter)node.getAttribute("Gateway")).getExpression());
         }
     }
     
@@ -88,7 +88,7 @@ public abstract class AdHocNetwork extends TypedAtomicActor {
     	Iterator<Entity> n = this.nodes.iterator();
         while (n.hasNext()) {
         	Entity node = (Entity) n.next();
-        	System.out.println(node.getName());
+//        	System.out.println(node.getName());
         }
     }
     
@@ -104,8 +104,10 @@ public abstract class AdHocNetwork extends TypedAtomicActor {
         CompositeActor container = (CompositeActor) getContainer();
         @SuppressWarnings("rawtypes")
 		Iterator actors = container.deepEntityList().iterator();
+        
         while (actors.hasNext()) {
             Entity node = (Entity) actors.next();
+            
             // Skip actors that are not properly marked.
             Attribute mark = node.getAttribute("networked");
             if (!(mark instanceof Variable)) {
@@ -118,7 +120,11 @@ public abstract class AdHocNetwork extends TypedAtomicActor {
             if (!((BooleanToken) markValue).booleanValue()) {
                 continue;
             }
-           	((StringParameter)node.getAttribute("Gateway")).setExpression("");
+            
+            if (!((StringParameter)node.getAttribute("Gateway")).getExpression().equals("Drone")) {
+            	((StringParameter)node.getAttribute("Gateway")).setExpression("");
+            }
+           	
            	if (node.getContainer().getAttribute("lineGateway_"+node.getName()) != null)
            		_removeLine("lineGateway_"+node.getName());
            	String[] tempSinks = (networkSinks.getExpression()).substring(1,networkSinks.getExpression().length()-1).split(",");

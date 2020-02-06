@@ -1,0 +1,59 @@
+Simulation Total Time;7337
+Total Number of Sensed Events by the WSN: 543
+Total Number of Sensed Events by the Drone: 324
+Number of Sensed Events by the Drone per Day
+1;324
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;0;0;0;11;7166.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;0;0;0;17;6166.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;0;0;0;15;6500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;0;0;0;15;6500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;0;0;1;18;6000
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;0;0;0;18;6000
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;0;0;0;15;6500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;0;0;0;17;6166.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;0;0;0;26;4666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;0;0;0;21;5500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;0;0;0;21;5500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;0;0;0;24;5000
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;0;0;0;15;6500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;0;0;0;11;7166.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;0;0;0;16;6333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;0;0;0;22;5333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;0;0;0;19;5833.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;0;0;0;16;6333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;0;0;0;15;6500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;0;0;0;13;6833.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;0;0;0;14;6666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;0;0;0;14;6666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;0;0;0;14;6666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;0;0;0;14;6666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;0;0;0;14;6666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;0;0;0;14;6666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;0;0;0;18;6000
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;0;0;1;20;5666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;0;0;0;12;7000
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;0;0;0;10;7333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;0;0;0;16;6333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;0;0;0;15;6500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;0;0;0;17;6166.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;0;0;0;18;6000
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;0;0;0;16;6333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;0;0;0;13;6833.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;0;0;0;21;5500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;0;0;0;15;6500
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;0;0;0;13;6833.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;0;0;0;16;6333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;0;0;0;11;7166.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;0;0;0;16;6333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;0;0;0;14;6666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;0;0;0;16;6333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;0;0;0;12;7000
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;0;0;0;14;6666.666667
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;0;0;0;19;5833.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;0;0;0;16;6333.333333
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;0;0;0;15;6500
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;355;0

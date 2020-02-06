@@ -1,318 +1,2936 @@
-Simulation Total Time;8651930
-Total Number of Sensed Events by the WSN;258625
+Simulation Total Time;6778061
+Total Number of Sensed Events by the WSN: 237620
 Number of Sensed Events by the WSN per Day
-1;2075
-2;3006
-3;2862
-4;2859
-5;2879
-6;2996
-7;2874
-8;2887
-9;2903
-10;2933
-11;3001
-12;2751
-13;2972
-14;2908
-15;2852
-16;3024
-17;2860
-18;2894
-19;2884
-20;2880
-21;3004
-22;2902
-23;2898
-24;2983
-25;2860
-26;3063
-27;2767
-28;2886
-29;2952
-30;2786
-31;2959
-32;2828
-33;2868
-34;2937
-35;2911
-36;3032
-37;2871
-38;2938
-39;2962
-40;2837
-41;3069
-42;2889
-43;2934
-44;2908
-45;2853
-46;3056
-47;2804
-48;2963
-49;2970
-50;2814
-51;2988
-52;2847
-53;2883
-54;2911
-55;2851
-56;2995
-57;2794
-58;2879
-59;2906
-60;2848
-61;2967
-62;2891
-63;2863
-64;2945
-65;2843
-66;3026
-67;2868
-68;2915
-69;2908
-70;2900
-71;2978
-72;2898
-73;2903
-74;2985
-75;2899
-76;3020
-77;2914
-78;2921
-79;2912
-80;2888
-81;2943
-82;2756
-83;2931
-84;2961
-85;2824
-86;3033
-87;2904
-88;2601
-89;2150
-90;964
-91;408
-Nodes
-Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node0;0;108208;38258;0;8854;7524102.429333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node1;0;192559;80087;0;7067;7821683.672667
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node2;0;413593;121368;1;2136;8643269.812002
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node3;0;287455;294361;0;6907;7847064.801336
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node4;0;416277;129046;0;7084;7818556.465334
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node5;0;208366;83869;1;4549;8241327.901334
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node6;0;117693;40136;0;5843;8025924.120667
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node7;0;96668;30741;0;7093;7817646.415333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node8;0;184359;36733;1;2347;8608610.413333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node9;0;223764;39145;0;7890;7684761.73
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node10;0;401638;38830;0;7941;7676263.6
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node11;0;241920;39841;1;4981;8169590.915333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node12;0;186265;39184;0;7889;7684928.062667
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node13;0;106309;34293;0;7257;7790291.876
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node14;0;88448;25410;1;2089;8651678.893333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node15;0;115671;34386;0;7829;7694956.944667
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node16;0;127462;31255;0;8079;7653309.056
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node17;0;131802;32030;0;5173;8137637.579333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node18;0;128108;34860;0;7840;7693120.353333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node19;0;123933;31295;0;8012;7664475.272667
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node20;0;88999;28003;1;4592;8234496.222667
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node21;0;66780;23321;0;6823;7862691.039333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node22;0;99205;26557;0;7967;7672003.904667
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node23;0;103874;24390;1;5185;8135683.421333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node24;0;100204;26857;0;7873;7687668.377333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node25;0;103848;27020;0;8101;7649667.391333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node26;0;101092;24401;1;5035;8160683.559333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node27;0;67735;23411;0;6666;7888856.848
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node28;0;51566;16498;0;7081;7819731.753333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node29;0;76875;19685;1;5070;8154878.518
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node30;0;72343;19205;0;7799;7700047.616666
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node31;0;75885;18984;0;8064;7655882.274
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node32;0;80330;20114;1;5154;8140875.746
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node33;0;70281;19366;0;7903;7682713.423333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node34;0;52416;16745;1;7106;7815563.710667
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node35;0;36927;10322;1;4508;8248602.512666
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node36;0;46264;14615;0;7740;7709908.804
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node37;0;48158;11406;0;7971;7671427.94
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node38;0;52205;12004;0;5149;8141757.945333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node39;0;48487;14960;0;7903;7682739.859333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node40;0;47404;11469;0;7889;7685094.438666
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node41;0;34364;10576;1;4426;8262267.667333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node42;0;16872;5814;0;5814;8030963.388
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node43;0;24012;7024;1;7024;7829288.815333
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node44;0;25285;4541;1;4541;8243136.992666
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node45;0;22151;6855;0;6855;7857456.188
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node46;0;25486;7208;0;7208;7798620.938666
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node47;0;24827;4562;0;4562;8239637.088666
-eboracum.wsn.network.node.sensor.controlled.PSControlledWSNNode;Node48;0;13885;6150;1;6150;7974961.35
-Events
-Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
-eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;403293;0
-Simulation Total Time;900
-Total Number of Sensed Events by the WSN;19
+1;4007
+2;3945
+3;3997
+4;4078
+5;3998
+6;4073
+7;4031
+8;4022
+9;4021
+10;4053
+11;4055
+12;4096
+13;3998
+14;4031
+15;4052
+16;4007
+17;3986
+18;4009
+19;4054
+20;4095
+21;3939
+22;4031
+23;4064
+24;3983
+25;4039
+26;3976
+27;4039
+28;4071
+29;4026
+30;4078
+31;3989
+32;4019
+33;4014
+34;4059
+35;3984
+36;4072
+37;4070
+38;4043
+39;3991
+40;3986
+41;4013
+42;4036
+43;4076
+44;4050
+45;4011
+46;4074
+47;4042
+48;3975
+49;4033
+50;4076
+51;4086
+52;4025
+53;4098
+54;4099
+55;4026
+56;4026
+57;4016
+58;4020
+59;3757
+Simulation Total Time;6784128
+Total Number of Sensed Events by the WSN: 238246
 Number of Sensed Events by the WSN per Day
-1;19
-Nodes
-Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node0;0;14;5;0;0;899.97
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node1;0;21;9;0;0;899.946
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node2;0;42;12;0;0;899.928
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node3;0;30;30;0;0;899.82
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node4;0;41;12;0;1;733.261333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node5;0;18;6;0;0;899.964
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node6;0;9;3;0;0;899.982
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node7;0;12;5;0;2;566.636667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node8;0;21;4;0;0;899.976
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node9;0;25;3;0;0;899.982
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node10;0;44;6;0;0;899.964
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node11;0;25;5;0;1;733.303333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node12;0;16;3;0;1;733.315333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node13;0;9;3;0;0;899.982
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node14;0;11;3;0;1;733.315333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node15;0;14;4;0;0;899.976
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node16;0;14;3;0;2;566.648667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node17;0;18;6;0;1;733.297333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node18;0;14;4;0;2;566.642667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node19;0;12;2;0;0;899.988
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node20;0;8;3;0;0;899.982
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node21;0;8;2;0;1;733.321333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node22;0;10;4;0;1;733.309333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node23;0;12;1;0;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node24;0;12;5;0;2;566.636667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node25;0;12;2;0;1;733.321333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node26;0;8;2;0;1;733.321333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node27;0;8;3;0;0;899.982
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node28;0;6;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node29;0;7;3;0;1;733.315333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node30;0;7;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node31;0;8;3;0;1;733.315333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node32;0;6;1;0;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node33;0;6;1;0;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node34;0;7;3;0;0;899.982
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node35;0;4;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node36;0;5;2;0;1;733.321333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node37;0;4;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node38;0;4;2;0;1;733.321333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node39;0;3;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node40;0;4;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node41;0;4;3;0;2;566.648667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node42;0;2;1;1;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node43;0;3;1;0;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node44;0;2;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node45;0;2;1;0;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node46;0;1;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node47;0;1;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node48;0;3;1;0;1;733.327333
-Events
-Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
-eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;36;0
-Simulation Total Time;900
-Total Number of Sensed Events by the WSN;19
+1;4048
+2;4038
+3;4021
+4;4014
+5;4030
+6;4056
+7;4082
+8;4052
+9;4028
+10;4032
+11;3981
+12;4030
+13;4020
+14;4050
+15;4096
+16;4112
+17;4005
+18;4033
+19;4016
+20;4009
+21;4081
+22;4062
+23;4055
+24;4022
+25;4044
+26;4016
+27;3913
+28;4006
+29;4040
+30;4011
+31;4034
+32;4038
+33;4000
+34;4036
+35;4016
+36;4056
+37;4036
+38;4041
+39;4154
+40;4017
+41;3993
+42;4058
+43;4027
+44;4035
+45;4097
+46;4102
+47;4036
+48;3940
+49;4052
+50;4096
+51;4044
+52;3975
+53;4024
+54;4103
+55;3968
+56;4039
+57;4028
+58;4019
+59;4003
+60;176
+Simulation Total Time;6798778
+Total Number of Sensed Events by the WSN: 235981
 Number of Sensed Events by the WSN per Day
-1;19
+1;4048
+2;4058
+3;3951
+4;4054
+5;3984
+6;3981
+7;3989
+8;4059
+9;3983
+10;4002
+11;3996
+12;4050
+13;4023
+14;4044
+15;4118
+16;4034
+17;4065
+18;3995
+19;4047
+20;4044
+21;4037
+22;4062
+23;4069
+24;4108
+25;4061
+26;4020
+27;4026
+28;3979
+29;3974
+30;4022
+31;3983
+32;4091
+33;3988
+34;3972
+35;4061
+36;4133
+37;4057
+38;3996
+39;3965
+40;4036
+41;4042
+42;3993
+43;4072
+44;4041
+45;3991
+46;4135
+47;4051
+48;3986
+49;4035
+50;4033
+51;4044
+52;4015
+53;4089
+54;4078
+55;4052
+56;4059
+57;4009
+58;4096
+59;1995
+Simulation Total Time;6786131
+Total Number of Sensed Events by the WSN: 236873
+Number of Sensed Events by the WSN per Day
+1;4056
+2;4050
+3;4049
+4;3986
+5;4067
+6;3989
+7;4037
+8;4004
+9;4040
+10;4045
+11;4067
+12;4013
+13;4085
+14;3960
+15;4031
+16;4015
+17;4001
+18;4048
+19;4067
+20;4062
+21;4066
+22;4057
+23;4028
+24;3972
+25;4071
+26;4105
+27;4098
+28;4027
+29;4119
+30;4061
+31;4054
+32;4054
+33;4078
+34;3995
+35;4062
+36;4012
+37;4015
+38;3995
+39;4003
+40;3990
+41;4021
+42;3992
+43;4035
+44;4029
+45;3981
+46;4051
+47;4054
+48;4052
+49;4017
+50;4075
+51;4065
+52;4038
+53;4040
+54;4034
+55;4056
+56;4058
+57;4041
+58;4000
+59;2700
+Simulation Total Time;6767477
+Total Number of Sensed Events by the WSN: 235920
+Number of Sensed Events by the WSN per Day
+1;3986
+2;4073
+3;4017
+4;3971
+5;4020
+6;4005
+7;4026
+8;4090
+9;3971
+10;4082
+11;4065
+12;4013
+13;4015
+14;3999
+15;4040
+16;4048
+17;4066
+18;3997
+19;4043
+20;4015
+21;4030
+22;3988
+23;4036
+24;4099
+25;4105
+26;4075
+27;4041
+28;4020
+29;4039
+30;4063
+31;3939
+32;4050
+33;4007
+34;4054
+35;3918
+36;3997
+37;4033
+38;4030
+39;4024
+40;3981
+41;4058
+42;4032
+43;4087
+44;4020
+45;4007
+46;3993
+47;4044
+48;4062
+49;4014
+50;4045
+51;4079
+52;4031
+53;4068
+54;4016
+55;4017
+56;4020
+57;4045
+58;4015
+59;2196
+Simulation Total Time;6753822
+Total Number of Sensed Events by the WSN: 236912
+Number of Sensed Events by the WSN per Day
+1;4087
+2;4056
+3;4031
+4;3965
+5;4062
+6;4003
+7;3996
+8;4082
+9;4018
+10;4022
+11;4030
+12;3991
+13;3988
+14;4033
+15;4019
+16;3956
+17;3995
+18;3988
+19;4064
+20;3978
+21;4020
+22;4029
+23;4119
+24;4034
+25;4031
+26;3979
+27;4036
+28;3996
+29;4051
+30;4039
+31;4022
+32;4001
+33;4052
+34;4041
+35;3992
+36;4003
+37;4076
+38;3957
+39;4041
+40;3995
+41;4104
+42;4001
+43;4081
+44;3983
+45;4050
+46;4045
+47;4039
+48;3988
+49;4021
+50;4027
+51;4031
+52;4024
+53;4074
+54;4101
+55;4053
+56;3959
+57;4063
+58;4060
+59;3330
+Simulation Total Time;6755620
+Total Number of Sensed Events by the WSN: 236832
+Number of Sensed Events by the WSN per Day
+1;4080
+2;4017
+3;4075
+4;4013
+5;4049
+6;4028
+7;4026
+8;4020
+9;4077
+10;4037
+11;3982
+12;4001
+13;4044
+14;4060
+15;3979
+16;4052
+17;4099
+18;4027
+19;4013
+20;4078
+21;4084
+22;3971
+23;4051
+24;4073
+25;4011
+26;4092
+27;4037
+28;4005
+29;4011
+30;4014
+31;4104
+32;4039
+33;4074
+34;3999
+35;4036
+36;3997
+37;4067
+38;4100
+39;3970
+40;4019
+41;4041
+42;3979
+43;4110
+44;3999
+45;4050
+46;4053
+47;4003
+48;4050
+49;4036
+50;4067
+51;4068
+52;3995
+53;3987
+54;4019
+55;3986
+56;4016
+57;4042
+58;4112
+59;2708
+Simulation Total Time;6784809
+Total Number of Sensed Events by the WSN: 236629
+Number of Sensed Events by the WSN per Day
+1;4012
+2;4036
+3;4016
+4;4071
+5;4059
+6;4075
+7;3985
+8;4056
+9;3987
+10;4069
+11;4028
+12;3953
+13;4101
+14;4131
+15;4100
+16;4080
+17;4077
+18;4009
+19;4018
+20;4021
+21;4008
+22;4077
+23;3976
+24;4068
+25;4066
+26;3996
+27;4015
+28;4034
+29;4035
+30;4034
+31;4001
+32;4070
+33;3982
+34;4064
+35;4037
+36;3954
+37;3987
+38;4095
+39;4050
+40;4052
+41;4067
+42;4065
+43;4034
+44;4008
+45;4024
+46;4030
+47;4054
+48;4042
+49;4104
+50;4023
+51;4039
+52;4034
+53;4007
+54;4089
+55;3984
+56;4008
+57;4040
+58;4014
+59;2478
+Simulation Total Time;6769169
+Total Number of Sensed Events by the WSN: 237606
+Number of Sensed Events by the WSN per Day
+1;4060
+2;4099
+3;4039
+4;3963
+5;4037
+6;4042
+7;4037
+8;4034
+9;3990
+10;4113
+11;4034
+12;4013
+13;4081
+14;3945
+15;4046
+16;4036
+17;4009
+18;4081
+19;4036
+20;4006
+21;4038
+22;4020
+23;4007
+24;4022
+25;4006
+26;4033
+27;3990
+28;4059
+29;4039
+30;4121
+31;4015
+32;4014
+33;4039
+34;4042
+35;3997
+36;4122
+37;4082
+38;4035
+39;4097
+40;4004
+41;4003
+42;4025
+43;4049
+44;4020
+45;4063
+46;4027
+47;4021
+48;4130
+49;4074
+50;4073
+51;3986
+52;3994
+53;4014
+54;3984
+55;4016
+56;4019
+57;4030
+58;4007
+59;3588
+Simulation Total Time;6770936
+Total Number of Sensed Events by the WSN: 236754
+Number of Sensed Events by the WSN per Day
+1;4038
+2;4046
+3;4048
+4;4093
+5;4017
+6;3979
+7;4047
+8;3975
+9;4010
+10;4073
+11;4019
+12;4050
+13;4118
+14;4064
+15;4024
+16;4107
+17;4084
+18;4031
+19;4076
+20;3927
+21;4000
+22;4059
+23;4025
+24;4091
+25;4071
+26;4060
+27;4013
+28;4040
+29;3971
+30;4015
+31;4005
+32;4012
+33;4035
+34;4013
+35;3974
+36;4067
+37;4013
+38;3959
+39;4040
+40;4028
+41;4042
+42;4004
+43;4076
+44;3982
+45;4038
+46;4060
+47;4006
+48;3986
+49;4066
+50;4030
+51;4040
+52;4039
+53;4045
+54;4060
+55;4050
+56;4045
+57;4016
+58;4030
+59;2822
+Simulation Total Time;6773517
+Total Number of Sensed Events by the WSN: 236773
+Number of Sensed Events by the WSN per Day
+1;4028
+2;4089
+3;4005
+4;3997
+5;4025
+6;4017
+7;4006
+8;4030
+9;4062
+10;4034
+11;4086
+12;4005
+13;4032
+14;4037
+15;4051
+16;4018
+17;3979
+18;4015
+19;4086
+20;4062
+21;4038
+22;3950
+23;4009
+24;4022
+25;4016
+26;3944
+27;4011
+28;4058
+29;3934
+30;3957
+31;4086
+32;4038
+33;4048
+34;4061
+35;4034
+36;4091
+37;4023
+38;4022
+39;4039
+40;4042
+41;4067
+42;4050
+43;4050
+44;4088
+45;4016
+46;4095
+47;4133
+48;3999
+49;3990
+50;4027
+51;4016
+52;4042
+53;4027
+54;4013
+55;4017
+56;4086
+57;4093
+58;4074
+59;2803
+Simulation Total Time;6750748
+Total Number of Sensed Events by the WSN: 238040
+Number of Sensed Events by the WSN per Day
+1;4018
+2;4059
+3;4048
+4;4113
+5;4075
+6;4093
+7;4036
+8;4002
+9;4050
+10;4022
+11;4082
+12;3967
+13;4054
+14;4052
+15;4105
+16;4030
+17;3990
+18;4058
+19;4156
+20;3991
+21;4016
+22;4067
+23;3973
+24;3984
+25;4034
+26;3980
+27;4107
+28;3950
+29;4012
+30;4055
+31;4060
+32;3976
+33;4026
+34;4088
+35;4034
+36;4005
+37;4012
+38;4071
+39;4017
+40;4089
+41;4015
+42;4004
+43;4017
+44;4025
+45;4078
+46;4014
+47;4037
+48;4018
+49;4035
+50;4070
+51;4046
+52;4034
+53;4052
+54;4007
+55;4018
+56;4056
+57;4007
+58;4059
+59;3891
+Simulation Total Time;6769477
+Total Number of Sensed Events by the WSN: 237369
+Number of Sensed Events by the WSN per Day
+1;4016
+2;4019
+3;4070
+4;4028
+5;3986
+6;4001
+7;4010
+8;4016
+9;3983
+10;3971
+11;4004
+12;4031
+13;4092
+14;4009
+15;4028
+16;4051
+17;4036
+18;4033
+19;4036
+20;4019
+21;4023
+22;3988
+23;4003
+24;4084
+25;4011
+26;4086
+27;4038
+28;4033
+29;4071
+30;4070
+31;4046
+32;4016
+33;4051
+34;4059
+35;3935
+36;3980
+37;4074
+38;4017
+39;4024
+40;4072
+41;4007
+42;4034
+43;4014
+44;4012
+45;4052
+46;4022
+47;3999
+48;4025
+49;4052
+50;4020
+51;4007
+52;4070
+53;4043
+54;3999
+55;4071
+56;4000
+57;4077
+58;4028
+59;3717
+Simulation Total Time;6762975
+Total Number of Sensed Events by the WSN: 237694
+Number of Sensed Events by the WSN per Day
+1;4004
+2;4076
+3;4020
+4;4027
+5;4030
+6;4043
+7;4081
+8;3971
+9;4017
+10;4007
+11;3984
+12;4059
+13;4086
+14;4046
+15;4026
+16;4037
+17;4047
+18;4020
+19;4045
+20;3992
+21;4019
+22;4049
+23;4004
+24;4054
+25;3987
+26;4050
+27;4094
+28;4132
+29;4110
+30;4058
+31;3989
+32;3953
+33;4047
+34;4059
+35;4019
+36;4016
+37;3987
+38;3972
+39;4083
+40;4023
+41;4002
+42;3986
+43;4096
+44;4111
+45;4041
+46;4039
+47;4017
+48;4065
+49;4035
+50;4019
+51;4053
+52;4100
+53;4091
+54;4051
+55;3983
+56;4006
+57;4032
+58;4067
+59;3577
+Simulation Total Time;6780905
+Total Number of Sensed Events by the WSN: 236855
+Number of Sensed Events by the WSN per Day
+1;4080
+2;4067
+3;4057
+4;3973
+5;4037
+6;4028
+7;4049
+8;4023
+9;4026
+10;4072
+11;4018
+12;3984
+13;3946
+14;4012
+15;4052
+16;4026
+17;4048
+18;3992
+19;4061
+20;4037
+21;4065
+22;4095
+23;4071
+24;4044
+25;4028
+26;3991
+27;4079
+28;4094
+29;4063
+30;4047
+31;4044
+32;4062
+33;4076
+34;3969
+35;4016
+36;4010
+37;4081
+38;4086
+39;4005
+40;4057
+41;4007
+42;3983
+43;3996
+44;3996
+45;4120
+46;4004
+47;3944
+48;3980
+49;4036
+50;4043
+51;4062
+52;4061
+53;3987
+54;4037
+55;4009
+56;3976
+57;4078
+58;4108
+59;2857
+Simulation Total Time;6769440
+Total Number of Sensed Events by the WSN: 236634
+Number of Sensed Events by the WSN per Day
+1;4005
+2;4029
+3;4010
+4;4014
+5;4136
+6;4034
+7;4036
+8;4009
+9;4018
+10;4084
+11;4019
+12;4037
+13;3988
+14;4028
+15;4065
+16;4060
+17;4063
+18;4111
+19;4031
+20;3982
+21;4014
+22;3976
+23;3990
+24;4051
+25;4002
+26;4009
+27;4071
+28;4001
+29;3916
+30;4093
+31;4052
+32;4013
+33;4023
+34;4051
+35;3967
+36;4051
+37;4020
+38;3951
+39;3999
+40;4022
+41;4061
+42;4039
+43;4090
+44;3985
+45;4016
+46;4054
+47;4051
+48;4004
+49;3981
+50;4072
+51;4040
+52;3992
+53;4018
+54;4043
+55;3938
+56;4057
+57;4003
+58;4021
+59;3138
+Simulation Total Time;6786192
+Total Number of Sensed Events by the WSN: 236212
+Number of Sensed Events by the WSN per Day
+1;4063
+2;4068
+3;3983
+4;4048
+5;4000
+6;3955
+7;4094
+8;4106
+9;4073
+10;4013
+11;3936
+12;3990
+13;4004
+14;4041
+15;3984
+16;4061
+17;4017
+18;3975
+19;4012
+20;4039
+21;4078
+22;4066
+23;3996
+24;4050
+25;3952
+26;4049
+27;4023
+28;4020
+29;4096
+30;4003
+31;3994
+32;3995
+33;4042
+34;4002
+35;3985
+36;4055
+37;4019
+38;3966
+39;4010
+40;4004
+41;4002
+42;4028
+43;4100
+44;4070
+45;3944
+46;4092
+47;4062
+48;4005
+49;4093
+50;4004
+51;4025
+52;4006
+53;4021
+54;4047
+55;4003
+56;4023
+57;4023
+58;4009
+59;2788
+Simulation Total Time;6768120
+Total Number of Sensed Events by the WSN: 237740
+Number of Sensed Events by the WSN per Day
+1;4066
+2;3988
+3;4018
+4;4012
+5;3975
+6;4055
+7;3995
+8;4127
+9;4039
+10;3994
+11;4052
+12;4010
+13;4095
+14;4017
+15;4100
+16;4070
+17;4075
+18;4087
+19;4064
+20;3998
+21;4047
+22;4052
+23;3986
+24;4026
+25;4057
+26;4013
+27;4018
+28;3993
+29;4080
+30;4058
+31;3955
+32;4014
+33;4004
+34;4084
+35;3974
+36;4025
+37;4084
+38;3988
+39;4042
+40;4031
+41;4029
+42;4031
+43;3995
+44;4014
+45;4040
+46;4032
+47;4028
+48;4053
+49;4055
+50;4012
+51;4073
+52;4019
+53;4072
+54;4078
+55;3993
+56;4022
+57;4038
+58;4037
+59;3751
+Simulation Total Time;6801819
+Total Number of Sensed Events by the WSN: 236271
+Number of Sensed Events by the WSN per Day
+1;4096
+2;4008
+3;4019
+4;4039
+5;4033
+6;4047
+7;4063
+8;4014
+9;4020
+10;4015
+11;3955
+12;4058
+13;3940
+14;4077
+15;4017
+16;4060
+17;4047
+18;3977
+19;3976
+20;4030
+21;4010
+22;4051
+23;3958
+24;4024
+25;3985
+26;3974
+27;4059
+28;4044
+29;4058
+30;4036
+31;4028
+32;3972
+33;4016
+34;4143
+35;4029
+36;4065
+37;4002
+38;4042
+39;4016
+40;4048
+41;4018
+42;4091
+43;4058
+44;4013
+45;4049
+46;4017
+47;4027
+48;4049
+49;4108
+50;4031
+51;4009
+52;4057
+53;4026
+54;4015
+55;4060
+56;4061
+57;4055
+58;3978
+59;2498
+Simulation Total Time;6768466
+Total Number of Sensed Events by the WSN: 237480
+Number of Sensed Events by the WSN per Day
+1;4004
+2;4042
+3;4025
+4;4095
+5;4070
+6;4013
+7;4060
+8;4041
+9;4056
+10;4004
+11;4028
+12;4005
+13;4103
+14;4069
+15;4051
+16;4095
+17;4119
+18;4056
+19;4008
+20;3994
+21;4042
+22;4092
+23;3990
+24;4044
+25;4031
+26;4045
+27;4051
+28;3933
+29;4047
+30;4027
+31;4052
+32;4059
+33;4063
+34;4024
+35;3989
+36;4075
+37;4004
+38;4032
+39;4046
+40;4060
+41;3945
+42;4025
+43;4049
+44;4132
+45;4046
+46;4119
+47;4066
+48;4058
+49;4070
+50;4108
+51;4094
+52;4015
+53;4025
+54;4081
+55;4080
+56;4012
+57;4005
+58;4058
+59;2848
+Simulation Total Time;6766526
+Total Number of Sensed Events by the WSN: 236556
+Number of Sensed Events by the WSN per Day
+1;4077
+2;4017
+3;3993
+4;4029
+5;4062
+6;3980
+7;4069
+8;4047
+9;3945
+10;4044
+11;4051
+12;4025
+13;4004
+14;4059
+15;4008
+16;4005
+17;4003
+18;3987
+19;4060
+20;4043
+21;4036
+22;3999
+23;3974
+24;4052
+25;3932
+26;4005
+27;4046
+28;3994
+29;4032
+30;3989
+31;4039
+32;4004
+33;3997
+34;4060
+35;3985
+36;4015
+37;4062
+38;4047
+39;4037
+40;4048
+41;4029
+42;4055
+43;4044
+44;4042
+45;4037
+46;4018
+47;4002
+48;3982
+49;4024
+50;4043
+51;4037
+52;4026
+53;4026
+54;4032
+55;3965
+56;4040
+57;4079
+58;3976
+59;3238
+Simulation Total Time;6804487
+Total Number of Sensed Events by the WSN: 237016
+Number of Sensed Events by the WSN per Day
+1;3980
+2;4128
+3;3998
+4;4002
+5;3968
+6;4083
+7;4105
+8;4059
+9;4053
+10;4075
+11;4078
+12;4034
+13;4135
+14;4021
+15;4010
+16;4001
+17;4030
+18;3983
+19;4075
+20;4032
+21;4060
+22;4028
+23;4033
+24;4044
+25;3971
+26;4058
+27;4065
+28;4015
+29;3996
+30;4046
+31;4065
+32;3984
+33;4078
+34;4023
+35;4028
+36;4082
+37;4000
+38;3996
+39;4054
+40;4013
+41;4030
+42;3972
+43;4017
+44;4034
+45;3999
+46;4038
+47;4050
+48;4105
+49;4029
+50;4003
+51;4140
+52;3963
+53;3970
+54;4087
+55;4027
+56;4027
+57;4048
+58;4031
+59;2957
+Simulation Total Time;6783801
+Total Number of Sensed Events by the WSN: 237123
+Number of Sensed Events by the WSN per Day
+1;3985
+2;4057
+3;4137
+4;4103
+5;4052
+6;3981
+7;4070
+8;4026
+9;4008
+10;3998
+11;4033
+12;4034
+13;4048
+14;4085
+15;4050
+16;4114
+17;4006
+18;3995
+19;4005
+20;4046
+21;4021
+22;4085
+23;4038
+24;4069
+25;3968
+26;3975
+27;4065
+28;4083
+29;4027
+30;4004
+31;4029
+32;4045
+33;3987
+34;4029
+35;3996
+36;3980
+37;4039
+38;4057
+39;4044
+40;4004
+41;4093
+42;4053
+43;3945
+44;4013
+45;4029
+46;4047
+47;4079
+48;4062
+49;4073
+50;4044
+51;4113
+52;3995
+53;4051
+54;4013
+55;4046
+56;3977
+57;3994
+58;4111
+59;3007
+Simulation Total Time;6756111
+Total Number of Sensed Events by the WSN: 236773
+Number of Sensed Events by the WSN per Day
+1;4043
+2;3964
+3;3984
+4;4027
+5;4037
+6;4086
+7;3998
+8;4035
+9;4099
+10;4044
+11;4068
+12;4012
+13;4005
+14;4079
+15;4010
+16;4002
+17;4027
+18;3992
+19;4027
+20;4052
+21;4065
+22;4013
+23;4061
+24;4023
+25;4059
+26;4030
+27;4094
+28;4065
+29;3980
+30;3994
+31;4046
+32;3998
+33;4057
+34;4043
+35;4011
+36;4031
+37;4105
+38;4056
+39;3957
+40;4000
+41;4048
+42;3998
+43;4030
+44;3990
+45;4041
+46;3970
+47;4021
+48;4060
+49;4022
+50;4076
+51;4026
+52;4050
+53;4059
+54;4057
+55;4138
+56;3960
+57;4003
+58;4075
+59;2870
+Simulation Total Time;6795005
+Total Number of Sensed Events by the WSN: 237042
+Number of Sensed Events by the WSN per Day
+1;4091
+2;4077
+3;4049
+4;4097
+5;4083
+6;4070
+7;4073
+8;4071
+9;4020
+10;3988
+11;4079
+12;4004
+13;4016
+14;4074
+15;4041
+16;4028
+17;4048
+18;4003
+19;4074
+20;4040
+21;4018
+22;4040
+23;3985
+24;4052
+25;3977
+26;3999
+27;4082
+28;4012
+29;4033
+30;4047
+31;4000
+32;4053
+33;4057
+34;4019
+35;3947
+36;4055
+37;4088
+38;4010
+39;4040
+40;4019
+41;4072
+42;4003
+43;4033
+44;4046
+45;4039
+46;4058
+47;4038
+48;4048
+49;4048
+50;4028
+51;4021
+52;4035
+53;4047
+54;4019
+55;4004
+56;3962
+57;4006
+58;4075
+59;2901
+Simulation Total Time;6764944
+Total Number of Sensed Events by the WSN: 236346
+Number of Sensed Events by the WSN per Day
+1;4005
+2;4054
+3;4050
+4;3996
+5;4044
+6;3992
+7;3933
+8;4028
+9;4077
+10;4000
+11;4096
+12;4078
+13;4040
+14;4002
+15;4016
+16;4045
+17;4104
+18;4010
+19;4071
+20;4067
+21;4034
+22;4047
+23;4082
+24;4011
+25;3996
+26;4005
+27;4029
+28;4008
+29;4131
+30;3973
+31;4019
+32;4039
+33;4013
+34;4035
+35;4091
+36;4065
+37;3972
+38;3997
+39;4056
+40;4030
+41;3974
+42;3973
+43;4029
+44;4063
+45;4023
+46;4026
+47;4050
+48;4033
+49;4091
+50;3992
+51;4039
+52;3975
+53;4061
+54;3954
+55;4036
+56;4070
+57;4022
+58;4058
+59;2536
+Simulation Total Time;6764440
+Total Number of Sensed Events by the WSN: 237138
+Number of Sensed Events by the WSN per Day
+1;4050
+2;4051
+3;4048
+4;4024
+5;4027
+6;4037
+7;3974
+8;3983
+9;4066
+10;3985
+11;3995
+12;3981
+13;4068
+14;4088
+15;4074
+16;4041
+17;3973
+18;4022
+19;3993
+20;3974
+21;3975
+22;4026
+23;4023
+24;3947
+25;4062
+26;4059
+27;4047
+28;4047
+29;3995
+30;4112
+31;3974
+32;4106
+33;3973
+34;4033
+35;3999
+36;4060
+37;4052
+38;4040
+39;3992
+40;4055
+41;4039
+42;4015
+43;3991
+44;4024
+45;4033
+46;4076
+47;4035
+48;4074
+49;4073
+50;3988
+51;4016
+52;4143
+53;4007
+54;4024
+55;4103
+56;4060
+57;4068
+58;4061
+59;3277
+Simulation Total Time;6766052
+Total Number of Sensed Events by the WSN: 237037
+Number of Sensed Events by the WSN per Day
+1;4045
+2;4054
+3;4003
+4;4016
+5;4011
+6;3976
+7;4025
+8;3983
+9;4067
+10;4071
+11;3967
+12;4006
+13;4041
+14;4022
+15;4074
+16;4033
+17;3950
+18;4020
+19;4054
+20;4034
+21;4020
+22;4055
+23;4026
+24;4003
+25;4039
+26;4069
+27;4057
+28;4120
+29;4018
+30;4016
+31;4018
+32;4026
+33;4013
+34;3998
+35;4016
+36;4067
+37;3988
+38;4044
+39;4037
+40;3999
+41;4058
+42;4075
+43;4030
+44;3989
+45;4091
+46;4038
+47;4027
+48;4009
+49;3999
+50;3993
+51;4108
+52;4013
+53;4040
+54;4124
+55;3983
+56;4022
+57;4047
+58;4088
+59;3222
+Simulation Total Time;6757922
+Total Number of Sensed Events by the WSN: 237236
+Number of Sensed Events by the WSN per Day
+1;4039
+2;4051
+3;4044
+4;4108
+5;4046
+6;4029
+7;4019
+8;4030
+9;4088
+10;3991
+11;4066
+12;4016
+13;4124
+14;4076
+15;3978
+16;3975
+17;4060
+18;4119
+19;4062
+20;4004
+21;4000
+22;4052
+23;4052
+24;3991
+25;4022
+26;4095
+27;4072
+28;4079
+29;3960
+30;4112
+31;4054
+32;4006
+33;3995
+34;3976
+35;4079
+36;4056
+37;4069
+38;4025
+39;4002
+40;3926
+41;4114
+42;4053
+43;4038
+44;4063
+45;4061
+46;4030
+47;4018
+48;4056
+49;3959
+50;4041
+51;4007
+52;4013
+53;4025
+54;4009
+55;3973
+56;3992
+57;4049
+58;3994
+59;3193
+Simulation Total Time;6763629
+Total Number of Sensed Events by the WSN: 236499
+Number of Sensed Events by the WSN per Day
+1;3981
+2;4067
+3;4044
+4;4128
+5;3977
+6;4057
+7;4083
+8;4027
+9;4041
+10;4024
+11;4024
+12;4089
+13;4098
+14;4015
+15;4067
+16;4090
+17;3957
+18;3921
+19;4071
+20;3962
+21;3978
+22;4073
+23;4029
+24;4000
+25;4033
+26;3971
+27;4031
+28;4029
+29;3997
+30;4025
+31;4044
+32;4080
+33;4048
+34;4083
+35;3983
+36;4128
+37;4027
+38;4012
+39;3974
+40;4020
+41;4041
+42;4033
+43;3977
+44;4078
+45;4007
+46;4032
+47;3983
+48;3969
+49;4051
+50;3999
+51;4031
+52;4027
+53;3956
+54;3962
+55;3985
+56;4094
+57;4023
+58;3994
+59;2969
+Simulation Total Time;7168
+Total Number of Sensed Events by the WSN: 504
+Total Number of Sensed Events by the Drone: 310
+Number of Sensed Events by the Drone per Day
+1;310
+Simulation Total Time;7511
+Total Number of Sensed Events by the WSN: 475
+Total Number of Sensed Events by the Drone: 306
+Number of Sensed Events by the Drone per Day
+1;306
+Simulation Total Time;7334
+Total Number of Sensed Events by the WSN: 489
+Total Number of Sensed Events by the Drone: 295
+Number of Sensed Events by the Drone per Day
+1;295
+Simulation Total Time;7914
+Total Number of Sensed Events by the WSN: 496
+Total Number of Sensed Events by the Drone: 312
+Number of Sensed Events by the Drone per Day
+1;312
+Simulation Total Time;7717
+Total Number of Sensed Events by the WSN: 507
+Total Number of Sensed Events by the Drone: 301
+Number of Sensed Events by the Drone per Day
+1;301
+Simulation Total Time;7446
+Total Number of Sensed Events by the WSN: 489
+Total Number of Sensed Events by the Drone: 305
+Number of Sensed Events by the Drone per Day
+1;305
+Simulation Total Time;7507
+Total Number of Sensed Events by the WSN: 517
+Total Number of Sensed Events by the Drone: 326
+Number of Sensed Events by the Drone per Day
+1;326
+Simulation Total Time;7899
+Total Number of Sensed Events by the WSN: 451
+Total Number of Sensed Events by the Drone: 296
+Number of Sensed Events by the Drone per Day
+1;296
+Simulation Total Time;7540
+Total Number of Sensed Events by the WSN: 503
+Total Number of Sensed Events by the Drone: 312
+Number of Sensed Events by the Drone per Day
+1;312
+Simulation Total Time;7847
+Total Number of Sensed Events by the WSN: 498
+Total Number of Sensed Events by the Drone: 311
+Number of Sensed Events by the Drone per Day
+1;311
+Simulation Total Time;7412
+Total Number of Sensed Events by the WSN: 501
+Total Number of Sensed Events by the Drone: 316
+Number of Sensed Events by the Drone per Day
+1;316
+Simulation Total Time;7665
+Total Number of Sensed Events by the WSN: 497
+Total Number of Sensed Events by the Drone: 314
+Number of Sensed Events by the Drone per Day
+1;314
+Simulation Total Time;7512
+Total Number of Sensed Events by the WSN: 496
+Total Number of Sensed Events by the Drone: 310
+Number of Sensed Events by the Drone per Day
+1;310
+Simulation Total Time;7290
+Total Number of Sensed Events by the WSN: 511
+Total Number of Sensed Events by the Drone: 311
+Number of Sensed Events by the Drone per Day
+1;311
+Simulation Total Time;7567
+Total Number of Sensed Events by the WSN: 510
+Total Number of Sensed Events by the Drone: 313
+Number of Sensed Events by the Drone per Day
+1;313
 Nodes
-Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node0;0;19;7;0;1;733.291333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node1;0;28;13;0;0;899.922
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node2;0;42;15;0;0;899.91
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node3;0;27;27;0;0;899.838
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node4;0;34;8;0;1;733.285333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node5;0;9;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node6;0;1;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node7;0;17;6;0;2;566.630667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node8;0;26;6;0;1;733.297333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node9;0;26;2;0;1;733.321333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node10;0;35;4;0;2;566.642667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node11;0;18;6;0;1;733.297333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node12;0;8;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node13;0;1;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node14;0;15;4;0;0;899.976
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node15;0;15;5;0;1;733.303333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node16;0;10;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node17;0;12;3;0;1;733.315333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node18;0;12;5;0;2;566.636667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node19;0;7;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node20;0;1;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node21;0;12;4;0;0;899.976
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node22;0;12;4;0;1;733.309333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node23;0;7;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node24;0;7;2;0;1;733.321333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node25;0;11;3;0;0;899.982
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node26;0;5;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node27;0;1;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node28;0;10;4;0;1;733.309333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node29;0;10;3;0;1;733.315333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node30;0;4;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node31;0;6;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node32;0;8;3;0;0;899.982
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node33;0;5;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node34;0;1;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node35;0;7;3;0;2;566.648667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node36;0;7;2;1;1;733.321333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node37;0;3;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node38;0;5;1;0;0;899.994
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node39;0;7;3;0;1;733.315333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node40;0;4;1;0;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node41;0;1;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node42;0;4;1;0;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node43;0;3;1;0;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node44;0;2;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node45;0;3;1;0;1;733.327333
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node46;0;4;2;0;2;566.654667
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node47;0;3;0;0;0;900
-eboracum.wsn.network.node.sensor.controlled.RandomControlledWSNNode;Node48;0;0;0;0;0;900
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; When it died
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;0;0;0;16;6333.333333;0 days 1:45:35
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;0;0;0;13;6833.333333;0 days 1:54:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;0;0;0;9;7500;0 days 2:6:7
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;0;0;0;13;6833.333333;0 days 1:54:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;0;0;0;10;7333.333333;0 days 2:4:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;0;0;0;13;6833.333333;0 days 1:54:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;0;0;0;15;6500;0 days 1:48:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;0;0;0;14;6666.666667;0 days 1:51:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;0;0;0;13;6833.333333;0 days 1:54:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;0;0;0;15;6500;0 days 1:48:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;0;0;0;12;7000;0 days 1:56:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;0;0;0;9;7500;0 days 2:6:7
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;0;0;0;18;6000;0 days 1:40:32
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;0;0;0;16;6333.333333;0 days 1:45:35
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;0;0;0;12;7000;0 days 1:56:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;0;0;0;14;6666.666667;0 days 1:51:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;0;0;0;14;6666.666667;0 days 1:51:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;0;0;0;16;6333.333333;0 days 1:45:35
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;0;0;0;14;6666.666667;0 days 1:51:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;0;0;0;17;6166.666667;0 days 1:43:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;0;0;0;13;6833.333333;0 days 1:54:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;0;0;0;11;7166.666667;0 days 1:59:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;0;0;0;17;6166.666667;0 days 1:43:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;0;0;0;19;5833.333333;0 days 1:38:10
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;0;0;0;19;5833.333333;0 days 1:38:10
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;0;0;0;21;5500;0 days 1:33:35
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;0;0;0;17;6166.666667;0 days 1:43:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;0;0;0;14;6666.666667;0 days 1:51:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;0;0;0;12;7000;0 days 1:56:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;0;0;0;18;6000;0 days 1:40:32
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;0;0;0;16;6333.333333;0 days 1:45:35
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;0;0;0;17;6166.666667;0 days 1:43:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;0;0;0;20;5666.666667;0 days 1:35:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;0;0;1;23;5166.666667;0 days 1:26:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;0;0;0;17;6166.666667;0 days 1:43:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;0;0;0;14;6666.666667;0 days 1:51:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;0;0;0;15;6500;0 days 1:48:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;0;0;0;19;5833.333333;0 days 1:38:10
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;0;0;0;17;6166.666667;0 days 1:43:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;0;0;0;12;7000;0 days 1:56:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;0;0;0;20;5666.666667;0 days 1:35:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;0;0;0;14;6666.666667;0 days 1:51:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;0;0;0;12;7000;0 days 1:56:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;0;0;0;16;6333.333333;0 days 1:45:35
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;0;0;0;20;5666.666667;0 days 1:35:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;0;0;0;15;6500;0 days 1:48:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;0;0;0;16;6333.333333;0 days 1:45:35
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;0;0;0;12;7000;0 days 1:56:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;0;0;0;12;7000;0 days 1:56:51
 Events
 Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
-eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;37;0
-Simulation Total Time;49
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;349;0
+Simulation Total Time;7513
+Total Number of Sensed Events by the WSN: 488
+Total Number of Sensed Events by the Drone: 301
+Number of Sensed Events by the Drone per Day
+1;301
 Nodes
-Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; When it died
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;0;0;0;9;7500;Day 0 at 2:5:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;0;0;0;11;7166.666667;Day 0 at 1:59:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;0;0;0;12;7000;Day 0 at 1:58:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;0;0;0;13;6833.333333;Day 0 at 1:53:59
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;0;0;0;14;6666.666667;Day 0 at 1:51:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;0;0;0;13;6833.333333;Day 0 at 1:53:59
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;0;0;0;13;6833.333333;Day 0 at 1:53:59
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;0;0;0;13;6833.333333;Day 0 at 1:53:59
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;0;0;0;14;6666.666667;Day 0 at 1:51:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;0;0;0;20;5666.666667;Day 0 at 1:34:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;0;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;0;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;0;0;0;10;7333.333333;Day 0 at 2:3:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;0;0;0;13;6833.333333;Day 0 at 1:53:59
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;0;0;0;14;6666.666667;Day 0 at 1:51:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;0;0;0;18;6000;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;0;0;0;18;6000;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;0;0;0;9;7500;Day 0 at 2:5:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;0;0;0;14;6666.666667;Day 0 at 1:51:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;0;0;0;18;6000;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;0;0;0;17;6166.666667;Day 0 at 1:42:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;0;0;0;17;6166.666667;Day 0 at 1:42:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;0;0;0;10;7333.333333;Day 0 at 2:3:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;0;0;0;13;6833.333333;Day 0 at 1:53:59
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;0;0;0;18;6000;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;0;0;0;19;5833.333333;Day 0 at 1:37:26
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;0;0;0;14;6666.666667;Day 0 at 1:51:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;0;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;0;0;0;14;6666.666667;Day 0 at 1:51:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;0;0;0;11;7166.666667;Day 0 at 1:59:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;0;0;0;14;6666.666667;Day 0 at 1:51:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;0;0;0;19;5833.333333;Day 0 at 1:37:26
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;0;0;0;21;5500;Day 0 at 1:31:53
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;0;0;0;19;5833.333333;Day 0 at 1:37:26
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;0;0;0;18;6000;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;0;0;0;13;6833.333333;Day 0 at 1:53:59
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;0;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;0;0;0;17;6166.666667;Day 0 at 1:42:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;0;0;0;9;7500;Day 0 at 2:5:13
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;0;0;0;11;7166.666667;Day 0 at 1:59:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;0;0;0;15;6500;null
 Events
 Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
-Simulation Total Time;49
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;336;0
+Simulation Total Time;7688
+Total Number of Sensed Events by the WSN: 447
+Total Number of Sensed Events by the Drone: 294
+Number of Sensed Events by the Drone per Day
+1;294
 Nodes
-Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Time until Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;0;0;0;12;7000;Day 0 at 1:57:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;0;0;0;13;6833.333333;Day 0 at 1:54:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;0;0;0;12;7000;Day 0 at 1:57:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;0;0;0;8;7666.666667;Day 0 at 2:8:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;0;0;0;13;6833.333333;Day 0 at 1:54:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;0;0;0;11;7166.666667;Day 0 at 1:59:44
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;0;0;1;10;7333.333333;Day 0 at 2:2:42
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;0;0;0;14;6666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;0;0;0;20;5666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;0;0;0;20;5666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;0;0;0;17;6166.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;0;0;0;10;7333.333333;Day 0 at 2:2:42
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;0;0;0;14;6666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;0;0;0;17;6166.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;0;0;0;17;6166.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;0;0;1;18;6000;Day 0 at 1:40:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;0;0;0;19;5833.333333;Day 0 at 1:37:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;0;0;0;13;6833.333333;Day 0 at 1:54:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;0;0;0;15;6500;Day 0 at 1:48:26
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;0;0;0;17;6166.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;0;0;0;18;6000;Day 0 at 1:40:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;0;0;0;14;6666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;0;0;0;17;6166.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;0;0;0;14;6666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;0;0;0;17;6166.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;0;0;0;17;6166.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;0;0;0;17;6166.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;0;0;0;15;6500;Day 0 at 1:48:26
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;0;0;0;14;6666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;0;0;0;11;7166.666667;Day 0 at 1:59:44
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;0;0;0;15;6500;Day 0 at 1:48:26
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;0;0;0;8;7666.666667;Day 0 at 2:8:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;0;0;0;14;6666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;0;0;0;19;5833.333333;Day 0 at 1:37:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;0;0;0;14;6666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;0;0;0;9;7500;Day 0 at 2:5:29
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;0;0;0;15;6500;Day 0 at 1:48:26
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;0;0;1;12;7000;Day 0 at 1:57:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;0;0;0;11;7166.666667;Day 0 at 1:59:44
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;0;0;0;16;6333.333333;Day 0 at 1:45:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;0;0;0;14;6666.666667;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;0;0;0;13;6833.333333;Day 0 at 1:54:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;0;0;0;11;7166.666667;Day 0 at 1:59:44
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;0;0;0;9;7500;Day 0 at 2:5:29
 Events
 Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
-Simulation Total Time;49
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;338;0
+Simulation Total Time;7382
+Total Number of Sensed Events by the WSN: 486
+Total Number of Sensed Events by the Drone: 311
+Number of Sensed Events by the Drone per Day
+1;311
 Nodes
-Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Time until Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;277;0;0;11;7166.666667;0 days 1:59:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;261;0;0;15;6500;0 days 1:48:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;268;0;0;14;6666.666667;0 days 1:51:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;321;0;0;13;6833.333333;0 days 1:54:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;271;0;0;11;7166.666667;0 days 1:59:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;267;0;0;16;6333.333333;0 days 1:46:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;264;0;0;15;6500;0 days 1:48:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;297;0;0;14;6666.666667;0 days 1:51:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;327;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;292;0;0;15;6500;0 days 1:48:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;418;0;0;14;6666.666667;0 days 1:51:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;284;0;0;14;6666.666667;0 days 1:51:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;297;0;0;20;5666.666667;0 days 1:35:24
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;279;0;0;18;6000;0 days 1:40:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;302;0;0;11;7166.666667;0 days 1:59:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;241;0;0;20;5666.666667;0 days 1:35:24
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;291;0;0;16;6333.333333;0 days 1:46:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;305;0;0;14;6666.666667;0 days 1:51:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;229;0;0;19;5833.333333;0 days 1:37:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;248;0;0;18;6000;0 days 1:40:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;287;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;289;0;0;15;6500;0 days 1:48:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;365;0;0;14;6666.666667;0 days 1:51:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;337;0;0;10;7333.333333;0 days 2:3:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;428;0;0;14;6666.666667;0 days 1:51:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;245;0;0;18;6000;0 days 1:40:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;292;0;0;21;5500;0 days 1:33:55
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;302;0;0;16;6333.333333;0 days 1:46:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;299;0;0;13;6833.333333;0 days 1:54:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;337;0;0;10;7333.333333;0 days 2:3:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;346;0;0;10;7333.333333;0 days 2:3:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;307;0;0;14;6666.666667;0 days 1:51:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;268;0;0;15;6500;0 days 1:48:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;269;0;0;16;6333.333333;0 days 1:46:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;288;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;307;0;0;12;7000;0 days 1:57:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;362;0;0;14;6666.666667;0 days 1:51:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;287;0;0;15;6500;0 days 1:48:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;374;0;0;18;6000;0 days 1:40:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;250;0;0;19;5833.333333;0 days 1:37:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;310;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;292;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;233;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;251;0;0;19;5833.333333;0 days 1:37:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;232;0;0;18;6000;0 days 1:40:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;270;0;0;18;6000;0 days 1:40:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;228;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;269;0;0;13;6833.333333;0 days 1:54:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;198;0;0;13;6833.333333;0 days 1:54:9
 Events
 Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
-Simulation Total Time;49
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;346;0
+Simulation Total Time;8012
+Total Number of Sensed Events by the WSN: 521
+Total Number of Sensed Events by the Drone: 311
+Number of Sensed Events by the Drone per Day
+1;311
 Nodes
-Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Time until Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;264;0;0;12;7000;0 days 1:56:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;257;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;268;0;0;13;6833.333333;0 days 1:54:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;268;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;241;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;303;0;0;13;6833.333333;0 days 1:54:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;296;0;0;11;7166.666667;0 days 2:1:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;284;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;309;0;0;18;6000;0 days 1:40:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;269;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;369;0;0;18;6000;0 days 1:40:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;245;0;0;18;6000;0 days 1:40:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;284;0;0;22;5333.333333;0 days 1:28:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;315;0;0;14;6666.666667;0 days 1:51:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;270;0;0;16;6333.333333;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;254;0;0;18;6000;0 days 1:40:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;284;0;0;16;6333.333333;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;268;0;0;18;6000;0 days 1:40:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;221;0;0;21;5500;0 days 1:32:33
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;260;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;299;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;283;0;0;16;6333.333333;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;323;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;274;0;0;16;6333.333333;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;404;0;0;16;6333.333333;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;262;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;331;0;0;16;6333.333333;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;287;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;320;0;0;10;7333.333333;0 days 2:2:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;264;0;0;16;6333.333333;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;263;0;0;18;6000;0 days 1:40:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;295;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;244;0;1;18;6000;0 days 1:40:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;241;0;0;20;5666.666667;0 days 1:36:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;296;0;0;16;6333.333333;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;294;0;0;14;6666.666667;0 days 1:51:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;286;0;0;21;5500;0 days 1:32:33
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;258;0;0;19;5833.333333;0 days 1:38:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;451;0;0;12;7000;0 days 1:56:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;267;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;330;0;0;17;6166.666667;0 days 1:43:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;381;0;0;6;8000;0 days 2:13:32
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;261;0;1;14;6666.666667;0 days 1:51:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;301;0;0;13;6833.333333;0 days 1:54:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;255;0;0;15;6500;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;313;0;0;14;6666.666667;0 days 1:51:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;280;0;0;11;7166.666667;0 days 2:1:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;267;0;0;14;6666.666667;0 days 1:51:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;209;0;0;12;7000;0 days 1:56:46
 Events
 Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
-Simulation Total Time;49
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;370;0
+Simulation Total Time;7991
+Total Number of Sensed Events by the WSN: 473
+Total Number of Sensed Events by the Drone: 295
+Number of Sensed Events by the Drone per Day
+1;295
 Nodes
-Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Time until Death
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;260;26;0;13;6790;0 days 1:53:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;272;27;0;13;6790;0 days 1:53:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;244;34;0;17;6110;0 days 1:41:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;306;28;0;14;6620;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;248;27;0;14;6623.333333;0 days 1:52:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;277;30;0;15;6450;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;245;33;0;17;6110;0 days 1:41:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;290;28;0;14;6620;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;332;33;0;16;6280;0 days 1:44:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;279;32;0;16;6280;0 days 1:44:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;425;28;0;14;6620;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;284;28;0;14;6620;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;335;32;0;16;6280;0 days 1:44:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;296;32;0;16;6280;0 days 1:44:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;266;32;0;16;6280;0 days 1:44:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;293;26;0;13;6790;0 days 1:53:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;291;30;0;15;6450;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;325;23;0;11;7130;0 days 1:59:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;284;26;0;13;6790;0 days 1:53:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;284;30;0;15;6450;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;313;29;0;14;6620;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;282;30;0;15;6450;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;338;31;0;16;6280;0 days 1:44:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;295;28;0;14;6620;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;411;30;0;15;6450;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;235;40;0;20;5600;0 days 1:33:37
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;383;25;0;12;6960;0 days 1:56:10
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;334;25;0;12;6960;0 days 1:56:10
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;264;32;0;17;6113.333333;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;287;29;0;14;6620;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;269;34;0;17;6110;0 days 1:41:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;273;34;0;17;6110;0 days 1:41:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;268;34;0;17;6110;0 days 1:41:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;331;23;0;11;7130;0 days 1:59:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;365;16;0;8;7640;0 days 2:7:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;271;33;0;17;6110;0 days 1:41:51
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;329;32;0;16;6280;0 days 1:44:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;230;43;0;21;5430;0 days 1:30:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;334;43;0;21;5430;0 days 1:30:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;330;22;1;11;7130;0 days 1:59:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;453;12;0;6;7980;0 days 2:13:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;354;20;0;10;7300;0 days 2:2:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;247;28;0;14;6620;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;264;32;0;16;6280;0 days 1:44:43
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;218;38;0;19;5770;0 days 1:38:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;267;39;0;19;5770;0 days 1:38:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;279;24;0;12;6960;0 days 1:56:10
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;320;14;0;7;7810;0 days 2:10:18
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;222;18;0;9;7470;0 days 2:4:30
 Events
 Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
-Simulation Total Time;49
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;358;0
+Simulation Total Time;7527
+Total Number of Sensed Events by the WSN: 496
+Simulation Total Time;7479
+Total Number of Sensed Events by the WSN: 515
+Simulation Total Time;7300
+Total Number of Sensed Events by the WSN: 524
+Total Number of Sensed Events by the Drone: 311
+Number of Sensed Events by the Drone per Day
+1;311
+The first node to die: Node0 at 0 days 1:57:23
 Nodes
-Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode;0;0;0;0;0;49
-eboracum.wsn.network.node.sensor.MuleWSNNode;MuleWSNNode2;0;0;0;0;0;49
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;267;24;0;12;6960;0 days 1:57:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;253;30;0;15;6450;0 days 1:47:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;258;30;0;15;6450;0 days 1:47:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;280;33;0;17;6110;0 days 1:42:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;245;31;0;15;6450;0 days 1:47:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;312;22;0;11;7130;0 days 1:59:44
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;285;24;0;12;6960;0 days 1:57:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;337;20;0;10;7300;0 days 2:1:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;319;35;0;17;6110;0 days 1:42:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;245;39;0;20;5600;0 days 1:33:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;432;26;0;13;6790;0 days 1:53:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;283;30;0;15;6450;0 days 1:47:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;327;34;0;17;6110;0 days 1:42:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;299;32;0;16;6280;0 days 1:45:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;308;24;0;12;6960;0 days 1:57:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;260;34;0;17;6110;0 days 1:42:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;238;42;0;21;5430;0 days 1:30:57
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;283;34;0;17;6110;0 days 1:42:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;264;31;0;16;6280;0 days 1:45:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;246;37;0;19;5770;0 days 1:36:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;281;36;1;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;309;26;0;13;6790;0 days 1:53:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;301;38;0;19;5770;0 days 1:36:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;254;36;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;415;28;0;14;6620;0 days 1:50:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;269;30;0;15;6450;0 days 1:47:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;291;41;0;20;5600;0 days 1:33:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;272;37;0;19;5770;0 days 1:36:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;302;24;0;12;6960;0 days 1:57:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;214;45;0;22;5260;0 days 1:28:10
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;223;44;0;22;5260;0 days 1:28:10
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;232;45;0;22;5260;0 days 1:28:10
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;221;40;0;20;5600;0 days 1:33:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;256;34;0;17;6110;0 days 1:42:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;296;32;0;16;6280;0 days 1:45:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;334;21;0;10;7300;0 days 2:1:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;298;40;1;20;5600;0 days 1:33:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;246;39;0;19;5770;0 days 1:36:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;310;48;0;24;4920;0 days 1:23:27
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;254;37;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;348;27;0;14;6620;0 days 1:50:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;326;26;0;13;6790;0 days 1:53:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;290;20;0;10;7300;0 days 2:1:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;290;30;0;15;6450;0 days 1:47:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;293;21;0;10;7300;0 days 2:1:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;305;29;0;14;6620;0 days 1:50:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;251;28;0;14;6620;0 days 1:50:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;271;26;0;14;6620;0 days 1:50:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;214;22;0;11;7130;0 days 1:59:44
 Events
 Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent;EventType;25;0
-eboracum.wsn.event.PeriodicEvent;PeriodicEvent2;EventType;25;0
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;343;0
+Simulation Total Time;7469
+Total Number of Sensed Events by the WSN: 467
+Total Number of Sensed Events by the Drone: 298
+Number of Sensed Events by the Drone per Day
+1;298
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+The first node to die: null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;289;18;0;9;7470;null
+The first node to die: Node1 at 0 days 1:56:6
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;277;24;0;12;6960;0 days 1:56:6
+The first node to die: Node2 at 0 days 1:59:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;295;23;0;11;7130;0 days 1:59:15
+The first node to die: Node3 at 0 days 1:59:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;336;22;0;11;7130;0 days 1:59:15
+The first node to die: Node4 at 0 days 1:59:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;277;22;0;11;7130;0 days 1:59:15
+The first node to die: Node5 at 0 days 1:59:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;315;22;0;11;7130;0 days 1:59:15
+The first node to die: Node6 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;273;28;0;14;6620;0 days 1:50:28
+The first node to die: Node7 at 0 days 1:53:24
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;309;26;0;13;6790;0 days 1:53:24
+The first node to die: Node8 at 0 days 1:47:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;355;30;0;15;6450;0 days 1:47:52
+The first node to die: Node9 at 0 days 1:53:24
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;303;25;0;13;6790;0 days 1:53:24
+The first node to die: Node10 at 0 days 1:53:24
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;436;26;0;13;6790;0 days 1:53:24
+The first node to die: Node11 at 0 days 1:47:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;284;30;0;15;6450;0 days 1:47:52
+The first node to die: Node12 at 0 days 1:47:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;348;30;0;15;6450;0 days 1:47:52
+The first node to die: Node13 at 0 days 1:47:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;307;31;0;15;6450;0 days 1:47:52
+The first node to die: Node14 at 0 days 1:56:6
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;306;24;0;12;6960;0 days 1:56:6
+The first node to die: Node15 at 0 days 1:47:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;290;30;0;15;6450;0 days 1:47:52
+The first node to die: Node16 at 0 days 1:47:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;288;31;0;15;6450;0 days 1:47:52
+The first node to die: Node17 at 0 days 1:42:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;275;32;0;17;6113.333333;0 days 1:42:12
+The first node to die: Node18 at 0 days 1:38:0
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;237;37;0;19;5770;0 days 1:38:0
+The first node to die: Node19 at 0 days 1:38:0
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;244;39;0;19;5770;0 days 1:38:0
+The first node to die: Node20 at 0 days 1:39:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;276;36;0;18;5940;0 days 1:39:19
+The first node to die: Node21 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;304;29;0;14;6620;0 days 1:50:28
+The first node to die: Node22 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;354;28;0;14;6620;0 days 1:50:28
+The first node to die: Node23 at 0 days 1:42:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;255;34;0;17;6110;0 days 1:42:12
+The first node to die: Node24 at 0 days 1:39:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;375;37;0;18;5940;0 days 1:39:19
+The first node to die: Node25 at 0 days 1:38:0
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;251;39;0;19;5770;0 days 1:38:0
+The first node to die: Node26 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;354;28;0;14;6620;0 days 1:50:28
+The first node to die: null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;255;40;0;20;5600;null
+The first node to die: Node28 at 0 days 1:56:6
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;304;24;0;12;6960;0 days 1:56:6
+The first node to die: Node29 at 0 days 1:39:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;247;36;0;18;5940;0 days 1:39:19
+The first node to die: Node30 at 0 days 1:39:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;255;36;0;18;5940;0 days 1:39:19
+The first node to die: null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;252;40;0;20;5600;null
+The first node to die: Node32 at 0 days 1:47:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;278;30;0;15;6450;0 days 1:47:52
+The first node to die: Node33 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;292;28;0;14;6620;0 days 1:50:28
+The first node to die: Node34 at 0 days 1:47:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;303;30;0;15;6450;0 days 1:47:52
+The first node to die: Node35 at 0 days 1:44:54
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;278;31;0;16;6280;0 days 1:44:54
+The first node to die: Node36 at 0 days 1:31:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;282;42;0;21;5430;0 days 1:31:38
+The first node to die: Node37 at 0 days 1:39:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;253;36;1;18;5940;0 days 1:39:19
+The first node to die: null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;357;40;0;20;5600;null
+The first node to die: Node39 at 0 days 1:39:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;258;36;0;18;5940;0 days 1:39:19
+The first node to die: Node40 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;356;28;0;14;6620;0 days 1:50:28
+The first node to die: Node41 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;315;28;0;14;6620;0 days 1:50:28
+The first node to die: Node42 at 0 days 2:1:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;286;20;0;10;7300;0 days 2:1:47
+The first node to die: Node43 at 0 days 1:42:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;267;35;0;17;6110;0 days 1:42:12
+The first node to die: Node44 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;257;28;0;14;6620;0 days 1:50:28
+The first node to die: Node45 at 0 days 1:56:6
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;322;24;0;12;6960;0 days 1:56:6
+The first node to die: Node46 at 0 days 1:56:6
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;265;24;0;12;6960;0 days 1:56:6
+The first node to die: Node47 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;270;27;0;14;6620;0 days 1:50:28
+The first node to die: Node48 at 0 days 1:50:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;196;28;0;14;6620;0 days 1:50:28
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;333;0
+Simulation Total Time;7511
+Total Number of Sensed Events by the WSN: 461
+Total Number of Sensed Events by the Drone: 304
+Number of Sensed Events by the Drone per Day
+1;304
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;294;18;0;9;7470;0 days 2:5:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;267;28;0;14;6620;0 days 1:50:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;272;28;0;14;6620;0 days 1:50:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;333;22;0;11;7130;0 days 1:59:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;243;30;0;15;6450;0 days 1:47:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;299;26;0;13;6790;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;272;27;0;13;6790;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;327;23;0;11;7130;0 days 1:59:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;376;24;1;12;6960;0 days 1:56:36
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;286;30;0;15;6450;0 days 1:47:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;403;32;0;16;6280;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;299;26;0;13;6790;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;371;26;0;13;6790;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;303;30;0;15;6450;0 days 1:47:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;295;28;0;14;6620;0 days 1:50:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;336;18;0;9;7470;0 days 2:5:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;301;28;0;14;6620;0 days 1:50:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;283;35;1;17;6110;0 days 1:42:54
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;309;23;0;11;7130;0 days 1:59:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;274;32;0;16;6280;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;310;28;0;14;6620;0 days 1:50:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;320;22;0;11;7130;0 days 1:59:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;350;31;0;16;6280;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;298;25;0;13;6790;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;384;35;0;17;6110;0 days 1:42:54
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;277;32;0;16;6280;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;360;28;0;14;6620;0 days 1:50:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;301;31;0;15;6450;0 days 1:47:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;301;24;0;12;6960;0 days 1:56:36
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;254;36;0;18;5940;0 days 1:39:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;272;33;0;16;6280;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;222;45;0;22;5260;0 days 1:27:42
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;223;40;0;20;5600;0 days 1:33:37
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;271;32;0;16;6280;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;302;31;0;15;6450;0 days 1:47:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;290;28;0;14;6620;0 days 1:50:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;260;48;0;24;4920;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;263;32;0;16;6280;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;349;42;0;20;5600;0 days 1:33:37
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;240;38;0;19;5770;0 days 1:36:25
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;340;30;0;15;6450;0 days 1:47:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;347;20;0;10;7300;0 days 2:1:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;261;26;0;13;6790;null
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;256;37;0;18;5940;0 days 1:39:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;251;28;0;14;6620;0 days 1:50:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;300;28;0;14;6620;0 days 1:50:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;215;36;0;18;5940;0 days 1:39:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;246;31;0;15;6450;0 days 1:47:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;178;32;0;16;6280;null
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;341;0
+Simulation Total Time;7413
+Total Number of Sensed Events by the WSN: 490
+Total Number of Sensed Events by the Drone: 305
+Number of Sensed Events by the Drone per Day
+1;305
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;258;24;0;12;6960;0 days 1:56:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;264;28;0;14;6620;0 days 1:50:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;279;27;0;13;6790;0 days 1:53:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;325;24;0;12;6960;0 days 1:56:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;269;24;0;12;6960;0 days 1:56:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;295;25;0;13;6790;0 days 1:53:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;260;30;0;15;6450;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;320;22;0;11;7130;0 days 1:59:0
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;324;35;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;305;24;0;12;6960;0 days 1:56:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;439;26;0;13;6790;0 days 1:53:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;316;24;0;12;6960;0 days 1:56:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;346;31;0;16;6280;0 days 1:45:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;294;34;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;272;30;0;15;6450;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;305;24;0;12;6960;0 days 1:56:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;266;36;0;18;5940;0 days 1:40:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;285;34;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;326;20;0;10;7300;0 days 2:3:33
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;326;22;0;11;7130;0 days 1:59:0
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;335;24;0;12;6960;0 days 1:56:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;263;34;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;328;34;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;237;42;0;21;5430;0 days 1:32:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;374;36;0;18;5940;0 days 1:40:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;260;36;0;18;5940;0 days 1:40:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;392;24;0;12;6960;0 days 1:56:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;334;24;0;12;6960;0 days 1:56:3
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;290;26;0;13;6790;0 days 1:53:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;289;29;0;14;6620;0 days 1:50:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;304;25;0;13;6790;0 days 1:53:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;299;30;0;15;6450;0 days 1:48:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;241;38;0;19;5770;0 days 1:36:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;318;22;0;11;7130;0 days 1:59:0
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;312;29;0;14;6620;0 days 1:50:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;280;32;0;16;6280;0 days 1:45:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;349;30;0;15;6450;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;239;40;0;20;5600;0 days 1:34:57
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;359;40;0;20;5600;0 days 1:34:57
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;277;30;0;15;6450;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;331;32;0;16;6280;0 days 1:45:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;306;30;0;15;6450;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;251;30;0;15;6450;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;287;29;0;14;6620;0 days 1:50:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;240;32;1;16;6280;0 days 1:45:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;317;26;0;13;6790;0 days 1:53:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;242;30;0;15;6450;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;230;36;1;19;5773.333333;0 days 1:36:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;202;26;0;13;6790;0 days 1:53:22
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;339;0
+Time that first node die: 0 days 1:59:0
+Simulation Total Time;7822
+Total Number of Sensed Events by the WSN: 519
+Total Number of Sensed Events by the Drone: 309
+Number of Sensed Events by the Drone per Day
+1;309
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;258;26;0;13;6790;0 days 1:53:18
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;265;28;0;14;6620;0 days 1:50:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;298;20;1;10;7300;0 days 2:2:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;304;28;0;14;6620;0 days 1:50:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;204;40;0;20;5600;0 days 1:35:32
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;272;33;0;16;6280;0 days 1:44:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;295;23;0;11;7130;0 days 2:0:33
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;269;34;0;17;6110;0 days 1:42:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;315;35;1;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;308;25;0;12;6960;0 days 1:56:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;400;31;1;15;6450;0 days 1:47:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;231;40;0;20;5600;0 days 1:35:32
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;312;37;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;310;30;0;15;6450;0 days 1:47:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;264;32;0;16;6280;0 days 1:44:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;253;35;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;265;36;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;258;38;0;19;5770;0 days 1:37:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;230;36;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;204;48;0;24;4920;0 days 1:22:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;314;29;0;14;6620;0 days 1:50:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;282;28;0;14;6620;0 days 1:50:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;339;31;0;15;6450;0 days 1:47:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;244;39;0;19;5770;0 days 1:37:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;357;38;0;19;5770;0 days 1:37:21
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;265;32;0;16;6280;0 days 1:44:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;339;33;0;17;6110;0 days 1:42:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;326;27;0;13;6790;0 days 1:53:18
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;262;32;0;16;6280;0 days 1:44:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;277;31;0;15;6450;0 days 1:47:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;262;36;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;289;32;0;16;6280;0 days 1:44:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;267;34;0;17;6110;0 days 1:42:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;361;14;0;7;7810;0 days 2:10:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;376;15;0;7;7810;0 days 2:10:22
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;277;30;0;15;6450;0 days 1:47:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;334;34;0;17;6110;0 days 1:42:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;268;36;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;427;28;0;14;6620;0 days 1:50:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;303;26;0;13;6790;0 days 1:53:18
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;375;24;0;12;6960;0 days 1:56:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;367;16;0;8;7640;0 days 2:7:29
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;235;32;0;16;6280;0 days 1:44:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;273;31;0;16;6280;0 days 1:44:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;257;30;0;15;6450;0 days 1:47:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;331;24;0;12;6960;0 days 1:56:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;274;23;0;11;7130;0 days 2:0:33
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;248;33;0;16;6280;0 days 1:44:50
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;214;22;0;11;7130;0 days 2:0:33
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;371;0
+Time that first node die: 
+Simulation Total Time;7675
+Total Number of Sensed Events by the WSN: 504
+Total Number of Sensed Events by the Drone: 306
+Number of Sensed Events by the Drone per Day
+1;306
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;253;31;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;269;25;0;13;6790;0 days 1:53:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;282;24;0;12;6960;0 days 1:56:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;305;28;0;14;6620;0 days 1:50:29
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;197;38;0;19;5770;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;252;35;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;251;32;0;16;6280;0 days 1:45:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;304;27;0;13;6790;0 days 1:53:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;326;35;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;340;18;0;9;7470;0 days 2:5:33
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;434;26;0;13;6790;0 days 1:53:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;220;42;0;21;5430;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;268;44;0;22;5260;0 days 1:27:53
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;294;32;0;16;6280;0 days 1:45:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;328;17;0;8;7640;0 days 2:7:55
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;268;32;0;16;6280;0 days 1:45:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;291;30;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;267;37;0;18;5940;0 days 1:39:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;226;40;0;20;5600;0 days 1:35:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;220;41;0;21;5430;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;286;35;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;296;28;0;14;6620;0 days 1:50:29
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;344;33;1;16;6280;0 days 1:45:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;292;30;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;393;34;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;264;32;0;16;6280;0 days 1:45:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;320;34;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;302;31;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;306;24;0;12;6960;0 days 1:56:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;296;26;0;13;6790;0 days 1:53:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;284;33;0;16;6280;0 days 1:45:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;299;30;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;270;30;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;256;34;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;283;34;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;294;28;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;368;28;0;14;6620;0 days 1:50:29
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;299;26;0;13;6790;0 days 1:53:14
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;414;30;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;277;30;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;292;38;0;19;5770;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;276;36;0;18;5940;0 days 1:39:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;273;24;0;12;6960;0 days 1:56:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;295;29;0;15;6450;0 days 1:47:34
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;295;18;1;10;7300;0 days 2:2:18
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;256;38;0;19;5770;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;192;43;0;21;5430;0 days 1:30:37
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;201;41;0;21;5430;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;172;34;0;17;6110;
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;364;0
+Time that first node die: 0.0
+Simulation Total Time;7135
+Total Number of Sensed Events by the WSN: 498
+Total Number of Sensed Events by the Drone: 309
+Number of Sensed Events by the Drone per Day
+1;309
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;268;22;0;11;7130;0 days 1:58:55
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;255;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;269;26;0;13;6790;0 days 1:53:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;282;32;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;231;32;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;252;36;0;18;5940;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;252;34;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;286;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;318;34;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;261;35;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;386;35;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;269;32;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;344;31;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;290;34;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;306;22;0;11;7130;0 days 1:58:55
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;253;36;0;18;5940;0 days 1:39:0
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;266;37;0;18;5940;0 days 1:39:0
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;296;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;287;26;0;13;6790;0 days 1:53:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;276;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;283;35;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;265;34;0;17;6110;0 days 1:42:16
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;344;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;284;29;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;422;29;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;310;24;0;12;6960;0 days 1:57:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;358;28;0;14;6620;0 days 1:51:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;302;32;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;261;33;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;268;32;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;280;32;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;298;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;295;26;0;13;6790;0 days 1:53:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;288;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;303;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;272;32;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;312;38;0;19;5770;0 days 1:37:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;278;32;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;439;26;0;13;6790;0 days 1:53:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;297;28;0;14;6620;0 days 1:51:47
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;345;31;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;258;40;0;20;5600;0 days 1:33:39
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;264;26;0;13;6790;0 days 1:53:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;248;39;0;19;5770;0 days 1:37:19
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;242;32;0;16;6280;0 days 1:44:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;318;26;0;13;6790;0 days 1:53:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;270;25;0;12;6960;0 days 1:57:31
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;271;27;0;13;6790;0 days 1:53:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;192;28;0;14;6620;0 days 1:51:47
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;337;0
+Time that first node die: 5600.0
+Simulation Total Time;7158
+Total Number of Sensed Events by the WSN: 495
+Total Number of Sensed Events by the Drone: 303
+Number of Sensed Events by the Drone per Day
+1;303
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;272;25;0;12;6960;0 days 1:56:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;270;26;1;13;6790;0 days 1:53:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;273;27;0;13;6790;0 days 1:53:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;296;32;0;16;6280;0 days 1:44:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;235;30;0;15;6450;0 days 1:48:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;245;36;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;270;28;0;14;6620;0 days 1:50:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;315;23;0;11;7130;0 days 1:59:18
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;334;32;0;16;6280;0 days 1:44:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;264;36;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;416;28;0;14;6620;0 days 1:50:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;250;36;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;281;42;0;21;5430;0 days 1:30:55
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;307;30;0;15;6450;0 days 1:48:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;287;26;0;13;6790;0 days 1:53:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;262;36;0;17;6110;0 days 1:42:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;300;29;0;14;6620;0 days 1:50:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;294;30;0;15;6450;0 days 1:48:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;217;40;0;20;5600;0 days 1:33:27
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;242;39;0;19;5770;0 days 1:36:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;316;26;0;13;6790;0 days 1:53:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;310;23;0;12;6960;0 days 1:56:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;335;32;0;16;6280;0 days 1:44:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;308;26;0;13;6790;0 days 1:53:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;442;26;0;13;6790;0 days 1:53:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;289;26;0;13;6790;0 days 1:53:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;350;30;0;15;6450;0 days 1:48:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;326;27;0;13;6790;0 days 1:53:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;284;28;0;14;6620;0 days 1:50:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;280;30;0;15;6450;0 days 1:48:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;301;27;0;14;6620;0 days 1:50:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;295;30;0;15;6450;0 days 1:48:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;249;37;1;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;275;32;0;16;6280;0 days 1:44:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;296;32;0;16;6280;0 days 1:44:45
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;259;35;0;18;5940;0 days 1:39:9
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;289;41;0;21;5430;0 days 1:30:55
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;270;33;0;17;6110;0 days 1:42:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;391;35;0;17;6110;0 days 1:42:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;266;34;0;17;6110;0 days 1:42:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;319;34;0;17;6110;0 days 1:42:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;318;28;0;14;6620;0 days 1:50:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;245;28;0;14;6620;0 days 1:50:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;280;31;0;15;6450;0 days 1:48:11
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;265;28;0;14;6620;0 days 1:50:23
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;325;26;0;13;6790;0 days 1:53:28
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;279;22;0;11;7130;0 days 1:59:18
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;275;23;0;12;6960;0 days 1:56:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;207;25;0;12;6960;0 days 1:56:5
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;328;0
+Time that first node die: 0 days 1:30:55
+Simulation Total Time;7309
+Total Number of Sensed Events by the WSN: 503
+Total Number of Sensed Events by the Drone: 305
+Number of Sensed Events by the Drone per Day
+1;305
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;255;28;0;14;6620;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;273;28;0;14;6620;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;291;23;0;11;7130;0 days 1:59:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;297;31;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;268;24;0;12;6960;0 days 1:56:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;293;28;0;14;6620;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;280;26;0;13;6790;0 days 1:53:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;305;26;1;13;6790;0 days 1:53:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;352;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;285;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;370;36;0;18;5940;0 days 1:39:29
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;226;41;0;21;5430;0 days 1:31:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;306;39;0;20;5600;0 days 1:33:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;299;32;0;16;6280;0 days 1:44:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;270;33;0;16;6280;0 days 1:44:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;290;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;308;27;0;13;6790;0 days 1:53:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;233;43;0;21;5430;0 days 1:31:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;228;39;0;20;5600;0 days 1:33:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;287;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;341;22;0;11;7130;0 days 1:59:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;247;38;0;19;5770;0 days 1:36:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;359;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;298;28;0;14;6620;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;334;44;1;21;5430;0 days 1:31:2
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;281;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;394;24;0;12;6960;0 days 1:56:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;354;20;1;10;7300;0 days 2:1:49
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;233;40;0;20;5600;0 days 1:33:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;241;40;0;20;5600;0 days 1:33:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;266;36;0;18;5940;0 days 1:39:29
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;251;40;0;20;5600;0 days 1:33:56
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;258;34;0;17;6110;0 days 1:42:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;322;22;0;11;7130;0 days 1:59:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;336;23;1;12;6960;0 days 1:56:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;249;38;0;19;5770;0 days 1:36:12
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;333;35;0;17;6110;0 days 1:42:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;277;34;0;17;6110;0 days 1:42:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;404;33;0;16;6280;0 days 1:44:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;273;32;0;16;6280;0 days 1:44:46
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;373;23;1;12;6960;0 days 1:56:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;308;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;243;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;270;35;0;17;6110;0 days 1:42:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;264;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;304;30;0;15;6450;0 days 1:47:30
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;270;22;0;11;7130;0 days 1:59:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;276;24;0;12;6960;0 days 1:56:15
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;209;24;0;12;6960;0 days 1:56:15
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;338;0
+Time that first node die: eboracum.wsn.network.node.sensor.MuleWSNNode 0 days 1:31:2
+Simulation Total Time;7497
+Total Number of Sensed Events by the WSN: 527
+Total Number of Sensed Events by the Drone: 317
+Number of Sensed Events by the Drone per Day
+1;317
+Nodes
+Class Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node0;0;273;22;0;11;7130;0 days 1:58:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node1;0;307;18;0;9;7470;0 days 2:4:57
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node2;0;284;24;0;12;6960;0 days 1:56:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node3;0;316;26;0;13;6790;0 days 1:54:1
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node4;0;279;22;0;11;7130;0 days 1:58:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node5;0;288;29;0;15;6450;0 days 1:48:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node6;0;309;18;0;9;7470;0 days 2:4:57
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node7;0;257;34;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node8;0;327;37;0;18;5940;0 days 1:39:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node9;0;291;28;0;14;6620;0 days 1:50:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node10;0;398;33;0;16;6280;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node11;0;295;28;0;14;6620;0 days 1:50:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node12;0;337;34;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node13;0;314;28;0;14;6620;0 days 1:50:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node14;0;240;37;0;18;5940;0 days 1:39:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node15;0;256;37;1;18;5940;0 days 1:39:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node16;0;281;32;0;16;6280;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node17;0;295;30;1;15;6450;0 days 1:48:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node18;0;296;26;0;12;6960;0 days 1:56:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node19;0;260;36;0;18;5940;0 days 1:39:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node20;0;294;32;0;16;6280;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node21;0;261;33;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node22;0;320;33;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node23;0;264;32;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node24;0;350;39;0;19;5770;0 days 1:36:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node25;0;247;39;0;19;5770;0 days 1:36:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node26;0;367;28;0;14;6620;0 days 1:50:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node27;0;317;28;0;14;6620;0 days 1:50:40
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node28;0;263;32;0;16;6280;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node29;0;265;32;0;16;6280;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node30;0;255;38;0;19;5770;0 days 1:36:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node31;0;243;42;0;21;5430;0 days 1:32:20
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node32;0;246;38;0;19;5770;0 days 1:36:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node33;0;317;22;0;11;7130;0 days 1:58:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node34;0;310;30;0;15;6450;0 days 1:48:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node35;0;254;38;0;19;5770;0 days 1:36:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node36;0;316;36;0;18;5940;0 days 1:39:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node37;0;229;44;0;22;5260;0 days 1:29:38
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node38;0;383;36;0;18;5940;0 days 1:39:5
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node39;0;283;30;0;15;6450;0 days 1:48:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node40;0;332;33;0;17;6110;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node41;0;337;24;0;12;6960;0 days 1:56:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node42;0;237;32;0;16;6280;
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node43;0;315;22;0;11;7130;0 days 1:58:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node44;0;282;22;0;11;7130;0 days 1:58:52
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node45;0;324;24;0;12;6960;0 days 1:56:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node46;0;244;30;0;15;6450;0 days 1:48:8
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node47;0;278;25;0;12;6960;0 days 1:56:17
+eboracum.wsn.network.node.sensor.MuleWSNNode;Node48;0;213;22;0;11;7130;0 days 1:58:52
+Events
+Class Name; Name; Type; Number of Produced Events; Number of Times Sensed
+eboracum.wsn.event.StochasticPeriodicJumperEvent;E0_0;E0;355;0
+Time that first node die: Node37 0 days 1:29:38

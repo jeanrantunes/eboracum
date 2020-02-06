@@ -46,7 +46,7 @@ public class PaperSimulation extends BenchmarksGenerator {
 		this.cpuCost = 50;
 		this.idleCost = 0.3;
 		this.wirelessEvents.clear();
-		this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "StochasticPeriodicJumperEvent"), 1);
+		this.wirelessEvents.put(new WirelessEvent("E0", 1.0, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "StochasticPeriodicJumperEvent"), 1);
 		//this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "RandomMobileEvent"), 1);
 		HistogramSpectrogramFactory.newPoissonHistogram(100, "periodHist.csv");
 		this.wirelessNodes.clear();

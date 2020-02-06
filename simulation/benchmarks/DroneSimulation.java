@@ -38,9 +38,9 @@ public class DroneSimulation extends BenchmarksGenerator {
 	
 	private void beginSetupBeePaperConfig(){	
 		this.mobileSink = true;
-		this.initBattery = 5400000/2;
+		this.initBattery = 5400/2;
 //		this.commCover = 160;
-		this.commCover = 120;
+		this.commCover = 160;
 		this.sensorCover = 120;
 		this.numOfNodes = 49;
 		if (!nodesRandomizeFlag) generateGridPosition(numOfNodes);
@@ -48,7 +48,7 @@ public class DroneSimulation extends BenchmarksGenerator {
 		this.cpuCost = 50;
 		this.idleCost = 0.3;
 		this.wirelessEvents.clear();
-		this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "StochasticPeriodicJumperEvent"), 1);
+		this.wirelessEvents.put(new WirelessEvent("E0", 1.0, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "StochasticPeriodicJumperEvent"), 1);
 		//this.wirelessEvents.put(new WirelessEvent("E0", 0.0018, false,"{1.0, 0.0, 0.0, 1.0}", "<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"1\"/></task>", "RandomMobileEvent"), 1);
 		HistogramSpectrogramFactory.newPoissonHistogram(100, "DronePeriodHist.csv");
 		this.wirelessNodes.clear();

@@ -81,7 +81,7 @@
         </property>
     </entity>
     <entity name="PeriodicEvent" class="eboracum.wsn.event.PeriodicEvent">
-        <property name="_location" class="ptolemy.kernel.util.Location" value="[365.0, 380.0]">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[360.0, 180.0]">
         </property>
     </entity>
     <entity name="Drone" class="eboracum.wsn.network.node.Drone">
@@ -95,7 +95,7 @@
         <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel">
         </property>
         <doc>Simple WSN Sensor Node based on a FIFO CPU to handle the Events to be processed.</doc>
-        <property name="_location" class="ptolemy.kernel.util.Location" value="{400.0, 325.0}">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[365.0, 110.0]">
         </property>
     </entity>
     <entity name="MuleWSNNode2" class="eboracum.wsn.network.node.sensor.MuleWSNNode">

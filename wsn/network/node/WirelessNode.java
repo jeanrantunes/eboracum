@@ -46,8 +46,8 @@ public abstract class WirelessNode extends TypedAtomicActor {
     private Entity myNetwork;
 	protected EllipseAttribute _circle;
 	protected EllipseAttribute _circle_comm;
-//    protected WirelessIOPort in;
-//    protected WirelessIOPort out;
+    protected WirelessIOPort in;
+    protected WirelessIOPort out;
     protected Time timeControler;
     protected Time newTimeControler;
     protected String iconColor = WirelessNode.ICONCOLOR;
@@ -75,10 +75,10 @@ public abstract class WirelessNode extends TypedAtomicActor {
     	commCoverRadius.setExpression("CommCover");
     	network = new StringParameter(this,"Network");
     	network.setExpression("SimpleAdHocNetwork");
-//    	in = new WirelessIOPort(this, "input", true, false);
-//    	in.outsideChannel.setExpression("$CommChannelName");
-//    	out = new WirelessIOPort(this, "output", false, true);
-//    	out.outsideChannel.setExpression("$CommChannelName");
+    	in = new WirelessIOPort(this, "input", true, false);
+    	in.outsideChannel.setExpression("$CommChannelName");
+    	out = new WirelessIOPort(this, "output", false, true);
+    	out.outsideChannel.setExpression("$CommChannelName");
     	gateway = new StringParameter(this,"Gateway");
     	gateway.setExpression("");
     	Parameter randomize = new Parameter(this,"randomize");
@@ -136,12 +136,12 @@ public abstract class WirelessNode extends TypedAtomicActor {
 			}
 		}
 		// if senses an event
-//		if(in.hasToken(0)){
-//			// receives and decide what to do with the message, if it is for this node.
-//			if (this.receiveMessage(this.in.get(0).toString())) {
-//				this.sendMessageToSink(this.receivedMessage);
-//			}
-//		}
+		if(in.hasToken(0)){
+			// receives and decide what to do with the message, if it is for this node.
+			if (this.receiveMessage(this.in.get(0).toString())) {
+				this.sendMessageToSink(this.receivedMessage);
+			}
+		}
 		if (!this.timeControler.equals(this.getDirector().getModelTime())){
 			if (this.synchronizedRealTime.getExpression().equals("true")) {
 				_fireAt(this.getDirector().getModelTime().add(1));
@@ -201,35 +201,44 @@ public abstract class WirelessNode extends TypedAtomicActor {
 		return super.postfire();
 	}
 
-	public boolean receiveMessage(String tempMessage) throws NumberFormatException, IllegalActionException{
+	public boolean receiveMessage(String tempMessage) throws NumberFormatException, IllegalActionException {
+		
+		if (tempMessage.contains("DroneHello") || this.getName() == "Drone") { /*message of handskake*/
+			this.numberOfReceivedMessages++;
+			return false;
+		} else if (tempMessage.contains("target=Drone")) { /*event sensored by node*/
+			this.numberOfReceivedMessages++;
+			this.receivedMessage = tempMessage.split(",")[1].split("=")[1];
+//			System.out.println("Wireless node: " + tempMessage.split(",")[1].split("=")[1]);
+//			System.out.println("Wireless node: " + tempMessage.split(",")[0].split("=")[1]);
+//			System.out.println(this.getName());
+			return true;
+		}
+		
 		tempMessage = tempMessage.substring(2, tempMessage.length()-2);
 		//double commCost = this.eventCommCostMap.get(tempMessage.split(",")[0].split("=")[1]);
 		//if ((Double.parseDouble(battery.getValueAsString()) >= commCost)){
 			//battery.setExpression(Double.toString( ( Double.parseDouble(battery.getValueAsString()) - commCost )));
 			//_fireAt(this.getDirector().getModelTime().add(round(Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression()))));
-			this.numberOfReceivedMessages++;
-			System.out.println(tempMessage.split(",").length);
-//			if (tempMessage.split(",").length > 0) {
-//				
-//			}
-			System.out.println(this.getName());
-			if (this.getName().equals(tempMessage.split(",")[1].split("=")[1])){
-				this.receivedMessage = tempMessage.split(",")[0].split("=")[1];
-				return true;
-			}
-			else return false;
+		this.numberOfReceivedMessages++;
+		
+		if (this.getName().equals(tempMessage.split(",")[1].split("=")[1])){
+			this.receivedMessage = tempMessage.split(",")[0].split("=")[1];
+			return true;
+		}
+		else return false;
 		//}
 		//else return false;
 	}
 	
 	protected boolean sendMessageToSink(String token) throws NoRoomException, IllegalActionException{
 			double commCost = this.eventCommCostMap.get(token.split("_")[0]);
-			if ((!gateway.getExpression().equals("")&&!gateway.getExpression().equals("END")) && (Double.parseDouble(battery.getValueAsString()) >= commCost)){
+			if ((!gateway.getExpression().equals("") && !gateway.getExpression().equals("END")) && (Double.parseDouble(battery.getValueAsString()) >= commCost)){
 				battery.setExpression(Double.toString( ( Double.parseDouble(battery.getValueAsString()) - commCost )));
 				if (this.synchronizedRealTime.getExpression().equals("false"))
 					this.timeOfDeath = (this.getDirector().getModelTime().add(((Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression())))));
 					//_fireAt(this.getDirector().getModelTime().add(round(Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression()))));
-//				out.send(0, new StringToken("{event="+token+",gateway="+gateway.getExpression()+"}"));
+				out.send(0, new StringToken("{event="+token+",gateway="+gateway.getExpression()+"}"));
 				this.numberOfSentMessages++;
 				return true;
 			}
@@ -243,7 +252,7 @@ public abstract class WirelessNode extends TypedAtomicActor {
 			battery.setExpression(Double.toString( ( Double.parseDouble(battery.getValueAsString()) - commCost )));
 			this.timeOfDeath = (this.getDirector().getModelTime().add(((Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression())))));
 			//_fireAt(this.getDirector().getModelTime().add(round(Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression()))));
-//			out.send(0, new StringToken("{="+token+",gateway=ALL}"));
+			out.send(0, new StringToken("{="+token+",gateway=ALL}"));
 			//this.numberOfSentMessages++;
 			return true;
 		}
@@ -329,8 +338,8 @@ public abstract class WirelessNode extends TypedAtomicActor {
 		SingletonParameter hide = new SingletonParameter(this, "_hideName");
 		hide.setToken(BooleanToken.TRUE);
 		hide.setVisibility(Settable.EXPERT);
-//		(new SingletonParameter(in, "_hide")).setToken(BooleanToken.TRUE);
-//		(new SingletonParameter(out, "_hide")).setToken(BooleanToken.TRUE);
+		(new SingletonParameter(in, "_hide")).setToken(BooleanToken.TRUE);
+		(new SingletonParameter(out, "_hide")).setToken(BooleanToken.TRUE);
 	}
 	
 	public double round(double value) {

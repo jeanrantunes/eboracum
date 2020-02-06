@@ -88,7 +88,7 @@
         <property class="ptolemy.data.expr.Parameter" name="InitBattery"
                 value="GlobalInitBattery">
         </property>
-        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0.3">
+        <property class="ptolemy.data.expr.Parameter" name="IdleEnergyCost" value="0">
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="[0,500]">
         </property>

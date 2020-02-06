@@ -39,7 +39,7 @@ public class SimpleFIFOBasedCPU implements SensorCPU{
 	}
 	
 	public List<Object> run(String task, Time currentTime){
-		
+//		System.out.println(task);
 		String processedEvent = null;
 		if (task != null)
 			this.queue.add(task);
@@ -48,7 +48,10 @@ public class SimpleFIFOBasedCPU implements SensorCPU{
 			this.nextTimeFree = Time.NEGATIVE_INFINITY;
         }
 		if (this.nextTimeFree.equals(Time.NEGATIVE_INFINITY) && this.queue.size() > 0) {
-			this.nextTimeFree = currentTime.add(round(taskCostMap.get(this.queue.element().split("_")[0])));
+			Double taskCost = taskCostMap.get(this.queue.element().split("_")[0]);
+			if (taskCost != null) {
+				this.nextTimeFree = currentTime.add(round(taskCostMap.get(this.queue.element().split("_")[0])));
+			}
 		}
 		//if (task != null) processedEvent = task;
 		this.tempReturn.clear();
@@ -56,10 +59,9 @@ public class SimpleFIFOBasedCPU implements SensorCPU{
 		tempReturn.add(processedEvent);
 		//System.out.println(this.nextTimeFree+"  "+task);
 		tempReturn.add(this.nextTimeFree);
-//		System.out.println(task);
+		//System.out.print(queue+";");
 		
 		if (processedEvent != null) {
-			System.out.println(currentTime + "-" + processedEvent);
 			this.block = new Block(); 
 			block.setEventInMemory(processedEvent);
 			block.setTimeOccurrentEvent(currentTime);

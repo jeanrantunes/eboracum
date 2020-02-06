@@ -41,11 +41,11 @@
     <property class="ptolemy.data.expr.ExpertParameter" name="_vergilCenter"
              value="{586.7041666666668, 269.3277777777777}">
     </property>
-    <property class="ptolemy.data.expr.Parameter" name="GlobalInitBattery" value="2700000.0">
+    <property class="ptolemy.data.expr.Parameter" name="GlobalInitBattery" value="2700.0">
     </property>
     <property class="ptolemy.data.expr.Parameter" name="SensorCover" value="120.0">
     </property>
-    <property class="ptolemy.data.expr.Parameter" name="CommCover" value="120.0">
+    <property class="ptolemy.data.expr.Parameter" name="CommCover" value="160.0">
     </property>
     <property class="ptolemy.data.expr.Parameter" name="DataReportFile"
              value="&#34;eboracum/data/defaultReport.csv&#34;">
@@ -140,7 +140,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -171,6 +171,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 125.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -219,7 +247,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -250,6 +278,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 250.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -298,7 +354,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -329,6 +385,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 375.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -377,7 +461,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -408,6 +492,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 500.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -456,7 +568,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -487,6 +599,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 625.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -535,7 +675,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -566,6 +706,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 750.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -614,7 +782,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -645,6 +813,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{125.0, 875.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -693,7 +889,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -724,6 +920,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 125.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -772,7 +996,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -803,6 +1027,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 250.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -851,7 +1103,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -882,6 +1134,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 375.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -930,7 +1210,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -961,6 +1241,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 500.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1009,7 +1317,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1040,6 +1348,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 625.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1088,7 +1424,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1119,6 +1455,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 750.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1167,7 +1531,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1198,6 +1562,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{250.0, 875.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1246,7 +1638,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1277,6 +1669,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 125.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1325,7 +1745,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1356,6 +1776,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 250.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1404,7 +1852,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1435,6 +1883,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 375.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1483,7 +1959,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1514,6 +1990,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 500.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1562,7 +2066,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1593,6 +2097,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 625.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1641,7 +2173,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1672,6 +2204,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 750.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1720,7 +2280,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1751,6 +2311,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{375.0, 875.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1799,7 +2387,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1830,6 +2418,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 125.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1878,7 +2494,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1909,6 +2525,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 250.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -1957,7 +2601,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -1988,6 +2632,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 375.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2036,7 +2708,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2067,6 +2739,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 500.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2115,7 +2815,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2146,6 +2846,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 625.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2194,7 +2922,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2225,6 +2953,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 750.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2273,7 +3029,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2304,6 +3060,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{500.0, 875.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2352,7 +3136,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2383,6 +3167,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 125.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2431,7 +3243,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2462,6 +3274,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 250.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2510,7 +3350,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2541,6 +3381,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 375.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2589,7 +3457,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2620,6 +3488,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 500.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2668,7 +3564,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2699,6 +3595,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 625.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2747,7 +3671,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2778,6 +3702,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 750.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2826,7 +3778,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2857,6 +3809,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{625.0, 875.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2905,7 +3885,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -2936,6 +3916,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 125.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -2984,7 +3992,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3015,6 +4023,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 250.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3063,7 +4099,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3094,6 +4130,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 375.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3142,7 +4206,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3173,6 +4237,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 500.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3221,7 +4313,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3252,6 +4344,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 625.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3300,7 +4420,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3331,6 +4451,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 750.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3379,7 +4527,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3410,6 +4558,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{750.0, 875.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3458,7 +4634,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3489,6 +4665,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 125.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3537,7 +4741,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3568,6 +4772,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 250.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3616,7 +4848,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3647,6 +4879,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 375.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3695,7 +4955,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3726,6 +4986,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 500.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3774,7 +5062,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3805,6 +5093,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 625.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3853,7 +5169,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3884,6 +5200,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 750.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
@@ -3932,7 +5276,7 @@
         <property class="ptolemy.data.expr.StringParameter" name="Network"
                 value="SimpleAdHocNetwork">
         </property>
-        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="Drone">
+        <property class="ptolemy.data.expr.StringParameter" name="Gateway" value="">
         </property>
         <property class="ptolemy.data.expr.Parameter" name="randomize" value="false">
         </property>
@@ -3963,6 +5307,34 @@
         </property>
         <property class="ptolemy.kernel.util.Location" name="_location" value="{875.0, 875.0}">
         </property>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="input">
+            <property name="input"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
+        <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="output">
+            <property name="output"/>
+            <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"
+                   value="$CommChannelName">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="outsideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.StringParameter" name="insideChannel" value="">
+            </property>
+            <property class="ptolemy.data.expr.Parameter" name="insideTransmitProperties">
+            </property>
+            <property class="ptolemy.data.expr.SingletonParameter" name="_hide" value="true">
+            </property>
+        </port>
         <port class="ptolemy.domains.wireless.kernel.WirelessIOPort" name="inputSensoring">
             <property name="input"/>
             <property class="ptolemy.data.expr.StringParameter" name="outsideChannel"

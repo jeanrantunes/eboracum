@@ -3,13 +3,17 @@ package eboracum.wsn.network.node;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import eboracum.wsn.network.node.sensor.cpu.Block;
 import ptolemy.actor.NoTokenException;
 import ptolemy.actor.util.Time;
 import ptolemy.data.StringToken;
+import ptolemy.data.Token;
 import ptolemy.data.expr.Parameter;
 import ptolemy.data.expr.StringParameter;
 import ptolemy.domains.wireless.kernel.WirelessIOPort;
@@ -31,28 +35,53 @@ public class Drone extends NetworkMainGateway {
 	private int directionY;
 	private int speed;
 	private int detectionDistance;
+	private int detectionDistanceX;
+	private int detectionDistanceY;
+	private int accDetectionDistance;
 	private int count = 0;
 	private boolean goBackToOrigin;
+	private int numberOfHankShake = 0;
+	private ArrayList<String> lastEventsRound;
+	private int originX, originY;
+	public int eventSensoredByDroneCounter;
+	public int eventSensoredByDroneGenCounter;
+	private int dayCounter;
+	public ArrayList <Integer> detailEventSensoredByDroneCounter; 
 	
 	public Drone(CompositeEntity container, String name) throws IllegalActionException, NameDuplicationException {
 		super(container, name);
-		this.x = 0;
-		this.y = 0;
+		
 		this.scenarioXY = new int[2];
 		this.directionX = 1;
 		this.directionY = 1;
-		this.speed = 100;
 		this.detectionDistance = 100;
+		this.detectionDistanceX = 0;
+		this.detectionDistanceY = 0;
+		this.accDetectionDistance = this.detectionDistance;
 		this.goBackToOrigin = false;
-		
+		this.lastEventsRound = new ArrayList();
+		this.eventSensoredByDroneCounter = 0;
+		this.dayCounter = 1;
+
 		Parameter axisX = new Parameter(this,"Size axis X");
 		Parameter axisY = new Parameter(this,"Size axis Y");
+		
 		axisX.setExpression("1000");
 		axisY.setExpression("1000");
 		
 		this.scenarioXY[0] = Integer.parseInt(axisX.getValueAsString());
 		this.scenarioXY[1] = Integer.parseInt(axisY.getValueAsString());
-
+		
+		this.x = (int) (0.10 * this.scenarioXY[0]);
+		this.y = (int) (0.10 * this.scenarioXY[1]);
+		this.originX = this.x;
+		this.originY = this.x;
+		
+		this.speed = 50;
+		
+		this.scenarioXY[0] *= 0.90;
+		this.scenarioXY[1] *= 0.90;
+		
 		inPort = new WirelessIOPort(this, "inputDrone", true, false);
 		inPort.outsideChannel.setExpression("$CommChannelName");
 		outPort = new WirelessIOPort(this, "outputDrone", false, true);
@@ -62,16 +91,22 @@ public class Drone extends NetworkMainGateway {
 	
 	public void initialize() throws IllegalActionException{
 		super.initialize();
+		this.eventSensoredByDroneCounter = 0;
+		detailEventSensoredByDroneCounter = new ArrayList<Integer>();
 	}
 	
 	@SuppressWarnings("null")
 	public void fire() throws IllegalActionException {
 		super.fire();
-		zigzag();
-		if(inPort.hasToken(0)){
-			addEventToTheMemoryDrone(inPort.get(0).toString());
+		spiral();
+		if (inPort.hasToken(0) && !this.goBackToOrigin){
+			Token message = inPort.get(0);
+			if (message != null) {
+				addEventToTheMemoryDrone(message.toString());
+			}
+		} else if (!this.goBackToOrigin) {
+			outPort.send(0, new StringToken("{message=DroneHello}"));
 		}
-		outPort.send(0, new StringToken("{message=DroneHello}"));
 	}
 
 	public void zigzag() throws NoTokenException, IllegalActionException {
@@ -89,7 +124,7 @@ public class Drone extends NetworkMainGateway {
 			this.directionX = 1;
 			this.x += this.speed * this.directionX;
 			this.count = 0;
-		} else if ((this.x == this.scenarioXY[0] && this.directionX == 1) || (this.x == 0 && this.directionX == -1)) {
+		} else if ((this.x == this.scenarioXY[0] && this.directionX == 1) || (this.x == this.originX && this.directionX == -1)) {
 			this.y += this.speed * this.directionY;
 			this.count += this.speed;
 		} else {
@@ -99,35 +134,67 @@ public class Drone extends NetworkMainGateway {
 		move(this.x,this.y);
 	}
 	
+	public void spiral() throws NoTokenException, IllegalActionException {
+		
+		
+		if (this.goBackToOrigin) {
+			goBackToOrigin();
+		} else if (this.scenarioXY[0]/2 - this.speed / 2 <= this.x && this.x <= this.scenarioXY[0]/2 + this.speed / 2 && this.scenarioXY[1]/2 - this.speed / 2 <= this.y && this.y <= this.scenarioXY[1]/2 + this.speed / 2) {
+			this.goBackToOrigin = true;
+			this.detectionDistanceX = 0;
+			this.detectionDistanceY = 0;
+			goBackToOrigin();
+		} else if ((this.y - (this.detectionDistanceY + this.detectionDistance)) <= this.originY && this.directionY == -1) { //turn right
+			this.detectionDistanceX += this.detectionDistance;
+			this.detectionDistanceY += this.detectionDistance;
+			this.directionX = 1;
+			this.directionY = 1;
+			this.x += this.speed * this.directionX;
+		} else if (this.x <= (this.originX + this.detectionDistanceX) && this.directionX == -1) { //top
+			this.directionY = -1;
+			this.y += this.speed * this.directionY;
+		} else if (this.y >= (this.scenarioXY[1] - this.detectionDistanceY)) { //turn left
+			this.directionX = -1;
+			this.x += this.speed * this.directionX;
+		} else if (this.x >= (this.scenarioXY[0] - this.detectionDistanceX)) { //bottom
+			this.y += this.speed * this.directionX;
+		}  
+		else { //right
+			this.x += this.speed * this.directionX;
+		}
+		
+		move(this.x,this.y);
+	}
+	
 	public void goBackToOrigin() throws NoTokenException, IllegalActionException {
-		if (this.x == 0 && this.y == 0)	{
+		if (this.x == this.originX && this.y == this.originY) {
 			this.goBackToOrigin = false;
 		}
 		
-		if (this.x == 0 && this.y < 0) {
+		if (this.x == this.originX && this.y < this.originY) {
 			this.y += this.speed;
-		} else if (this.x == 0 && this.y > 0) {
+		} else if (this.x == this.originX && this.y > this.originY) {
 			this.y -= this.speed;
-		} else if (this.x > 0) {
+		} else if (this.x > this.originX) {
 			this.x -= this.speed;
-		} else if (this.x < 0) {
+		} else if (this.x < this.originX) {
 			this.x += this.speed;
 		}
 		
-		if (this.y == 0 && this.x < 0) {
+		if (this.y == this.originY && this.x < this.originX) {
 			this.x += this.speed;
-		} else if (this.y == 0 && this.x > 0) {
+		} else if (this.y == this.originY && this.x > this.originX) {
 			this.x -= this.speed;
-		} else if (this.y > 0) {
+		} else if (this.y > this.originY) {
 			this.y -= this.speed;
-		} else if (this.y < 0) {
+		} else if (this.y < this.originY) {
 			this.y += this.speed;
 		} 
 	}
 
 	public void addEventToTheMemoryDrone(String received) throws NumberFormatException, IllegalActionException {
 		String[] aux = received.split("[\\=\\,\\{\\}\\\"]");
-		System.out.println(aux);
+	
 		if(aux[aux.length-1].equals("Drone")) {
 			String node = null;
 			Block b = new Block();
@@ -144,13 +211,95 @@ public class Drone extends NetworkMainGateway {
 				}
 			}
 			
-			if(memoryDrone.containsKey(node)) {
-				memoryDrone.get(node).add(b);
-			}
-			else { 
-				memoryDrone.put(node, new ArrayList<Block>(Arrays.asList(b)));
+			if (!this.lastEventsRound.contains(b.getProcessedEvent())) {
+				this.lastEventsRound.add(b.getProcessedEvent());
+				
+				if(memoryDrone.containsKey(node)) {
+					memoryDrone.get(node).add(b);
+					this.eventSensoredByDroneGenCounter++;
+					this.eventSensoredByDroneCounter++;
+					if (this.getDirector().getModelTime().getDoubleValue()/(3600*24) > this.dayCounter){
+						
+						System.out.println("day " + this.dayCounter + " :" +this.eventSensoredByDroneCounter + "sensored;");
+						
+						detailEventSensoredByDroneCounter.add(this.eventSensoredByDroneCounter);
+						this.dayCounter++;
+						this.eventSensoredByDroneCounter = 0;
+					}
+					
+				}
+				else { 
+					this.eventSensoredByDroneCounter++;
+					memoryDrone.put(node, new ArrayList<Block>(Arrays.asList(b)));
+				}
 			}
 		}
+	}
+	
+	public int eventsInDroneMemory() {
+		Set<Entry<String, ArrayList<Block>>> set = this.memoryDrone.entrySet();
+		Iterator it = set.iterator();
+		int count = 0;
+		while(it.hasNext()){
+			Entry<String, ArrayList<Block>> entry = (Entry)it.next();
+			count += entry.getValue().size();
+		}
+		
+		return count;
+	}
+	
+	public void hasDuplicatedItemsOnDroneMemory() {
+		String events = "";
+		
+		int count = 0, count2 = 0;
+		String lastNodeWithItem = "";
+		
+		for(String item: this.lastEventsRound) {
+			Set<Entry<String, ArrayList<Block>>> set = this.memoryDrone.entrySet();
+			Iterator it = set.iterator();
+			count = 0;
+			lastNodeWithItem = "";
+			while(it.hasNext()){
+				
+				Entry<String, ArrayList<Block>> entry = (Entry)it.next();
+//				System.out.println("node -> " + entry.getKey());
+				for(Block block: entry.getValue()) {
+//					System.out.println("- blocks " + block.getProcessedEvent() + "  " + item);
+					if (block.getProcessedEvent() == item) {
+						count ++; 
+						count2 ++;
+					}
+					if (count == 1) {
+						lastNodeWithItem = entry.getKey();
+					} else if (count > 1) {
+						System.out.println("======\n");
+						System.out.println("Have repeated items: " + block.getProcessedEvent() + " - " + item);
+						System.out.println("In the nodes " + entry.getKey() + " and " + lastNodeWithItem + "\n\n");
+						System.out.println("======");
+					}
+				}
+			}
+		}
+	}
+	
+	public String getMemory() {
+		Set<Entry<String, ArrayList<Block>>> set = this.memoryDrone.entrySet();
+		Iterator it = set.iterator();
+		String events = "\nNodes in drone memory: \n";
+		
+		while(it.hasNext()){
+			Entry<String, ArrayList<Block>> entry = (Entry)it.next();
+//		    System.out.println(entry.getKey() + ":\n");
+//			events += entry.getKey() + ";" + entry.getValue().size() + "\n";
+			events += "-->" + entry.getKey() + " :\n";
+			for(Block item: entry.getValue()) {
+				events += "[" +item.getProcessedEvent()+"--"+item.getTimeEvent() +"]\n";
+//				System.out.println("[ " +item.getProcessedEvent()+"--"+item.getTimeEvent() +" ]");
+			}
+		    
+		}
+	    
+		return events;
 	}
 	
 	public void move(int x, int y) throws NoTokenException, IllegalActionException {

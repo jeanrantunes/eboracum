@@ -56,7 +56,7 @@ public abstract class BenchmarksGenerator {
 	protected String wirelessSensorNodesType;
 	protected double cpuCost;
 	protected double idleCost;
-	protected boolean mobileSink;
+	protected static boolean mobileSink;
 	 
 	public BenchmarksGenerator() {
 		this.runBenchmarks();
@@ -68,13 +68,19 @@ public abstract class BenchmarksGenerator {
 		try {
 			createDataReportFile(simulationIdentification,round);
 			
-			Process p = Runtime.getRuntime().exec("java ptolemy.vergil.VergilApplication -visualsense -DataReportFile &quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot; eboracum/data/"+simulationIdentification+".xml");
+			Process p = Runtime.getRuntime().exec("java -Xmx8192m ptolemy.vergil.VergilApplication -visualsense -runThenExit -DataReportFile &quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot; eboracum/data/"+simulationIdentification+".xml");
 /*no GUI*/
+//			Process p = Runtime.getRuntime().exec("java -Xmx8192m ptolemy.actor.gui.MoMLSimpleApplication eboracum/data/\"+simulationIdentification+\".xml -DataReportFile &quot;eboracum/data/"+simulationIdentification+"_"+round+".csv&quot;");
+			
 			//java -classpath . ptolemy.actor.gui.MoMLSimpleApplication eboracum/data/NodeGrid49_SideSink_EventSpaceDistUniform_NoNetRebuild_EventsVarID0.xml
 			p.waitFor();
 		} catch (IOException e) {//ThenExit
 			e.printStackTrace();
 		}
+	}
+	
+	public static boolean isMobileSink() {
+		return mobileSink;
 	}
 	
 	protected void generateGridPosition(int n){

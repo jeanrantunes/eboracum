@@ -39,10 +39,9 @@ public class NetworkMainGateway extends WirelessNode {
 		super.fire();
 		battery.setExpression(initBattery.getValueAsString());
 		if (this.receivedMessage != null) {
-			//System.out.println("Sink pre flt:   >>>>>>> "+this.receivedMessage+" "+lastSensedEvent);
+//			System.out.println("Sink pre flt:   >>>>>>> "+this.receivedMessage+" "+lastSensedEvent);
 			if (!this.receivedMessage.equals(lastSensedEvent)){
 				this.eventSensoredGenCounter++;
-				//System.out.println("Sink:   >>>>>>> "+this.eventSensoredCounter);
 				if (this.getDirector().getModelTime().getDoubleValue()/(3600*24) > this.dayCounter){
 					this.eventSensoredCounter++;
 					detailEventSensoredCounter.add(this.eventSensoredCounter);

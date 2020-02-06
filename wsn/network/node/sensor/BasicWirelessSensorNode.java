@@ -1,10 +1,14 @@
 package eboracum.wsn.network.node.sensor;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.TimeZone;
+import java.util.concurrent.TimeUnit;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -54,6 +58,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
     public Parameter sensorCoverRadius;
     public int numberOfSensoredEvents;
     public int numberOfQueuedEvents;
+    public String whenItDied;
     
     
     public BasicWirelessSensorNode(CompositeEntity container, String name)
@@ -79,6 +84,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
     	this.eventOrdinaryMap = new HashMap<String, Boolean>();
     	type = new StringParameter(this, "Type");
         type.setExpression("EventType");
+        this.whenItDied = "";
     }
     
     public void initialize() throws IllegalActionException {
@@ -96,6 +102,18 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
     
 	public void fire() throws NoTokenException, IllegalActionException {
 		super.fire();
+//		System.out.println(this.getDisplayName() + " - " + this.battery.getValueAsString() + " - " + this.getDirector().getModelTime().getDoubleValue());
+		if (Double.parseDouble(this.battery.getValueAsString()) <= 0) {
+			long time = (long) this.getDirector().getModelTime().getDoubleValue();
+
+			int day = (int)TimeUnit.SECONDS.toDays(time);        
+			long hours = TimeUnit.SECONDS.toHours(time) - (day * 24);
+			long minute = TimeUnit.SECONDS.toMinutes(time) - (TimeUnit.SECONDS.toHours(time) * 60);
+			long second = TimeUnit.SECONDS.toSeconds(time) - (TimeUnit.SECONDS.toMinutes(time) * 60);
+			
+			this.whenItDied = day + " days " + hours + ":" + minute + ":" + second;
+//			System.out.println(day + " days " + hours + ":" + minute + ":" + second );
+		}
 		// sensing the Event
 		this.sensorNodeAction();
 		/*this.cpu.getDataMemory();*/
@@ -154,8 +172,10 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 			Time tempTimeLastCPURun = Time.NEGATIVE_INFINITY; //temporary variable to help the scheme of battery consumption when not synchronised to the real time
 			tempTimeLastCPURun = this.timeLastCPURun; 
 			List<Object> runReturn = this.cpu.run(tempEvent,this.getDirector().getModelTime());
+			
 			if ((Integer)runReturn.get(0)>0){ // if CPU has process to handle, collect information about this run
 				this.timeLastCPURun = this.getDirector().getModelTime(); // last time of CPU run
+
 				this.numberOfQueuedEvents = (Integer)runReturn.get(0); // collect number of event in the CPU waiting to be processed for statistics
 			}
 			else
@@ -164,6 +184,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 				// if an event was processed
 				if (Double.parseDouble(battery.getValueAsString()) >= ((Double.parseDouble(CPUEnergyCost.getValueAsString())*(this.getDirector().getModelTime().getDoubleValue()-this.newTimeControler.getDoubleValue())))){ // if it has battery yet 
 					// deals with the processed event
+		
 					battery.setExpression(Double.toString(Double.parseDouble(battery.getValueAsString())-((Double.parseDouble(CPUEnergyCost.getValueAsString())*(this.getDirector().getModelTime().getDoubleValue()-this.newTimeControler.getDoubleValue())))));
 					if (this.synchronizedRealTime.getExpression().equals("false"))
 						this.timeOfDeath = (this.getDirector().getModelTime().add(((Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression())))));
@@ -195,12 +216,10 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 	protected void eventDoneManager(List<Object> runReturn) throws NoRoomException, IllegalActionException{
 		// verify if the event must be send through the network (not ordinary)
 		//((BasicEvent)this.getEvent(((String)runReturn.get(1)))).numberOfSensorProcessedEvents++;
-		//System.out.println((String)runReturn.get(1));
-		//if (this.eventOrdinaryMap.get(((String)runReturn.get(1)).split("_")[0]))	
+		if (!this.eventOrdinaryMap.get(((String)runReturn.get(1)).split("_")[0]))	
 			// send the event to the gateway
-			
-			//this.sendMessageToSink(((String)runReturn.get(1))); comentado por jean
-		//this.numberOfSensoredEvents++; // collect the event for statistics
+			this.sendMessageToSink(((String)runReturn.get(1)));
+		this.numberOfSensoredEvents++; // collect the event for statistics	
 	}
 	
 	protected Entity getEvent(String name) throws IllegalActionException {
