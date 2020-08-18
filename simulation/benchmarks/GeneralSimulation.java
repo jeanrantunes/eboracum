@@ -7,10 +7,10 @@ public class GeneralSimulation extends BenchmarksGenerator {
 
 	protected void runBenchmarks(){
 			this.scenarioDimensionXY = new int[]{1000,1000};
-			//HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
-			//simBeePaperConfig("Uniform");
-			HistogramSpectrogramFactory.newNormalSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
-			simBeePaperConfig("Normal");
+			HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
+			simBeePaperConfig("Uniform");
+//			HistogramSpectrogramFactory.newNormalSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
+//			simBeePaperConfig("Normal");
 			//HistogramSpectrogramFactory.newInvertNormalSpectrogram(this.scenarioDimensionXY[1]-100, this.scenarioDimensionXY[0]-100, "spectStartPosition.csv");
 			//simBeePaperConfig("InvNormal");
 	}

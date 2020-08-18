@@ -88,7 +88,7 @@
         <property name="CommChannelName" class="ptolemy.data.expr.StringParameter" value="PowerLossChannel">
         </property>
         <doc>Special WSN Node designed only to be the main gateway of the network.</doc>
-        <property name="_location" class="ptolemy.kernel.util.Location" value="[0.0, 900.0]">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[700.0, 100.0]">
         </property>
     </entity>
     <entity name="MuleWSNNode" class="eboracum.wsn.network.node.sensor.MuleWSNNode">
@@ -107,6 +107,10 @@
     </entity>
     <entity name="PeriodicEvent2" class="eboracum.wsn.event.PeriodicEvent">
         <property name="_location" class="ptolemy.kernel.util.Location" value="{770, 545}">
+        </property>
+    </entity>
+    <entity name="Drone2" class="eboracum.wsn.network.node.Drone">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[700.0, 100.0]">
         </property>
     </entity>
 </entity>

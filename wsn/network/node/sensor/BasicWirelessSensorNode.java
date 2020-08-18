@@ -59,7 +59,7 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
     public int numberOfSensoredEvents;
     public int numberOfQueuedEvents;
     public String whenItDied;
-    
+    public double batterySpentWithDrone;
     
     public BasicWirelessSensorNode(CompositeEntity container, String name)
 			throws IllegalActionException, NameDuplicationException {
@@ -184,11 +184,13 @@ public abstract class BasicWirelessSensorNode extends WirelessNode {
 				// if an event was processed
 				if (Double.parseDouble(battery.getValueAsString()) >= ((Double.parseDouble(CPUEnergyCost.getValueAsString())*(this.getDirector().getModelTime().getDoubleValue()-this.newTimeControler.getDoubleValue())))){ // if it has battery yet 
 					// deals with the processed event
-		
+//					System.out.println("Before: " +  Double.parseDouble(this.battery.getValueAsString()));
 					battery.setExpression(Double.toString(Double.parseDouble(battery.getValueAsString())-((Double.parseDouble(CPUEnergyCost.getValueAsString())*(this.getDirector().getModelTime().getDoubleValue()-this.newTimeControler.getDoubleValue())))));
 					if (this.synchronizedRealTime.getExpression().equals("false"))
 						this.timeOfDeath = (this.getDirector().getModelTime().add(((Double.parseDouble(battery.getValueAsString())/Double.parseDouble(idleEnergyCost.getExpression())))));
 					this.eventDoneManager(runReturn);
+//					System.out.println("After: " + Double.parseDouble(this.battery.getValueAsString()));
+					
 				}
 			}
 			else {

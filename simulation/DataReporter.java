@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 import eboracum.wsn.event.BasicEvent;
 import eboracum.wsn.network.node.NetworkMainGateway;
-import eboracum.wsn.network.node.Drone;
+import eboracum.wsn.network.node.UAV;
 import eboracum.wsn.network.node.sensor.BasicWirelessSensorNode;
 import ptolemy.actor.CompositeActor;
 import ptolemy.actor.TypedAtomicActor;
@@ -54,30 +54,36 @@ public class DataReporter extends TypedAtomicActor {
         	Iterator actors = container.deepEntityList().iterator();
           	String fileReport = simulationReportFile.getValueAsString().substring(1,simulationReportFile.getValueAsString().length()-1);
           	BenchmarksGenerator.appendDataReportFile(fileReport,"Simulation Total Time;"+df.format((this.getDirector().getModelTime().getDoubleValue())));
-			
+          	double totalBatterySpentWithDrone = 0;
+          	
           	while (actors.hasNext()) {
         		Entity node = (Entity) actors.next();
-        		if (node.getClassName().equals("eboracum.wsn.network.node.NetworkMainGateway") || node.getClassName().equals("eboracum.wsn.network.node.Drone")){
-        			BenchmarksGenerator.appendDataReportFile(fileReport,"Total Number of Sensed Events by the WSN: "+((NetworkMainGateway)node).eventSensoredGenCounter);
+        		if (node.getClassName().equals("eboracum.wsn.network.node.NetworkMainGateway") || node.getClassName().equals("eboracum.wsn.network.node.UAV")){
         			
-        			if (node.getClassName().equals("eboracum.wsn.network.node.Drone")) {
-        				BenchmarksGenerator.appendDataReportFile(fileReport, "Total Number of Sensed Events by the Drone: "+ ((Drone)node).eventsInDroneMemory()); 
+        			if (node.getClassName().equals("eboracum.wsn.network.node.UAV")) {
+        				BenchmarksGenerator.appendDataReportFile(fileReport, "Total Number of Sensed Events by the Drone: "+ ((UAV)node).eventsInDroneMemory()); 
         				BenchmarksGenerator.appendDataReportFile(fileReport, "Number of Sensed Events by the Drone per Day");
         				
         				/*test if has duplicated nodes on drone memory*/
         				
+        				long timeElapsed = System.currentTimeMillis() - ((UAV)node).startTime;
+        				
+        				System.out.println("- execution time drone:" + timeElapsed/1000 + " s");
+        				
 //        				((Drone)node).hasDuplicatedItemsOnDroneMemory();
         				
-        				Iterator<Integer> n = ((Drone)node).detailEventSensoredByDroneCounter.iterator();
+        				Iterator<Integer> n = ((UAV)node).detailEventSensoredByDroneCounter.iterator();
         				int i = 1;
             			while (n.hasNext()) {
                     		Integer value = (Integer) n.next();
                     		BenchmarksGenerator.appendDataReportFile(fileReport,i+";"+value);
                     		i++;
                     	}
-                    	BenchmarksGenerator.appendDataReportFile(fileReport,i+";"+((Drone)node).eventSensoredByDroneCounter);
+                    	BenchmarksGenerator.appendDataReportFile(fileReport,i+";"+((UAV)node).eventSensoredByDroneCounter);
                     	
         			} else {
+        				BenchmarksGenerator.appendDataReportFile(fileReport,"Total Number of Sensed Events by the WSN: "+((NetworkMainGateway)node).eventSensoredGenCounter);
+    
         				BenchmarksGenerator.appendDataReportFile(fileReport,"Number of Sensed Events by the WSN per Day");
             			Iterator<Integer> n = ((NetworkMainGateway)node).detailEventSensoredCounter.iterator();
             			int i = 1;
@@ -92,13 +98,15 @@ public class DataReporter extends TypedAtomicActor {
         		
         		
         		ClassLoader classLoader = DataReporter.class.getClassLoader();
+        		
                 try {
                 	@SuppressWarnings("rawtypes")
 					Class bwsn = classLoader.loadClass("eboracum.wsn.network.node.sensor.BasicWirelessSensorNode");
                 	if (bwsn.isAssignableFrom(node.getClass())){
                 		if (firstNodeFlag) {
                 			this.firstNodeToDie = ((BasicWirelessSensorNode)node).timeOfDeath.getDoubleValue();
-                			BenchmarksGenerator.appendDataReportFile(fileReport,"Nodes\nClass Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime");
+ 
+                			BenchmarksGenerator.appendDataReportFile(fileReport,"Nodes\nClass Name; Name; Remaining Battery;Number of Received Messages;Number of Sent Messages;Number of Enqueued Events; Number of Sensored Events; Time of Death; Lifetime; Battery spent with drone");
                 			firstNodeFlag = false;
                 		}
                 		//System.out.println(node)
@@ -110,17 +118,17 @@ public class DataReporter extends TypedAtomicActor {
                 		((BasicWirelessSensorNode)node).numberOfQueuedEvents+";"+
     					((BasicWirelessSensorNode)node).numberOfSensoredEvents+";"+
                 		df.format(((BasicWirelessSensorNode)node).timeOfDeath.getDoubleValue())+";"+
-                		((BasicWirelessSensorNode)node).whenItDied);
+                		((BasicWirelessSensorNode)node).whenItDied+";"+
+                		((BasicWirelessSensorNode)node).batterySpentWithDrone);
+    					
+    					totalBatterySpentWithDrone += ((BasicWirelessSensorNode)node).batterySpentWithDrone;
     					
     					if (((BasicWirelessSensorNode)node).timeOfDeath.getDoubleValue() < this.firstNodeToDie) {
     						this.firstNodeToDieStr = node.getName() + " " + ((BasicWirelessSensorNode)node).whenItDied;
     						this.firstNodeToDie = ((BasicWirelessSensorNode)node).timeOfDeath.getDoubleValue();
     					}
     					
-//    					System.out.println("*parameters: \n"+((BasicWirelessSensorNode)node).numberOfReceivedMessages+";\n"+
-//    					((BasicWirelessSensorNode)node).numberOfSentMessages+";\n"+
-//                		((BasicWirelessSensorNode)node).numberOfQueuedEvents+";\n"+
-//    					((BasicWirelessSensorNode)node).numberOfSensoredEvents+";\n");
+    					
     					
                 	}
                 	
@@ -133,6 +141,8 @@ public class DataReporter extends TypedAtomicActor {
                 		}
                 		BenchmarksGenerator.appendDataReportFile(fileReport,node.getClassName()+";"+node.getName()+";"+((Parameter)node.getAttribute("Type")).getExpression()+";"+((BasicEvent)node).numberOfProducedEvents+";"+((BasicEvent)node).numberOfSensorProcessedEvents);
                 		BenchmarksGenerator.appendDataReportFile(fileReport,"Time that first node die: " + this.firstNodeToDieStr);
+                		BenchmarksGenerator.appendDataReportFile(fileReport,"Total battery spent with drone: "+ totalBatterySpentWithDrone);
+            			
     				}
 					
                 } catch (Exception e) {

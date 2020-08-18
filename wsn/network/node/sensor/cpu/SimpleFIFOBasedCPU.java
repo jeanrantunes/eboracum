@@ -90,6 +90,10 @@ public class SimpleFIFOBasedCPU implements SensorCPU{
 		System.out.println();
 	}
 	
+	public int getLengthMemory() {
+		return this.memory.size();
+	}
+	
 	protected void processTaskCostMap(){
 		try {
 			File fXmlFile = new File(SimpleFIFOBasedCPU.PLATFORMCONFIG);

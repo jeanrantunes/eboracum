@@ -13,6 +13,7 @@ public class NetworkMainGateway extends WirelessNode {
 	private static final String MAINGATEWAYCOLOR = "{0.0, 0.0, 0.0, 1.0}";
 	
 	public ArrayList <Integer> detailEventSensoredCounter; 
+	public ArrayList <String> eventsSensoredBySink;
 	public int eventSensoredCounter;
 	public int eventSensoredGenCounter;
 	private int dayCounter;
@@ -32,6 +33,7 @@ public class NetworkMainGateway extends WirelessNode {
 		super.initialize();
 		this.eventSensoredCounter = 0;
 		detailEventSensoredCounter = new ArrayList<Integer>();
+		this.eventsSensoredBySink = new ArrayList<String>();
 		//createDataLogFile();
 	}
 
@@ -39,8 +41,8 @@ public class NetworkMainGateway extends WirelessNode {
 		super.fire();
 		battery.setExpression(initBattery.getValueAsString());
 		if (this.receivedMessage != null) {
-//			System.out.println("Sink pre flt:   >>>>>>> "+this.receivedMessage+" "+lastSensedEvent);
-			if (!this.receivedMessage.equals(lastSensedEvent)){
+			if (!this.eventsSensoredBySink.contains(this.receivedMessage)){
+				this.eventsSensoredBySink.add(this.receivedMessage);
 				this.eventSensoredGenCounter++;
 				if (this.getDirector().getModelTime().getDoubleValue()/(3600*24) > this.dayCounter){
 					this.eventSensoredCounter++;

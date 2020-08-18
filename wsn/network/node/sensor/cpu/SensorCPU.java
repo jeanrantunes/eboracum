@@ -45,6 +45,8 @@ import ptolemy.actor.util.Time;
 		public Block getBlockMemory();
 
 		public void showDataMemory();
+
+		public int getLengthMemory();
 		
 	}
 

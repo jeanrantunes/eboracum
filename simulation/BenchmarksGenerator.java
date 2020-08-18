@@ -57,6 +57,7 @@ public abstract class BenchmarksGenerator {
 	protected double cpuCost;
 	protected double idleCost;
 	protected static boolean mobileSink;
+	protected static String planning;
 	 
 	public BenchmarksGenerator() {
 		this.runBenchmarks();
@@ -125,7 +126,11 @@ public abstract class BenchmarksGenerator {
 			scenario.setManager(god);
 			File fXmlFile;
 			if (this.mobileSink) {
-				fXmlFile = new File("eboracum/simulation/_base_model_mobilesink.xml");
+				if (this.planning == "spiral") {
+					fXmlFile = new File("eboracum/simulation/_base_model_drone_spiral.xml");
+				} else {
+					fXmlFile = new File("eboracum/simulation/_base_model_drone_bff.xml");
+				}
 			} else {
 				fXmlFile = new File("eboracum/simulation/_base_model.xml");
 			}
@@ -190,7 +195,7 @@ public abstract class BenchmarksGenerator {
 				}
 			}
 			if (this.mobileSink) {
-				changePropertyAttributeOfEntity(doc, "Drone", "Network", this.network);
+				changePropertyAttributeOfEntity(doc, "UAV", "Network", this.network);
 			} else {
 				if (this.mainGatewayCenteredFlag)
 					changePropertyAttributeOfEntity(doc, "NetworkMainGateway", "_location", "["+((this.scenarioDimensionXY[0])/2)+","+(this.scenarioDimensionXY[1]/2)+"]");
