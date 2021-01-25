@@ -98,7 +98,7 @@
         </property>
     </entity>
     <entity class="eboracum.wsn.network.SimpleAdHocNetwork" name="SimpleAdHocNetwork">
-        <property class="ptolemy.data.expr.StringParameter" name="NetworkSinks" value="{Drone}">
+        <property class="ptolemy.data.expr.StringParameter" name="NetworkSinks" value="{UAV}">
         </property>
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
@@ -116,7 +116,7 @@
         <property class="ptolemy.kernel.util.Location" name="_location" value="[1090.0, -135.0]">
         </property>
     </entity>
-    <entity class="eboracum.wsn.network.node.Drone" name="Drone">
+    <entity class="eboracum.wsn.network.node.UAV" name="UAV">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -135,7 +135,7 @@
     <link port="DataReporter.out" relation="relation2"/>
     <link port="DataReporter.trigger" relation="relation3"/>
     <link port="SimpleAdHocNetwork.out" relation="relation3"/>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node0">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node0">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -243,7 +243,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node1">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node1">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -351,7 +351,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node2">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node2">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -459,7 +459,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node3">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node3">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -567,7 +567,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node4">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node4">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -675,7 +675,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node5">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node5">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -783,7 +783,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node6">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node6">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -891,7 +891,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node7">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node7">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -999,7 +999,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node8">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node8">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1107,7 +1107,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node9">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node9">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1215,7 +1215,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node10">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node10">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1323,7 +1323,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node11">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node11">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1431,7 +1431,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node12">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node12">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1539,7 +1539,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node13">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node13">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1647,7 +1647,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node14">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node14">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1755,7 +1755,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node15">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node15">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1863,7 +1863,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node16">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node16">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -1971,7 +1971,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node17">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node17">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2079,7 +2079,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node18">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node18">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2187,7 +2187,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node19">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node19">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2295,7 +2295,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node20">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node20">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2403,7 +2403,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node21">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node21">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2511,7 +2511,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node22">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node22">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2619,7 +2619,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node23">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node23">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2727,7 +2727,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node24">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node24">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2835,7 +2835,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node25">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node25">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -2943,7 +2943,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node26">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node26">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -3051,7 +3051,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node27">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node27">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -3159,7 +3159,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node28">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node28">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -3267,7 +3267,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node29">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node29">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -3375,7 +3375,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node30">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node30">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -3483,7 +3483,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node31">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node31">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -3591,7 +3591,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node32">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node32">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -3699,7 +3699,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node33">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node33">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -3807,7 +3807,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node34">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node34">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -3915,7 +3915,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node35">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node35">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4023,7 +4023,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node36">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node36">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4131,7 +4131,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node37">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node37">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4239,7 +4239,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node38">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node38">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4347,7 +4347,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node39">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node39">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4455,7 +4455,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node40">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node40">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4563,7 +4563,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node41">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node41">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4671,7 +4671,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node42">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node42">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4779,7 +4779,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node43">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node43">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4887,7 +4887,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node44">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node44">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -4995,7 +4995,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node45">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node45">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -5103,7 +5103,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node46">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node46">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -5211,7 +5211,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node47">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node47">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -5319,7 +5319,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node48">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node48">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -5427,7 +5427,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node49">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node49">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -5535,7 +5535,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node50">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node50">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -5643,7 +5643,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node51">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node51">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -5751,7 +5751,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node52">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node52">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -5859,7 +5859,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node53">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node53">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -5967,7 +5967,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node54">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node54">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -6075,7 +6075,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node55">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node55">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -6183,7 +6183,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node56">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node56">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -6291,7 +6291,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node57">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node57">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -6399,7 +6399,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node58">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node58">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -6507,7 +6507,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node59">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node59">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -6615,7 +6615,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node60">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node60">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -6723,7 +6723,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node61">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node61">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -6831,7 +6831,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node62">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node62">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -6939,7 +6939,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node63">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node63">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -7047,7 +7047,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node64">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node64">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -7155,7 +7155,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node65">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node65">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -7263,7 +7263,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node66">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node66">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -7371,7 +7371,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node67">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node67">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -7479,7 +7479,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node68">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node68">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -7587,7 +7587,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node69">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node69">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -7695,7 +7695,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node70">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node70">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -7803,7 +7803,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node71">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node71">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -7911,7 +7911,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node72">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node72">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8019,7 +8019,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node73">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node73">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8127,7 +8127,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node74">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node74">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8235,7 +8235,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node75">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node75">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8343,7 +8343,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node76">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node76">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8451,7 +8451,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node77">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node77">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8559,7 +8559,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node78">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node78">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8667,7 +8667,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node79">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node79">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8775,7 +8775,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node80">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node80">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8883,7 +8883,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node81">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node81">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -8991,7 +8991,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node82">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node82">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -9099,7 +9099,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node83">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node83">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -9207,7 +9207,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node84">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node84">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -9315,7 +9315,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node85">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node85">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -9423,7 +9423,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node86">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node86">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -9531,7 +9531,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node87">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node87">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -9639,7 +9639,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node88">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node88">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -9747,7 +9747,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node89">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node89">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -9855,7 +9855,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node90">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node90">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -9963,7 +9963,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node91">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node91">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -10071,7 +10071,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node92">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node92">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -10179,7 +10179,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node93">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node93">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -10287,7 +10287,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node94">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node94">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -10395,7 +10395,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node95">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node95">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -10503,7 +10503,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node96">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node96">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -10611,7 +10611,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node97">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node97">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -10719,7 +10719,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node98">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node98">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>
@@ -10827,7 +10827,7 @@
             </property>
         </port>
     </entity>
-   <entity class="eboracum.wsn.network.node.sensor.MuleWSNNode" name="Node99">
+   <entity class="eboracum.wsn.network.node.sensor.UAVWSNNode" name="Node99">
         <property class="ptolemy.data.expr.StringParameter" name="CommChannelName"
                 value="PowerLossChannel">
         </property>

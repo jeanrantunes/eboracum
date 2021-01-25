@@ -23,7 +23,7 @@ public class PaperSimulation extends BenchmarksGenerator {
 		String simulationIdentification;
 		for (int j = 0; j <= 0; j++){
 			this.id = j;
-			simulationIdentification = "RSSF33-64Nodes"+dist+j;
+			simulationIdentification = "RSSF13-100Nodes-new"+dist+j;
 			this.nodesRandomizeFlag = false;
 			this.mainGatewayCenteredFlag = false;
 			this.beginSetupBeePaperConfig();
@@ -51,7 +51,7 @@ public class PaperSimulation extends BenchmarksGenerator {
 		this.idleCost = 0.3;
 		this.wirelessEvents.clear();
 		
-		this.wirelessEvents.put(new WirelessEvent("E0", 3, false, "{1.0, 0.0, 0.0, 1.0}",
+		this.wirelessEvents.put(new WirelessEvent("E0", 1, false, "{1.0, 0.0, 0.0, 1.0}",
 				"<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"3\"/></task>",
 				"StochasticPeriodicJumperEvent"), 1);
 		

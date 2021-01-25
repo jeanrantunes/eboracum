@@ -60,7 +60,7 @@ public class UAV extends WirelessNode {
 		super(container, name);
 		
 		StringParameter planning = new StringParameter(this,"Planning");
-		planning.setExpression("bff");
+		planning.setExpression("spiral");
 		
 		this.planning = planning.getExpression();
 		this.scenarioXY = new int[2];

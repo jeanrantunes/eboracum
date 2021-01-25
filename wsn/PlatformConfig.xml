@@ -1,5 +1,5 @@
 <load>
-<event type="E0" ordinary="false" commcost="3.0">
+<event type="E0" ordinary="false" commcost="1.0">
 <task id="0"><cpu name="SimpleFIFOBasedCPU" cost="3"/></task>
 </event>
 </load>

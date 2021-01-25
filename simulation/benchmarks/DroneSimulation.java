@@ -11,7 +11,7 @@ public class DroneSimulation extends BenchmarksGenerator {
 
 	protected void runBenchmarks() {
 		this.scenarioDimensionXY = new int[] { 1000, 1000 };
-		this.planning = "bff";
+		this.planning = "spiral";
 //		HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1] - 100,
 //				this.scenarioDimensionXY[0] - 100, "spectStartPosition.csv");
 //		simBeePaperConfig("Uniform");
@@ -25,7 +25,7 @@ public class DroneSimulation extends BenchmarksGenerator {
 		String simulationIdentification;
 		for (int j = 0; j <= 0; j++) {
 			this.id = j;
-			simulationIdentification = "drone-"+this.planning+"-33-5ms-64Nodes" + dist + j;
+			simulationIdentification = "drone-"+this.planning+"-13-new-5ms-100Nodes" + dist + j;
 			this.nodesRandomizeFlag = false;
 			this.mainGatewayCenteredFlag = false;
 			this.beginSetupBeePaperConfig();
@@ -45,9 +45,9 @@ public class DroneSimulation extends BenchmarksGenerator {
 	private void beginSetupBeePaperConfig() {
 		this.mobileSink = true;
 		this.initBattery = 5400000 / 2;
-		this.commCover = 125;
-		this.sensorCover = 85;
-		this.numOfNodes = 64;
+		this.commCover = 105;
+		this.sensorCover = 65;
+		this.numOfNodes = 100;
 		if (!nodesRandomizeFlag)
 			generateGridPosition(numOfNodes);
 		this.wirelessSensorNodesType = "GeneralType";
@@ -56,7 +56,7 @@ public class DroneSimulation extends BenchmarksGenerator {
 		this.wirelessEvents.clear();
 //		
 //		
-		this.wirelessEvents.put(new WirelessEvent("E0", 3, false, "{1.0, 0.0, 0.0, 1.0}",
+		this.wirelessEvents.put(new WirelessEvent("E0", 1, false, "{1.0, 0.0, 0.0, 1.0}",
 				"<task id=\"0\"><cpu name=\"SimpleFIFOBasedCPU\" cost=\"3\"/></task>",
 				"StochasticPeriodicJumperEvent"), 1);
 //		
