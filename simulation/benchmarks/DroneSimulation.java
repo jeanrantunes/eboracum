@@ -4,7 +4,11 @@ import ptolemy.data.expr.Parameter;
 import eboracum.simulation.BenchmarksGenerator;
 import eboracum.simulation.util.HistogramSpectrogramFactory;
 import eboracum.wsn.network.node.WirelessNode;
-
+import eboracum.wsn.network.node.UAV;
+import eboracum.wsn.network.node.BFFligthPattern;
+import ptolemy.kernel.CompositeEntity;
+import ptolemy.kernel.util.IllegalActionException;
+import ptolemy.kernel.util.NameDuplicationException;
 public class DroneSimulation extends BenchmarksGenerator {
 
 	int id;
@@ -12,6 +16,7 @@ public class DroneSimulation extends BenchmarksGenerator {
 	protected void runBenchmarks() {
 		this.scenarioDimensionXY = new int[] { 1000, 1000 };
 		this.planning = "spiral";
+		
 //		HistogramSpectrogramFactory.newUniformSpectrogram(this.scenarioDimensionXY[1] - 100,
 //				this.scenarioDimensionXY[0] - 100, "spectStartPosition.csv");
 //		simBeePaperConfig("Uniform");
@@ -23,9 +28,10 @@ public class DroneSimulation extends BenchmarksGenerator {
 
 	public void simBeePaperConfig(String dist) {
 		String simulationIdentification;
+		
 		for (int j = 0; j <= 0; j++) {
 			this.id = j;
-			simulationIdentification = "drone-"+this.planning+"-13-new-5ms-100Nodes" + dist + j;
+			simulationIdentification = this.planning+"_test_time";
 			this.nodesRandomizeFlag = false;
 			this.mainGatewayCenteredFlag = false;
 			this.beginSetupBeePaperConfig();
@@ -45,9 +51,9 @@ public class DroneSimulation extends BenchmarksGenerator {
 	private void beginSetupBeePaperConfig() {
 		this.mobileSink = true;
 		this.initBattery = 5400000 / 2;
-		this.commCover = 105;
-		this.sensorCover = 65;
-		this.numOfNodes = 100;
+		this.commCover = 100;
+		this.sensorCover = 70;
+		this.numOfNodes = 81;
 		if (!nodesRandomizeFlag)
 			generateGridPosition(numOfNodes);
 		this.wirelessSensorNodesType = "GeneralType";
@@ -103,8 +109,11 @@ public class DroneSimulation extends BenchmarksGenerator {
 	}
 
 	@SuppressWarnings("unused")
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IllegalActionException, NameDuplicationException {
 		BenchmarksGenerator b = new DroneSimulation();
+		CompositeEntity ce = new CompositeEntity();
+                BFFligthPattern bff = new BFFligthPattern();
+                UAV uav = new UAV(ce,"drone");
 	}
 
 }

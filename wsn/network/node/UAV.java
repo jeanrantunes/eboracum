@@ -52,7 +52,7 @@ public class UAV extends WirelessNode {
 	private int twoRounds;
 	public long startTime;
 	private String planning;
-	
+	private long start;
 	public ArrayList <Integer> detailEventSensoredByDroneCounter; 
 	@SuppressWarnings("unused")
 	
@@ -61,7 +61,7 @@ public class UAV extends WirelessNode {
 		
 		StringParameter planning = new StringParameter(this,"Planning");
 		planning.setExpression("spiral");
-		
+//		fligthPattern.movement();
 		this.planning = planning.getExpression();
 		this.scenarioXY = new int[2];
 		this.directionX = 1;
@@ -101,10 +101,13 @@ public class UAV extends WirelessNode {
 		outPort = new WirelessIOPort(this, "outputDrone", false, true);
 		outPort.outsideChannel.setExpression("$CommChannelName");
 		memoryDrone = new HashMap<String,ArrayList<Block>>();
+		
+		start = System.currentTimeMillis();
 	}
 	
 	public void initialize() throws IllegalActionException{
 		super.initialize();
+		
 		this.startTime = System.currentTimeMillis();
 		this.eventSensoredByDroneCounter = 0;
 		detailEventSensoredByDroneCounter = new ArrayList<Integer>();
@@ -113,6 +116,7 @@ public class UAV extends WirelessNode {
 	@SuppressWarnings("null")
 	public void fire() throws IllegalActionException {
 		super.fire();
+		 
 		if (this.planning.equals("") || this.planning.equals("bff")) {
 			zigzag();
 		} else if (this.planning.equals("spiral")) {
@@ -131,6 +135,7 @@ public class UAV extends WirelessNode {
 
 	public void zigzag() throws NoTokenException, IllegalActionException {
 		if (this.goBackToOrigin == true && this.x == this.originX && this.y == this.originY) {
+		    
 			this.directionX *= -1;
 			this.directionY *= -1;
 			this.goBackToOrigin = false;
@@ -182,6 +187,7 @@ public class UAV extends WirelessNode {
 				this.x <= this.scenarioXY[0]/2 + this.detectionDistance/2 && 
 				this.scenarioXY[1]/2 - this.detectionDistance/2 <= this.y && 
 				this.y <= this.scenarioXY[1]/2 + this.detectionDistance/2) {
+		    System.out.println(System.currentTimeMillis() - this.start);
 			this.goBackToOrigin = true;
 			this.x += this.speed * this.directionX * 2;
 			this.directionX = -1;
@@ -417,4 +423,5 @@ public class UAV extends WirelessNode {
                             + "with container = " + container);
         } 
     }
+
 }

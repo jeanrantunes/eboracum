@@ -23,7 +23,7 @@ public class PaperSimulation extends BenchmarksGenerator {
 		String simulationIdentification;
 		for (int j = 0; j <= 0; j++){
 			this.id = j;
-			simulationIdentification = "RSSF13-100Nodes-new"+dist+j;
+			simulationIdentification = "RSSF13-81Nodes-new1"+dist+j;
 			this.nodesRandomizeFlag = false;
 			this.mainGatewayCenteredFlag = false;
 			this.beginSetupBeePaperConfig();
@@ -42,9 +42,9 @@ public class PaperSimulation extends BenchmarksGenerator {
 	
 	private void beginSetupBeePaperConfig(){
 		this.initBattery = 5400000 / 2;
-		this.commCover = 105;
-		this.sensorCover = 65;
-		this.numOfNodes = 100;
+		this.commCover = 160;
+		this.sensorCover = 120;
+                this.numOfNodes = 49;
 		if (!nodesRandomizeFlag) generateGridPosition(numOfNodes);
 		this.wirelessSensorNodesType = "GeneralType";
 		this.cpuCost = 50;
